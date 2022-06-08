@@ -17,7 +17,6 @@ In the initial lessons, I choose to take an approach that involves writing and u
 
 ### Data Types
 * 002 - Data Types: Numeric data types and operations
-    * 
 * 003 - Mathematical Functions: Using Python as a calculator
 * 004 - Data Types: A quick introduction to variables
 * 005 - Data Types: Booleans (`bool`) data type and basic operations
