@@ -12,6 +12,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ### Data Types
 * 002 - Data Types: Numeric data types and operations
+    * 
 * 003 - Mathematical Functions: Using Python as a calculator
 * 004 - Data Types: Booleans (`bool`) data type and operations
 * 005 - Data Types: String (`str`) data type and operations 
