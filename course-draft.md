@@ -443,7 +443,20 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 
 
 
------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------
 
 
 # 003 - Data Types: Numeric data types and operations
@@ -453,9 +466,11 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 * Understand the numeric data types `int` and `float` and their basic operators
 * Write functions that perform repeatable mathematical operations
 
+
 ## What is a data type?
 * a data type is simply the type of a given value
     * for example the number 4 is the `int` data type, which stands for "integer", which represents whole numbers 
+
 
 ## What are the numeric data types?
 * `int` represents whole numbers, like 1, 3, -54, 997, and so on
