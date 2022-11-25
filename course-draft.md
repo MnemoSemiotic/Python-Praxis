@@ -6,6 +6,8 @@
 * Scope of Python Praxis
 * Big Picture
 
+## Who am I
+* 
 
 ## Why a "Leftist, Queer" series of technical courses?
 * Technical people are in positions of power, by way of decision and deferral to expertise
@@ -14,7 +16,11 @@
         * [Sabelosethu Mhlambi: Decolonizing AI](https://www.youtube.com/watch?v=UqVwfuIuU2k&t)
             * Discusses racial bias in AI, and proposes a relational ethics
         * [William Isaac, DeepMind: Columbia Data Science Institue, Race + Data Science series](https://www.youtube.com/watch?v=fcJR6DIo3Mg)
+* Technology is political (yeah everything is, actually)
 
+
+## Scope of this course
+* Covering Python from zero background through reasonable proficiency
 
 
 -------------------------------------------------------------------------
