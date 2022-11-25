@@ -18,6 +18,7 @@
             * Discusses racial bias in AI, and proposes a relational ethics
         * [William Isaac, DeepMind: Columbia Data Science Institue, Race + Data Science series](https://www.youtube.com/watch?v=fcJR6DIo3Mg)
 * Technology is political (yeah everything is, actually)
+* Technology has often been a haven for Queers, ND peopleo, etc., and I feel like we need to wrestle this back a bit from the tech bros and have safe space
 
 
 ## Making materials accessible
