@@ -467,6 +467,7 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 * Understand the numeric data types `int` and `float` and their basic operators
 * Understand the modulo (`%`) and floor division (`//`) operators
 * Casting between `int` and `float` data types
+* Rounding numbers using `round()`
 
 * ??Write functions that perform simple, repeatable mathematical operations
 
@@ -661,7 +662,7 @@ print(4.0 // 2) # --> 2.0
 ```
 
 ## Casting: using `int()` and `float()` to convert a number
-* In Python programming, **casting** refers to taking one data type and converting it to another data type by using the function related to the target data type.
+* In Python programming, **casting** refers to taking one data type and converting it to another data type by using the function related to the target data type
 
 ### Let's see what happens when we use the `int()` and `float()` functions without putting anything into them
 
