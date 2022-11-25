@@ -52,7 +52,9 @@
 ## Resources
 * The goal is to have each numbered lesson (000, 001, etc) have a video around 10-15 minutes in length
 * Most code examples and some specific concepts will also have a short with just writing of that code
-
+* The entirety of these lessons will be mapped out in this github repo 
+    * including lesson scripts that will be uploaded as as video captions
+* Most code examples will have a dedicated [repl.it](repl.it), for convenience
 
 
 
