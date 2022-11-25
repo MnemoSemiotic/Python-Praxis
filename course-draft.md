@@ -88,6 +88,14 @@
 
 
 
+## In the Next Lesson...
+
+
+
+
+
+
+
 
 -------------------------------------------------------------------------
 
@@ -306,8 +314,7 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
     * in other words: It's ok to write code in a way you understand, and then refine it later if necessary
 
 
-## In the Next Lesson:
-* We'll look at a simpler problem, and start exploring numeric types
+## In the Next Lesson...
 
 
 
@@ -353,6 +360,7 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 * You will write your code into `main.py` and click "Run" at the top when you want to see what your code does.
 
 
+
 # A few simple programs
 * A "program" for us right now, can be defined simply as a series of commands that we're keeping in a text file and running in an interpreter.
 
@@ -360,8 +368,9 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 ## Functions
 * We're going to write code mostly within functions.
     * let's be a little hand-wavey about this
-    * a **Function** can be thought of as a series of procedures that can be referred to by a simple name. 
+    * a **Function** can be thought of as a series of procedures that we can refer to using a name. 
         * A function can have values input into it, and it can **return** values
+* These are very simple examples, to demonstrate what a function is
 
 
 ## Simple Program 1: put your name in a greeting
@@ -379,12 +388,13 @@ def greet_with_name(your_name):
 print(greet_with_name("tov"))
 ```
 
-* Notice here that our function named `greet_with_name` takes some input and puts that input into a a greeting, and returns the whole thing.
-* We then print out the statement that we made and it appears on the console
+* Notice here that our function named `greet_with_name` takes some input and puts that into a greeting, then returns the whole thing.
+* We then `print` out what we made and it appears on the console
 
 
 
 ## Simple Program 2: add two numbers
+* We could also just use the addition operator directly, as in `num_1 + num_2`
 
 1. define your function
 
@@ -424,12 +434,12 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 ```
 
 # Conclusion
-* In this lesson we wrote a few very simple programs that returned results that we then printed to the console. These are just the beginning. We will often write code within functions, and then call or run those functions.
+* In this lesson we wrote a few very simple functions that returned results that we then printed to the console. These are just the beginning. We will often write code within functions, and then call or run those functions.
 * There's a lot more to functions, and we'll dig into that as we go.
 * Programming is a creative endeavor and it's important that you do more than just follow my lead and write the same code I do. Try to invent new things and see if Python does what you expect it to do.
 
-## In the Next Lesson:
-* Introduction to Data Types
+## In the Next Lesson...
+
 
 
 
