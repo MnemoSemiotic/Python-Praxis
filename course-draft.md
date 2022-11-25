@@ -465,6 +465,7 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 * Understand the concept of a data type
 * Use the `type()` function to check data types
 * Understand the numeric data types `int` and `float` and their basic operators
+* Understand the modulo (`%`) and floor division (`//`) operators
 * Write functions that perform simple, repeatable mathematical operations
 
 
@@ -572,7 +573,7 @@ print(8 % 2)
 print(16 % 3)
 ```
 
-Notice that modulo in these two cases (with integers) will give a non-decimal result
+Notice that modulo in these two cases (with integers) will give a non-decimal result. However, if either of the numbers in the operation have a decimal value, then the result will have a decimal value.
 
 
 
@@ -583,9 +584,10 @@ print(8 // 2)
 print(16 // 3)
 ```
 
+
 ## Order of Operations
 * Keep in mind that Python will use our normal order of arithmetic operations, what we often call PEMDAS.
-    * Parentheses, Exponents, Multiplication/Division, Addition/Subtraction
+    * Parentheses, Exponents, Multiplication / Division, Addition / Subtraction
 
 This means that these two operations, will be very different:
 
@@ -599,12 +601,15 @@ print( (5 + 3) / (7 - 24 % 8)**3 )
 * you will often run into simple arithmetic bugs and using more parentheses, even when not necessary, can help prevent these from happening
 * also, don't be afraid to use spaces to make your numeric operations easier to read
 
+
+
+
 ## Floats: `float`
 * simply stated, floats are positive or negative numbers that have a decimal point.
 * All the same mathematical operations that are used for integers may be used for floats
 
 ### Adding (`+`), Subtracting (`-`), Multiplying (`*`), Dividing (`/`), Exponentiation (`**`) with floats
-* notice that the result of these basic mathematical operations will result in floats, even when the result should be a whole number
+* notice that the result of these basic mathematical operations will result in floats, even when the result could be a whole number
 * likewise, a mathematical operation performed with a float and an integer will result in a `float`
 
 ```python
