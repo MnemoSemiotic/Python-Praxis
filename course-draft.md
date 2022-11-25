@@ -126,11 +126,11 @@ print(choice([1,2,3,4,5,6]))
 # choice can select from more than just a list of numbers
 print(choice(['one', 'two', 'three', 'four', 'five', 'six']))
 ```
-
-    1
-    five
-
-
+`output:`
+```
+1
+five
+```
 ### writing a simple function that utilizes `random.choice()`
 * notice the structure of the function that we define
 
