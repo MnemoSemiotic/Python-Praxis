@@ -648,8 +648,9 @@ you would expect to see a result of 5. However, you likely are seeing `4.999` wi
 Given how floats are stored in memory, they might not give an exact result.
 
 
+
 ### Float floor division 
-* just as with other operations, using the floor division with two floats will result in a `float`.
+* just as with other operations, but maybe surprisingly, using the floor division with two floats will result in a `float`.
 
 ```python
 print(5.0 // 2) # --> 2.0
