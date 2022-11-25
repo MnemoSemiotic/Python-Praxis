@@ -3,6 +3,7 @@
 ## Goals:
 * Accessible, Queer and "Leftist" series of courses in Data Analysis and Science
     * Why such a course is helpful or necessary
+* Establish a culture where programming is a form of literacy, and is accessible to all who want to develop that literacy
 * Scope of Python Praxis
 * Big Picture
 
@@ -19,8 +20,20 @@
 * Technology is political (yeah everything is, actually)
 
 
+## Making materials accessible
+* There's a current exclusionary culture in tech, that glorifies what the culture sees as intelligence
+* Programming, like any skill, is within reach by practice and application
+
+
+
 ## Scope of this course
-* Covering Python from zero background through reasonable proficiency
+* Covering Python from zero background through reasonable practical proficiency
+    * At every step, we'll apply what we've just learned
+    * Whenever possible, we'll use real-world examples (that maybe we even care about)
+* There will be some probability and statistics
+    * All concepts will be reasonably explained, with as little expectation of prior knowledge
+    *
+
 
 
 -------------------------------------------------------------------------
