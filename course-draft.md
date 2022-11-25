@@ -131,8 +131,11 @@ print(choice(['one', 'two', 'three', 'four', 'five', 'six']))
 1
 five
 ```
+
+
+
 ### writing a simple function that utilizes `random.choice()`
-* notice the structure of the function that we define
+* You do not need to understand this right now, we'll cover functions in much more depth throughout the course
 
 
 ```python
