@@ -466,7 +466,9 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 * Use the `type()` function to check data types
 * Understand the numeric data types `int` and `float` and their basic operators
 * Understand the modulo (`%`) and floor division (`//`) operators
-* Write functions that perform simple, repeatable mathematical operations
+* Casting between `int` and `float` data types
+
+* ??Write functions that perform simple, repeatable mathematical operations
 
 
 ## What is a data type?
