@@ -40,7 +40,8 @@
     * Classes, class structure, and methods
     * Basics in Numpy and Pandas, with applications on images and data
         * these will be extended in their own courses, as well, so just enough to be dangerous
-    * A basic example of machine learning and how to think about this example more generally.
+    * A basic example of machine learning and how to think about this example more generally
+    * A simple application 
 
 
 ## Big Picture
