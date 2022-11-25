@@ -173,6 +173,7 @@ print(single_dice_roll(36))
 28
 ```
 
+
 ### Let's make our function a little cleaner
 * 1. Use `range` directly to avoid the for-loop
 * 2. Make the choice directly from the `range`
@@ -180,9 +181,9 @@ print(single_dice_roll(36))
 
 
 ```python
-# 1. Use `range` directly to avoid the for-loop
+from random import choice
 
-# function definitions start with the keyword def
+# 1. Use `range` directly to avoid the for-loop
 def single_dice_roll(number_sides=6):
     # here we're going to directly attach the desired range to dice_sides
     dice_sides = range(1, number_sides+1)
@@ -198,12 +199,15 @@ print(single_dice_roll(6))
 print(single_dice_roll(36))
 ```
 
-    6
-    15
-
+`example output:`
+```
+6
+15
+```
 
 
 ```python
+from random import choice
 # 2. Make the choice directly from the `range`
 
 # function definitions start with the keyword def
@@ -219,12 +223,16 @@ print(single_dice_roll(6))
 print(single_dice_roll(36))
 ```
 
-    6
-    10
-
+`example output:`
+```
+6
+10
+```
 
 
 ```python
+from random import choice
+
 # 3. Return the operation directly
 
 def single_dice_roll(number_sides=6):
@@ -236,14 +244,19 @@ print(single_dice_roll(6))
 print(single_dice_roll(36))
 ```
 
-    4
-    33
+`example output:`
+```
+4
+33
+```
 
 
 ### What if we want to roll multiple dice of the same number of sides?
 
 
 ```python
+from random import choice
+
 def multiple_dice_roll(number_dice=1, number_sides=6):
     sum_dice = 0
 
@@ -258,7 +271,10 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 
 ```
 
-    21
+`example output:`
+```
+21
+```
 
 
 ### Let's make our multi dice roller a little cleaner
@@ -267,6 +283,8 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 
 
 ```python
+from random import choice
+
 def multiple_dice_roll(number_dice=1, number_sides=6):
     return sum([choice(range(1, number_sides+1)) for roll in range(number_dice)])
 
