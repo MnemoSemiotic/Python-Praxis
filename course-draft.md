@@ -41,7 +41,7 @@
     * Basics in Numpy and Pandas, with applications on images and data
         * these will be extended in their own courses, as well, so just enough to be dangerous
     * A basic example of machine learning and how to think about this example more generally
-    * A simple application 
+    * Develop a simple application 
 
 
 ## Big Picture
@@ -80,7 +80,7 @@
 * Introduction to an immediately available Python environment using [repl.it](https://repl.it)
 * Understanding that programming is a creative endeavor
     * If you have an idea and you know how to code within a given environment, you can actualize that idea
-    * There's a major issue of ableism within tech spaces, where intelligence is attributed when the real functional elements are familiarity, creativity, and laziness.
+    * There's a major issue of ableism within tech spaces, where intelligence is attributed when the real functional elements are familiarity and creativity.
 * Why should you become literate in programming?
     * So you can make stuff 
         * Games, art, music, generative text
