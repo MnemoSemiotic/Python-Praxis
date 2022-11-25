@@ -747,12 +747,21 @@ print(math.pi)
 ```python
 from math import ceil, sqrt, pi
 
-# note we now omit the math. that we included above
+# note we now omit the "math." part that we included above
 print(ceil(9.9))
 print(sqrt(25))
 print(pi)
 ```
 
+`output`
+```
+10
+5.0
+3.141592653589793
+```
+
+
+You will often [See `math` module documentation](https://docs.python.org/3/library/math.html)
 
 
 
