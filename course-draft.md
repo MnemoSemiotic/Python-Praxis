@@ -612,6 +612,7 @@ print( (5 + 3) / (7 - 24 % 8)**3 )
 * notice that the result of these basic mathematical operations will result in floats, even when the result could be a whole number
 * likewise, a mathematical operation performed with a float and an integer will result in a `float`
 
+
 ```python
 print(5.3 + 0.7)
 
@@ -644,7 +645,7 @@ print(125**(1/3)) # --> gives us 4.9999...
 
 you would expect to see a result of 5. However, you likely are seeing `4.999` with repeating 9's. 
 
-Given how floats are stored in memory, they may not be an exact result.
+Given how floats are stored in memory, they might not give an exact result.
 
 
 ### Float floor division 
