@@ -463,6 +463,7 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 
 ## Goals:
 * Understand the concept of a data type
+* Use the `type()` function to check data types
 * Understand the numeric data types `int` and `float` and their basic operators
 * Write functions that perform simple, repeatable mathematical operations
 
@@ -472,15 +473,13 @@ print(word_in_sentence("cat", "Is the dog inside?"))
     * for example the number 4 is the `int` data type, which stands for "integer", which represents whole numbers 
 
 
-## What are the numeric data types?
+## What are the numeric data types in Python?
 * `int` represents whole numbers, like 1, 3, -54, 997, and so on
 * `float` represents numbers that have decimal points
 * `bool` represents only the values `True` or `False`
-* `complex` represents values that are imaginary numbers (we won't go over this here, but just understand it exists)
+* `complex` represents values that are imaginary numbers (we won't go over this here, but it exists)
 
 ** We will cover only `int` and `float` in this lesson
-
-
 
 
 
