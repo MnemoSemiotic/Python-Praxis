@@ -1,5 +1,11 @@
 # 000 - Introduction - What to expect
 
+## Goals:
+* Accessible, Queer and "Leftist" series of courses in Data Analysis and Science
+* 
+
+
+
 -------------------------------------------------------------------------
 
 # 001 - A Demo: Rolling the Dice
