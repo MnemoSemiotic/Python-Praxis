@@ -311,13 +311,22 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 
 
 
------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------
 
 
 # 002 - First Steps: A Few Simple Programs
 
 ## Goals:
-* Set up a REPL.it account
+* Set up a REPL.it account to play with code
 * Develop an initial understanding of functions
 * Run a simple program
 
