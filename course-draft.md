@@ -691,11 +691,72 @@ print(round(9.73541, 3)) # --> 9.735, where we've rounded to the 3rd decimal pla
 
 
 
-## Defining Mathematical Functions using Python
-* writing functions makes it easier to reproduce mathematical operations, without having to write everything out.
-* notice that these functions will `return` values, and, in order to see those values in the output, we will need to print what the function returns
+
+
+------------------------------------------------------------------
+
+
+# 004 - Defining Mathematical Functions and using Python as a Calculator
+
+
+## Goals:
+* Writing functions makes it easier to reproduce mathematical operations, without having to write everything out.
+* For repetition, start using Python in your everyday life, as a calculator
+* Start using comments to ignore bits of code
+* Import mathematical functions from the `math` module
+* Define more custom mathematical functions
+
+
+
+## Why use Python as a calcluator?
+
+When first learning to program, it's important that you get a lot of repetition. It will be very helpful to use Python as a calculator whenever you can. Instead of grabbing a traditional calculator, simply use [repl.it](https://repl.it), or a python terminal to figure out answers to your mathematical questions.
+
+An advantage of using a text editor and building your math operations in Python, is that you can keep a record of what you've tried. You can comment out some lines of code, and leave others, as we'll see below.
+
+
+## `print()` vs `return`
+* Notice that these functions will `return` values, and, in order to see those values in the output, we will need to `print()` what the function returns
 * Try to solve these on your own before looking at the solution (if watching, pause, try, and go from there).
 
+
+
+## Importing `math` functions and _constants_
+* [See `math` module documentation](https://docs.python.org/3/library/math.html)
+* a _constant_ is a fixed mathematical value, like pi, tau, or e
+* importing all `math` functions
+
+```python
+# imports all math functions, called using math.<function_name()>
+import math
+
+print(math.ceil(9.9))
+print(math.sqrt(25))
+print(math.pi)
+```
+
+`output`
+```
+10
+5.0
+3.141592653589793
+```
+
+* import specific `math` functions
+
+```python
+from math import ceil, sqrt, pi
+
+# note we now omit the math. that we included above
+print(ceil(9.9))
+print(sqrt(25))
+print(pi)
+```
+
+
+
+
+## Defining Custom Math Functions
 
 ### Circumference of a Circle
 
@@ -767,31 +828,10 @@ print(area_of_triangle(4, 5))
 * Additionally, there are two special operations that you will often use when programming, the modulo (`%`) and floor division (`//`) operations.
 * Mathematical operations that you will write repeatedly can be defined in functions.
 
-## In the Next Lesson:
-* Using Python as a calculator
+
+
+## In the Next Lesson...
 
 
 
-------------------------------------------------------------------
-
-
-# 004 - Mathematical Functions: Using Python as a Calculator
-## Goals:
-* Start using Python in your everyday life, as a calculator
-* Start using comments to ignore bits of code
-* Importing mathematical functions from the `math` module
-* Define more custom mathematical functions
-
-## Why use Python as a calcluator?
-
-When first learning to program, it's important that you get a lot of repetition. It will be very helpful to use Python as a calculator whenever you can. Instead of grabbing a traditional calculator, simply use [repl.it](https://repl.it), or a python terminal to figure out answers to your mathematical questions.
-
-An advantage of using a text editor and building your math operations in Python, is that you can keep a record of what you've tried. You can comment out some lines of code, and leave others, as we'll see below.
-
-
-# Conclusion
-* 
-
-## In the Next Lesson:
-* 
 
