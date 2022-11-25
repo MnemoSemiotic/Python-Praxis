@@ -49,6 +49,9 @@
 * Repetition and application definitely help in internalizing methodology of programming
 
 
+## Resources
+* The goal is to have each numbered lesson (000, 001, etc) have a video around 10-15 minutes in length
+* Most code examples and some specific concepts will also have a short with just writing of that code
 
 
 
