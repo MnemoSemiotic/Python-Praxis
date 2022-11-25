@@ -1,4 +1,8 @@
-# 000 - Introduction: Rolling the Dice
+# 000 - Introduction - What to expect
+
+-------------------------------------------------------------------------
+
+# 001 - A Demo: Rolling the Dice
 
 ## Goals:
 * Give a simple introduction to programming
@@ -205,7 +209,7 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 -----------------------------------------------------------------------------------------------------
 
 
-# 001 - First Steps: A Few Simple Programs
+# 002 - First Steps: A Few Simple Programs
 
 ## Goals:
 * Set up a REPL.it account
@@ -313,7 +317,7 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 -----------------------------------------------------------------------------------------
 
 
-# 002 - Data Types: Numeric data types and operations
+# 003 - Data Types: Numeric data types and operations
 
 ## Goals:
 * Understand the concept of a data type
@@ -610,7 +614,7 @@ print(area_of_triangle(4, 5))
 ------------------------------------------------------------------
 
 
-# 003 - Mathematical Functions: Using Python as a Calculator
+# 004 - Mathematical Functions: Using Python as a Calculator
 ## Goals:
 * Start using Python in your everyday life, as a calculator
 * Start using comments to ignore bits of code
