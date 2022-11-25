@@ -55,6 +55,8 @@
 * The entirety of these lessons will be mapped out in this github repo 
     * including lesson scripts that will be uploaded as as video captions
 * Most code examples will have a dedicated [repl.it](https://repl.it), for convenience
+* I'll be streaming from time to time on these materials at [twitch.tv/MnemoSemiotic](https://MnemoSemiotic), and you can ask me questions there <3s
+
 
 
 
