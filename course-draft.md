@@ -761,9 +761,13 @@ print(pi)
 ```
 
 
-You will often [See `math` module documentation](https://docs.python.org/3/library/math.html)
+You will often import the square root function `math.sqrt`, but there are quite a few functions and constants in the `math` module. [See the `math` module documentation](https://docs.python.org/3/library/math.html). 
 
+Keep in mind that when you program, you will often be looking thing up. You don't have to memorize, in fact, you probably shouldn't memorize. Instead, be ready to look things up, either in official documentation, or more often, on [Stack Overflow](https://stackoverflow.com/), by Googling, etc.
 
+One nice trick is to keep a notes document and add things to it as you look them up. As you edit it, remove the things you don't need to look up anymore, and you'll have an easy extension to your working memory.
+
+# TODO: left off here
 
 ## Defining Custom Math Functions
 
