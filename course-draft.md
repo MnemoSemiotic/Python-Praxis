@@ -4,8 +4,13 @@
 * Accessible, Queer and "Leftist" series of courses in Data Analysis and Science
     * Why such a course is helpful or necessary
 * Scope of Python Praxis
+* Big Picture
 
 
+## Why a "Leftist, Queer" series of technical courses?
+* Technical people are in positions of power, by way of decision and deferral to expertise
+    * It's important that we build some relational ethics into the tech community, as currently it's very normitive, very white, and 
+    * Decisions and analyses are infused with biases, and have major repurcussions and outcomes
 
 
 
