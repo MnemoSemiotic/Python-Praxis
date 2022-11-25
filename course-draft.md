@@ -21,6 +21,20 @@
 * Technology has often been a haven for Queers, ND peopleo, etc., and I feel like we need to wrestle this back a bit from the tech bros and have safe space
 
 
+## Programming is a creative endeavor
+    * If you have an idea and you know how to code within a given environment, you can actualize that idea
+    * There's a major issue of ableism within tech spaces, where intelligence is attributed when the real functional elements are familiarity and creativity.
+
+
+## Why should you become literate in programming?
+    * So you can make stuff 
+        * Games, art, music, generative text
+    * So you can analyze data
+        * exs: Social Determinants of Health (SDoH), images, waveform signals, text
+    * So you can automate things you do over and over again
+    * So you can understand better the technology (and security involved) you are using
+    * Existentially, helps you to become a better problem-solver in a safe (sandboxed) way
+
 ## Making materials accessible
 * There's a current exclusionary culture in tech, that glorifies what the culture sees as intelligence
 * Programming, like any skill, is within reach by practice and application
@@ -54,6 +68,8 @@
     * Simple App / Gui development
 
 
+
+
 ## What does succeeding look like?
 * Succeeding is relative to your goals, so take whatever you need, and let me know if you need something else, and I'll do my best to collab and make something with you
 * I'll do my best to tie things into the real world, bc what I've seen and experience as "successful" learning, has been the result of meaningful application, not theory
@@ -77,20 +93,9 @@
 
 ## Goals:
 * Give a simple introduction to programming
+* Don't worry if you don't understand this lesson now, all concepts will be broken down in subsequent lessons
 * Introduction to an immediately available Python environment using [repl.it](https://repl.it)
-* Understanding that programming is a creative endeavor
-    * If you have an idea and you know how to code within a given environment, you can actualize that idea
-    * There's a major issue of ableism within tech spaces, where intelligence is attributed when the real functional elements are familiarity and creativity.
-* Why should you become literate in programming?
-    * So you can make stuff 
-        * Games, art, music, generative text
-    * So you can analyze data
-        * exs: Social Determinants of Health (SDoH), images, waveform signals, text
-    * So you can automate things you do over and over again
-    * So you can understand better the technology (and security involved) you are using
-    * Existentially, helps you to become a better problem-solver in a safe (sandboxed) way
-* Solve a simple repeatable task in a context
-    * Understanding the general idea of a **function**
+
 
 ## Using [Repl.it](https://replit.com/) as a first coding environment.
 * Create an account
@@ -126,7 +131,7 @@ print(choice([1,2,3,4,5,6]))
 # choice can select from more than just a list of numbers
 print(choice(['one', 'two', 'three', 'four', 'five', 'six']))
 ```
-`output:`
+`example output:`
 ```
 1
 five
@@ -137,10 +142,11 @@ five
 ### writing a simple function that utilizes `random.choice()`
 * You do not need to understand this right now, we'll cover functions in much more depth throughout the course
 
-
 ```python
+# we import the choice function
+from random import choice
 
-# function definitions start with the keyword def
+# function definitions starts with the keyword def
 def single_dice_roll(number_sides=6):
     # here we're going to create an empty list to hold numbers
     dice_sides = []
@@ -161,10 +167,11 @@ def single_dice_roll(number_sides=6):
 print(single_dice_roll(6))
 print(single_dice_roll(36))
 ```
-
-    3
-    28
-
+`example output:`
+```
+3
+28
+```
 
 ### Let's make our function a little cleaner
 * 1. Use `range` directly to avoid the for-loop
