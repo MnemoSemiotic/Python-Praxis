@@ -37,6 +37,10 @@
 * Specifically
     * Python basics, variables, data structures, and classes
     * Write a bunch of functions, that are often concerned with "counting"
+    * Classes, class structure, and methods
+    * Basics in Numpy and Pandas, with applications on images and data
+        * these will be extended in their own courses, as well, so just enough to be dangerous
+    * A basic example of machine learning and how to think about this context of machine learning
 
 
 ## What does succeeding look like?
