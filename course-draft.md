@@ -44,9 +44,12 @@
 
 
 ## What does succeeding look like?
-* Relative to your goals
+* Succeeding is relative to your goals, so take whatever you need, and let me know if you need something else, and I'll do my best to collab and make something with you
 * I'll do my best to tie things into the real world, bc what I've seen and experience as "successful" learning, has been the result of meaningful application, not theory
-* 
+* Repetition and application definitely help in internalizing methodology of programming
+
+
+
 
 
 
