@@ -333,24 +333,29 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 
 # What is REPL.it?
 * a text editor with a built-in interpreter
-    * text editor: for us, this is essentially a place to write code that can be interpreted by a given interpreter
+    * text editor: for us, this is essentially a place to write code in a basic text format, without characters that Python won't recognize
     * interpreter: takes code and runs it, and can provide output to the programmer in real time
+
 
 # Make an account on REPL.it
 * go to repl.it and register an account, pretty straight forward
 
+
 # Creating a new "repl"
-* Click the "create" button
+* Click the "create" button, using the "+" button 
 * Select "Python" and click Create Repl
     * you can accept the generated title or name the repl yourself
+
 
 # Using the repl
 * There are three sections
     * for now don't worry about the Files section, you will only be using the middle `main.py` section as well as the console
 * You will write your code into `main.py` and click "Run" at the top when you want to see what your code does.
 
+
 # A few simple programs
-* A program for us right now, is just a series of commands that we're keeping in a text file and running in an interpreter.
+* A "program" for us right now, can be defined simply as a series of commands that we're keeping in a text file and running in an interpreter.
+
 
 ## Functions
 * We're going to write code mostly within functions.
