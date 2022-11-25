@@ -31,8 +31,17 @@
     * At every step, we'll apply what we've just learned
     * Whenever possible, we'll use real-world examples (that maybe we even care about)
 * There will be some probability and statistics
-    * All concepts will be reasonably explained, with as little expectation of prior knowledge
-    *
+    * All concepts will be reasonably explained, with as little expectation of prior knowledge as possible
+    * Probability and Stats are highly applicable to thinking about and writing code
+* Specifically
+    * Python basics, variables, data structures, and classes
+    * Write a bunch of functions, that are often concerned with "counting"
+
+
+## What does succeeding look like?
+* Relative to your goals
+* I'll do my best to tie things into the real world, bc what I've seen and experience as "successful" learning, has been the result of meaningful application, not theory
+* 
 
 
 
