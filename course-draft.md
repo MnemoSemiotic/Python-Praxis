@@ -464,7 +464,7 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 ## Goals:
 * Understand the concept of a data type
 * Understand the numeric data types `int` and `float` and their basic operators
-* Write functions that perform repeatable mathematical operations
+* Write functions that perform simple, repeatable mathematical operations
 
 
 ## What is a data type?
