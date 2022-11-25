@@ -491,14 +491,17 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 ```python
 print(type(23))
 ```
+`output`
+```
+<class 'int'>
+```
 
-will show a result of `<class 'int'>`
 
 
-### What is a class?
-* This is a bigger question that we'll cover later when begin to write our own classes.
+### What is a `class`?
+* This is a bigger question that we'll cover more later when we begin to write our own classes.
 * For now, think of a class as a definition of a data type. 
-    * The data types that are built in to Python are defined somewhere in the form of a class.
+    * The data types that are built in to Python are defined somewhere in the form of a class
     * That means that we can eventually start defining our own data types by writing classes
 
 
