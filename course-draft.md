@@ -54,7 +54,7 @@
 * Most code examples and some specific concepts will also have a short with just writing of that code
 * The entirety of these lessons will be mapped out in this github repo 
     * including lesson scripts that will be uploaded as as video captions
-* Most code examples will have a dedicated [repl.it](repl.it), for convenience
+* Most code examples will have a dedicated [repl.it](https://repl.it), for convenience
 
 
 
@@ -64,7 +64,7 @@
 
 ## Goals:
 * Give a simple introduction to programming
-* Introduction to an immediately available Python environment using [repl.it](repl.it)
+* Introduction to an immediately available Python environment using [repl.it](https://repl.it)
 * Understanding that programming is a creative endeavor
     * If you have an idea and you know how to code within a given environment, you can actualize that idea
     * There's a major issue of ableism within tech spaces, where intelligence is attributed when the real functional elements are familiarity, creativity, and laziness.
