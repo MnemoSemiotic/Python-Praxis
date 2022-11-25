@@ -508,10 +508,13 @@ print(type(23))
 
 
 ## Integers: `int`
-* We can think integers simply as whole numbers.
+* We can think of integers simply as whole numbers, positive or negative
 * Any mathematical operation that we perform on whole numbers we can perform here.
 
 ### Adding (`+`), Subtracting (`-`), Multiplying (`*`), Dividing (`/`), Exponentiation (`**`)
+* The order of operations follows PEMDAS
+    * Parentheses, Exponents, Multiplication / Division, Addition / Subtraction
+
 
 Adding
 ```python
@@ -528,6 +531,7 @@ print(5 - 23 + 7)
 ```
 * note that addition and subtraction have equal precedence in the order of operations
 
+
 Multiplying
 ```python
 print(3 * 8)
@@ -542,6 +546,7 @@ print(3**5)
 print(144**(1/2)) # note that this operation will give a float value
 ```
 
+
 ### Division (`/`)
 I separated division because the result of a division in Python will be a `float` value, and that's something that you'll want to remember
 
@@ -550,7 +555,7 @@ Numbers may divide evenly
 print(8 / 2)
 ```
 
-Or may divide unevenly, yielding a decimal value
+Or may divide unevenly, in either case, resulting in a decimal value
 
 ```python
 print(16 / 3)
