@@ -1,8 +1,11 @@
-# 000 - Introduction - What to expect
+# 000 - Introduction - What to expect from Python Praxis
 
 ## Goals:
 * Accessible, Queer and "Leftist" series of courses in Data Analysis and Science
-* 
+    * Why such a course is helpful or necessary
+* Scope of Python Praxis
+
+
 
 
 
