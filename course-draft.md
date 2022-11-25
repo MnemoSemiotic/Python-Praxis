@@ -35,6 +35,7 @@
     * So you can understand better the technology (and security involved) you are using
     * Existentially, helps you to become a better problem-solver in a safe (sandboxed) way
 
+
 ## Making materials accessible
 * There's a current exclusionary culture in tech, that glorifies what the culture sees as intelligence
 * Programming, like any skill, is within reach by practice and application
@@ -55,7 +56,8 @@
     * Basics in Numpy and Pandas, with applications on images and data
         * these will be extended in their own courses, as well, so just enough to be dangerous
     * A basic example of machine learning and how to think about this example more generally
-    * Develop a simple application 
+    * Develop a simple application
+* The general format overall will be looking at a problem, solving it, then explaining all the components of the solution. 
 
 
 ## Big Picture
@@ -291,18 +293,22 @@ def multiple_dice_roll(number_dice=1, number_sides=6):
 print(multiple_dice_roll(number_dice=5, number_sides=6))
 ```
 
-    24
+`example output:`
+```
+24
+```
 
 
 # Conclusion
 * Programming can be simply defining a repeatable set of steps
 * Here we created some simple dice rolling functions
     * Working code is more important than clean code.
-    * in other words: It's ok to write code in a way you understand
+    * in other words: It's ok to write code in a way you understand, and then refine it later if necessary
 
-## In the First Lesson:
+
+## In the Next Lesson:
 * We'll look at a simpler problem, and start exploring numeric types
-* The general format will be looking at a problem, solving it, then explaining all the components of the solution.
+
 
 
 -----------------------------------------------------------------------------------------------------
