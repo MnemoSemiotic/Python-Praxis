@@ -11,6 +11,8 @@
 * Technical people are in positions of power, by way of decision and deferral to expertise
     * It's important that we build some relational ethics into the tech community, as currently it's very normitive, very white, and 
     * Decisions and analyses are infused with biases, and have major repurcussions and outcomes
+        * [Sabelosethu Mhlambi: Decolonizing AI](https://www.youtube.com/watch?v=UqVwfuIuU2k&t)
+            * 
         * [William Isaac, DeepMind: Columbia Data Science Institue, Race + Data Science series](https://www.youtube.com/watch?v=fcJR6DIo3Mg)
 
 
