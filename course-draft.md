@@ -723,12 +723,13 @@ print(round(9.73541, 3)) # --> 9.735, where we've rounded to the 3rd decimal pla
 ## Goals:
 * Writing functions makes it easier to reproduce mathematical operations, without having to write everything out.
 * For repetition, start using Python in your everyday life, as a calculator
+* Start using comments to ignore bits of code
 * Import mathematical functions from the `math` module
 * Define more custom mathematical functions
 
 
 
-## Why use Python as a calcluator?
+## Why use Python as a calculator?
 
 When first learning to program, it's important that you get a lot of repetition. It will be very helpful to use Python as a calculator whenever you can. Instead of grabbing a traditional calculator, simply use [repl.it](https://repl.it), or a python terminal to figure out answers to your mathematical questions.
 
