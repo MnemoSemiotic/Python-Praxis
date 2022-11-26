@@ -770,10 +770,11 @@ One nice trick is to keep a notes document and add things to it as you look them
 
 
 
+
+
 ## Defining Custom Math Functions
 
 A good way to practice writing functions, is by translating common math equations into Python functions.
-
 
 
 ### Circumference of a Circle
@@ -783,8 +784,10 @@ C = 2 \pi r
 $$
 
 ```python
+from math import pi
+
 def circumference_of_a_circle(radius):
-    return 2 * 3.14159 * radius
+    return 2 * pi * radius
 
 print(circumference_of_a_circle(radius=2))
 print(circumference_of_a_circle(radius=3))
@@ -799,8 +802,10 @@ A = \pi r^2
 $$
 
 ```python
+from math import pi
+
 def area_of_circle(radius):
-    return 3.14159 * radius**2
+    return pi * radius**2
 
 print(area_of_circle(radius=2))
 print(area_of_circle(radius=3))
@@ -815,8 +820,10 @@ V = \frac{4}{3} \pi r^3
 $$
 
 ```python
+from math import pi
+
 def volume_of_circle(radius):
-    return (4/3) * 3.14159 * radius**3
+    return (4/3) * pi * radius**3
 
 print(volume_of_circle(radius=2))
 print(volume_of_circle(radius=3))
@@ -824,15 +831,98 @@ print(volume_of_circle(radius=4))
 print(volume_of_circle(radius=5))
 ```
 
+### Area of a Rectangle
+
+$$
+A = w h
+$$
+
+* where $w$ is width, and $h$ is height
+
+```python
+def area_of_rectangle(width, height):
+    return width * height
+
+
+print(area_of_rectangle(1, 2))
+print(area_of_rectangle(2, 3))
+print(area_of_rectangle(3, 4))
+print(area_of_rectangle(4, 5))
+```
+
+
+### Area of a Square
+* note that a square is a special case of a rectangle, and we can call back to the rectangle function to calculate this, although it's simpler to write a new function
+
+$$
+A = l^2
+$$
+
+* where $l$ is the length of one side of the square
+
+```python
+# independent function
+def area_of_square(length):
+    return length**2
+
+print(area_of_square(1))
+print(area_of_square(2))
+print(area_of_square(3))
+print(area_of_square(4))
+
+
+def area_of_rectangle(width, height):
+    return width * height
+
+# dependent function
+def area_of_square(length):
+    return area_of_rectangle(length, length)
+
+
+print(area_of_square(1))
+print(area_of_square(2))
+print(area_of_square(3))
+print(area_of_square(4))
+```
+
+`output:`
+```
+1
+4
+9
+16
+1
+4
+9
+16
+```
+
+
 ### Area of a Triangle
+* We can also write a form of this function that is dependent on the `area_of_rectangle` function
 
 $$
 A = \frac{1}{2} b h
 $$
 
 ```python
+# independent function
 def area_of_triangle(base, height):
     return (1/2) * base * height
+
+print(area_of_triangle(1, 2))
+print(area_of_triangle(2, 3))
+print(area_of_triangle(3, 4))
+print(area_of_triangle(4, 5))
+
+
+# dependent function
+def area_of_rectangle(width, height):
+    return width * height
+
+def area_of_triangle(base, height):
+    return (1/2) * area_of_rectangle(base, height)
+
 
 print(area_of_triangle(1, 2))
 print(area_of_triangle(2, 3))
