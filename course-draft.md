@@ -1334,7 +1334,7 @@ print(type(1 == 1.9)) # --> False>
 * Interpolation using f-strings and `.format()` when using the `print()` function
 * Capitalizing, Lower-casing, and Upper-casing
 * Checking for substrings in strings using `in`
-* Extracting substrings from strings
+* Extracting substrings from strings using string indexing
 
 
 ## Strings
@@ -1353,4 +1353,20 @@ print(type(1 == 1.9)) # --> False>
 ## Capitalizing, Lower-casing, and Upper-casing strings
 
 
-##
+## Checking for substrings in strings using `in`
+
+
+## Extracting substrings from strings using string indexing
+
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+# 007 - A Brief Introduction to Strings in Python
