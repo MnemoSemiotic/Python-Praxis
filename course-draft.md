@@ -765,7 +765,7 @@ You will often import the square root function `math.sqrt`, but there are quite 
 
 Keep in mind that when you program, you will often be looking thing up. You don't have to memorize, in fact, you probably shouldn't memorize. Instead, be ready to look things up, either in official documentation, or more often, on [Stack Overflow](https://stackoverflow.com/), by Googling, etc.
 
-One nice trick is to keep a notes document and add things to it as you look them up. As you edit it, remove the things you don't need to look up anymore, and you'll have an easy extension to your working memory.
+One nice trick is to keep a notes document and add things to it as you look them up. As you edit that document, remove the things you don't need to look up anymore, and you'll have an easy extension to your working memory. It's also a good opportunity to get used to [writing Markdown](TODO:link-to-beginning-markdown-video)
 
 # TODO: left off here
 
