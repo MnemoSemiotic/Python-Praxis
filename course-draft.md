@@ -1102,7 +1102,7 @@ print(area_of_triangle(4, 5))
 
 ------------------------------------------------------------------
 
-# 006 - Declaring Variables, Checking Equality, and Applying logic
+# 006 - Type Inference, Duck Typing, Checking and Comparing Type
 
 
 ## Goals:
@@ -1150,6 +1150,7 @@ TypeError: '<' not supported between instances of 'str' and 'int'
     * However, `type(1.0) == type(1)` ?? ⇒ `False`
 * TODO: code examples of `type` run on variables
 * TODO: code examples of checking `type` equality
+    * `print(type(1.0) == type(1)) # --> False`
 
 
 ## `isinstance()` to check for specific types 
