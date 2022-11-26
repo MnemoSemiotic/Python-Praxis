@@ -723,7 +723,6 @@ print(round(9.73541, 3)) # --> 9.735, where we've rounded to the 3rd decimal pla
 ## Goals:
 * Writing functions makes it easier to reproduce mathematical operations, without having to write everything out.
 * For repetition, start using Python in your everyday life, as a calculator
-* Start using comments to ignore bits of code
 * Import mathematical functions from the `math` module
 * Define more custom mathematical functions
 
