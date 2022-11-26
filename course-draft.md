@@ -795,6 +795,15 @@ print(circumference_of_a_circle(radius=4))
 print(circumference_of_a_circle(radius=5))
 ```
 
+`output:`
+```
+12.566370614359172
+18.84955592153876
+25.132741228718345
+31.41592653589793
+```
+
+
 ### Area of a Circle
 
 $$
@@ -812,6 +821,15 @@ print(area_of_circle(radius=3))
 print(area_of_circle(radius=4))
 print(area_of_circle(radius=5))
 ```
+
+`output:`
+```
+12.566370614359172
+28.274333882308138
+50.26548245743669
+78.53981633974483
+```
+
 
 ### Volume of a Sphere
 
@@ -831,6 +849,15 @@ print(volume_of_circle(radius=4))
 print(volume_of_circle(radius=5))
 ```
 
+`output:`
+```
+33.510321638291124
+113.09733552923254
+268.082573106329
+523.5987755982989
+```
+
+
 ### Area of a Rectangle
 
 $$
@@ -849,6 +876,15 @@ print(area_of_rectangle(2, 3))
 print(area_of_rectangle(3, 4))
 print(area_of_rectangle(4, 5))
 ```
+
+`output:`
+```
+2
+6
+12
+20
+```
+
 
 
 ### Area of a Square
@@ -930,10 +966,25 @@ print(area_of_triangle(3, 4))
 print(area_of_triangle(4, 5))
 ```
 
+`output`
+```
+1.0
+3.0
+6.0
+10.0
+1.0
+3.0
+6.0
+10.0
+```
+
+
+
 # Conclusion
 * The `int` and `float` data types are used to represent whole numbers and numbers with decimals, respectively. 
 * Basic math operations, such as addition, subtraction, multiplication, division, and exponentiation, can be performed simply, and will follow the general PEMDAS order of operations
-* Additionally, there are two special operations that you will often use when programming, the modulo (`%`) and floor division (`//`) operations.
+* Additionally, there are two special operators that you will often use when programming, modulo (`%`) and floor division (`//`)
+* Many mathematical functions can be found in the built-in `math` module
 * Mathematical operations that you will write repeatedly can be defined in functions.
 
 
