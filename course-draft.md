@@ -1048,24 +1048,48 @@ print(area_of_triangle(4, 5))
 
 
 
+
+
 ------------------------------------------------------------------
 
+# 005 - Declaring Variables, Checking Equality, and Checking Data Type
 
-# 005 - 
 
 ## Goals:
 * Assigning values to variables
+* Boolean `bool` type, with values `True` and `False`
+* Equality operators (`==`, `>`, `>=`, `<`, `<=`, `!=`)
 * Understand that Python will _infer_ the type of data
 * Understand the concept of "duck typing" in Python
-* Checking variable types using `type()` and `isinstance`
+* Checking variable types using `type()` and `isinstance()`
 
 
 ## Variables
+* TODO: explanation and snippets for declaring variables
+* TODO: Mention "gets" as how to read assignment
 
 
+## Boolean `bool` data type
+
+
+## Equals (`==`) and Not Equals (`!=`)
+* TODO: demonstrate equals and not equals operations on variables
+
+
+
+
+## Greater than `>` and less than
 
 ## Type _Inference_ 
+* Simply stated, Python will look at a data value, and assign it a type that makes sense, without you needing to explicitly say, for example, that a number is an `int` or `float`
 
+
+## Duck Typing
+* Python is a “duck typed” language
+    * _"If it walks like a duck, and quacks like a duck, then it must be a duck."_
+    * Effectively, this means that you can perform mathematical operations between similar types, such as ints and floats, because Python infers a general type for the operation.
+        * For example, operations between ints and floats will result in floats
+        * Division will result in a float
 
 
 
@@ -1074,6 +1098,8 @@ print(area_of_triangle(4, 5))
 * Type comparison
     * `1.0 == 1` ?? ⇒ `True`
     * However, `type(1.0) == type(1)` ?? ⇒ `False`
+
+
 
 
 ## `isinstance()` to check for specific types 
