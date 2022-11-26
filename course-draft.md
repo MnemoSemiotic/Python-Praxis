@@ -591,21 +591,44 @@ print(16 / 3)
 ## Special operators: Modulo (`%`) and Floor Division (`//`)
  
 ### Modulo (`%`) will give you the remainder of a division
+* Wildly helpful, as it turns out
+    * can check even-ness or odd-ness using `num % 2`
+    * can check divisibility
+
 
 ```python
 print(8 % 2)
 print(16 % 3)
 ```
 
-Notice that modulo in these two cases (with integers) will give a non-decimal result. However, if either of the numbers in the operation have a decimal value, then the result will have a decimal value.
+Notice that modulo in these two cases (with positive integers) will give a non-decimal result. However, if either of the numbers in the operation have a decimal value, then the result will have a decimal value. Basically, unless you know what you're doing applying modulo on decimal values, avoid doing so. Same for negative numbers. However, feel free 
+
+
+Let's look at some further applications of modulo
+
+```python
+if num % 2 == 0: print('num is even')
+if num % 2 == 1: print('num is odd')
+if num % 4 == 0: print('num is divisible by 4')
+
+print(21 % 4) # --> 1
+print(20 % 4) # --> 0
+print(5 % 20) # --> 5
+print(6 % 20) # --> 6
+```
+
 
 
 
 ### Floor Division (`//`) will give you the result of division, rounded down to the nearest integer
 
 ```python
-print(8 // 2)
-print(16 // 3)
+print(20 // 4)     # --> 5
+print(100 // 102)  # --> 0
+print(27 // 3)     # --> 9
+print(72.6 // 3.3) # --> 21.0
+print(72 // 3.3)   # --> 21.0
+print(72.6 // 3)   # --> 24.0
 ```
 
 
