@@ -16,3 +16,5 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 
 
+## TODOs:
+* Create "intro to writing markdown video"
