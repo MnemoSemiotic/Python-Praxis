@@ -18,3 +18,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * Create "intro to writing markdown video"
+* include `math.factorial`, `math.comb` in "counting" lesson on combinations
+* include `math.gcd` in lesson where GCD function is covered
+* include `math.gcd` in lesson where GCD function is covered
+
