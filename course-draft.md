@@ -1117,7 +1117,8 @@ TypeError: '<' not supported between instances of 'str' and 'int'
     * Effectively, this means that you can perform mathematical operations between similar types, such as ints and floats, because Python infers a general type for the operation.
         * For example, operations between ints and floats will result in floats
         * Division will result in a float
-
+* TODO: Again show results for operations between numeric types that result in floats, include assignment to variables
+* TODO: Again show casting to specific result type
 
 
 
