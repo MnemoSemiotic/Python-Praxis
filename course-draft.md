@@ -500,7 +500,7 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 
 ## What are the numeric data types in Python?
 * `int` represents whole numbers, like 1, 3, -54, 997, and so on
-* `float` represents numbers that have decimal points
+* `float` represents numbers that have decimal points, such as -4.2, 17845.0, etc
 * `bool` represents only the values `True` or `False`
 * `complex` represents values that are imaginary numbers (we won't go over this here, but it exists)
 
@@ -669,8 +669,15 @@ print( (5 + 3) / (7 - 24 % 8)**3 )
 
 ## Floats: `float`
 * simply stated, floats are positive or negative numbers that have a decimal point.
+* a `float` can be thought of as **continuous** while an `int` can be thought of as **discrete**, though in reality, all numbers are stored in a discrete way in a computer
+    * Sometimes, we will consider two `float` values to be essentially equal if the difference is below some threshold.
+    * **Underflow** occurs when trying to represent a number that is smaller than the computer can represent in binary.
+        * Can lead to unexpected behavior
+
 * All the same mathematical operations that are used for integers may be used for floats
     * `int` and `float` datatypes are encoded differently, but are able to share operators in Python
+
+
 
 ### Adding (`+`), Subtracting (`-`), Multiplying (`*`), Dividing (`/`), Exponentiation (`**`) with floats
 * notice that the result of these basic mathematical operations will result in floats, even when the result could be a whole number
@@ -1119,17 +1126,17 @@ print(area_of_triangle(4, 5))
 
 ------------------------------------------------------------------
 
-# 005 - Declaring Variables, Checking Equality, and Applying logic
+# 005 - Declaring Variables, Incrementing Variables, Booleans, Checking Equality, and Applying logic
 
 
 ## Goals:
 * Assigning values to variables
+* Incrementing numeric values in variables
 * Boolean `bool` type, with values `True` and `False`
+* "Truthiness"
 * Comparison Operators (`==`, `>`, `>=`, `<`, `<=`, `!=`)
 * Logical Operators (`not`, `and`, `or`)
-* Understand that Python will _infer_ the type of data
-    * Understand the concept of "duck typing" in Python
-* Checking variable types using `type()` and `isinstance()`
+
 
 
 ## Variable assignment using the _assignment operator_ `=`
@@ -1143,12 +1150,24 @@ print(area_of_triangle(4, 5))
 
 
 
+
+## Incrementing numeric variable values
+* Operations that modify the current value stored in a variable 
+* `+=`, `-=`, `*=`, `/=`, etc. 
+* TODO: add incrementation code snippets
+
+
+
 ## Boolean `bool` data type
 * TODO: explanation of `bool` type
     * result of comparison
     * related to the binary concept of 1, or 0
 `
 
+
+
+## Truthiness
+* TODO: show inherently `True` and `False` values 
 
 ## Equals (`==`) and Not Equals (`!=`)
 * TODO: demonstrate equals and not equals operations on variables
@@ -1174,13 +1193,45 @@ print(area_of_triangle(4, 5))
 
 ------------------------------------------------------------------
 
-# 006 - Type Inference, Duck Typing, Checking and Comparing Data Types
+# 006 - Scalar types are immutable, the `None` Type, Type Inference, Duck Typing, Checking and Comparing Data Types
 
 
 ## Goals:
+* Understand the concept of a "scalar" type
+* Intro to the concept of _mutability_ and _immutability_
 * Understand that Python will _infer_ the type of data
     * Understand the concept of "duck typing" in Python
 * Checking variable types using `type()` and `isinstance()`
+
+
+
+## "Scalar" types
+* A scalar type holds one single value
+* So far, we’ve mostly dealt with scalar types: `int`, `float`, `bool`
+* Other scalar types are `string`, `None`, `complex`, `byte
+* TODO: Contrast with "collection" types
+
+
+## What does it mean for a type to be _immutable_?
+* Modifying the value referred to by an immutable type variable value will change the location that the variable name points to in memory. You can test this using the `id()` function
+
+```python
+x = 4
+print(id(x))
+
+x -= 2
+print(id(x))
+```
+
+* TODO: add more examples of immutability
+* TODO: mention that there are also _mutable_ types, which we'll get to soon
+
+
+
+## What is the `None` type?
+* TODO: demonstrate the None type
+* TODO: note that functions by default will return `None` when no return is explicitly defined
+    * demonstrate this with a `print` vs `return` example
 
 
 ## Type _Inference_ 
