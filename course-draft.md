@@ -65,13 +65,13 @@
     * Probability and Stats are highly applicable to thinking about and writing code
 * Specifically
     * Python basics, variables, data structures, and classes
-    * Write a bunch of functions, that are often concerned with "counting"
+    * Write a bunch of functions, that are often concerned with "counting", ranging from simple to fairly complex
     * Classes, class structure, and methods
     * Basics in Numpy and Pandas, with applications on images and data
-        * these will be extended in their own courses, as well, so just enough to be dangerous
+        * these will be extended in their own courses, as well, so just enough to be dangerous 
     * A basic example of machine learning and how to think about this example more generally
     * Develop a simple application
-* The general format overall will be looking at a problem, solving it, then explaining all the components of the solution. 
+* The general format will be looking at a problem, solving it, then explaining all the components of the solution. 
 
 
 ## Big Picture
@@ -768,6 +768,7 @@ single quotes instead of double quotes
     * Comments can be used to "comment out" lines of code so that they don't execute, which can be helpful when troubleshooting bugs
     * A type of comment, called a DocString, can be included when defining functions, classes, and methods, so that code can be it's own reference material.
         * (We'll explore this later in the course)
+    * Leaving `# TODO:` statements in the code, for things you want to add or change later
 
 
 
@@ -1053,3 +1054,5 @@ print(area_of_triangle(4, 5))
 # 005 - 
 
 ## Goals:
+* Assigning values to variables
+* Checking variable types using `type()` and `isinstance`
