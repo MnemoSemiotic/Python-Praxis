@@ -21,19 +21,33 @@
 * Technology has often been a haven for Queers, ND peopleo, etc., and I feel like we need to wrestle this back a bit from the tech bros and have safe space
 
 
+
+## What is Python?
+* General purpose and relatively easy to learn programming language
+* Used in various domains
+    * Data Science
+    * Robotics
+    * App building
+    * etc
+* Python is currently the most used language of Data Science
+    * Extensive machine learning libraries
+    * Generally supported on many types of platforms
+    
+
+
 ## Programming is a creative endeavor
-    * If you have an idea and you know how to code within a given environment, you can actualize that idea
-    * There's a major issue of ableism within tech spaces, where intelligence is attributed when the real functional elements are familiarity and creativity.
+* If you have an idea and you know how to code within a given environment, you can actualize that idea
+* There's a major issue of ableism within tech spaces, where intelligence is attributed when the real functional elements are familiarity and creativity.
 
 
 ## Why should you become literate in programming?
-    * So you can make stuff 
-        * Games, art, music, generative text
-    * So you can analyze data
-        * exs: Social Determinants of Health (SDoH), images, waveform signals, text
-    * So you can automate things you do over and over again
-    * So you can understand better the technology (and security involved) you are using
-    * Existentially, helps you to become a better problem-solver in a safe (sandboxed) way
+* So you can make stuff 
+    * Games, art, music, generative text
+* So you can analyze data
+    * exs: Social Determinants of Health (SDoH), images, waveform signals, text
+* So you can automate things you do over and over again
+* So you can understand better the technology (and security involved) you are using
+* Existentially, helps you to become a better problem-solver in a safe (sandboxed) way
 
 
 ## Making materials accessible
@@ -994,3 +1008,9 @@ print(area_of_triangle(4, 5))
 
 
 
+------------------------------------------------------------------
+
+
+# 005 - 
+
+## Goals:
