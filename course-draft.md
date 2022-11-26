@@ -1138,6 +1138,7 @@ print(area_of_triangle(4, 5))
 
 ## Goals:
 * Assigning values to variables
+* Naming variables appropriately
 * Incrementing numeric values in variables
 * Boolean `bool` type, with values `True` and `False`
 * "Truthiness"
@@ -1162,6 +1163,16 @@ print(area_of_triangle(4, 5))
 * TODO: explanation and snippets for declaring variables
 * TODO: Mention "gets" as how to read assignment
 
+
+
+## Give it a good name
+* You should strive to give your variables well-defined, succinct names
+* Variable naming conventions are covered in [PEP 8](https://www.python.org/dev/peps/pep-0008/).
+* Use **snake case** to name variables:
+    * Replace spaces with _
+    * `this_is_a_variable = 8`
+* There are some reserved words that can’t be used as variable names.
+    * [Python reserved words list](https://docs.python.org/3/reference/lexical_analysis.html#identifiers)
 
 
 
