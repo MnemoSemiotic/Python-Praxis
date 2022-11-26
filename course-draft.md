@@ -1130,7 +1130,7 @@ print(area_of_triangle(4, 5))
 
 ------------------------------------------------------------------
 
-# 006 - Type Inference, Duck Typing, Checking and Comparing Type
+# 006 - Type Inference, Duck Typing, Checking and Comparing Data Types
 
 
 ## Goals:
