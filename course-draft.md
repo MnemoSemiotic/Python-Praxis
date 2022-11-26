@@ -759,6 +759,7 @@ print(round(9.73541, 3)) # --> 9.735, where we've rounded to the 3rd decimal pla
 
 ## What is the result of calculating `1/10**1000000`? Explain this result
 * TODO: fill this in
+* `0.0`
 
 
 ## Examples translating mathematical statements to code
@@ -1168,12 +1169,17 @@ print(area_of_triangle(4, 5))
 * TODO: explanation of `bool` type
     * result of comparison
     * related to the binary concept of 1, or 0
-`
+
 
 
 
 ## Truthiness
 * TODO: show inherently `True` and `False` values 
+* What is the result of `bool(‘’)`?
+    * `False`
+* What is the result of `bool(‘’ + ‘Hi’)`?
+    * `True`
+
 
 ## Equals (`==`) and Not Equals (`!=`)
 * TODO: demonstrate equals and not equals operations on variables
