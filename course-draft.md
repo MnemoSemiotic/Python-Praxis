@@ -767,7 +767,8 @@ Keep in mind that when you program, you will often be looking thing up. You don'
 
 One nice trick is to keep a notes document and add things to it as you look them up. As you edit that document, remove the things you don't need to look up anymore, and you'll have an easy extension to your working memory. It's also a good opportunity to get used to [writing Markdown](TODO:link-to-beginning-markdown-video)
 
-# TODO: left off here
+
+
 
 ## Defining Custom Math Functions
 
