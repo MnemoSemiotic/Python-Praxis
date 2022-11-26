@@ -1147,6 +1147,9 @@ print(area_of_triangle(4, 5))
 
 
 ## Variable assignment using the _assignment operator_ `=`
+* You can think of variable assignment as giving a name to something so that it can be accessed later by different parts of your program.
+    * You can use a variable to store any data type
+    * Important for **reusability**
 * ex `x = 4`
 * Variable Assignment: giving a name through which a value can be referred
 * Operations on a variable will be determined by the data type of the value stored.
