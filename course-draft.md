@@ -47,7 +47,7 @@
     * exs: Social Determinants of Health (SDoH), images, waveform signals, text
 * So you can automate things you do over and over again
 * So you can understand better the technology (and security involved) you are using
-* Existentially, helps you to become a better problem-solver in a safe (sandboxed) way
+* Helps you to become a better problem-solver in a safe (sandboxed) way
 
 
 ## Making materials accessible
@@ -75,7 +75,7 @@
 
 
 ## Big Picture
-* Intent is to include this course in a series, with courses that explore 
+* Intent is to include this course in a series, with further courses that explore 
     * Data Analysis 
     * Data Science 
     * Social Determinants of Health 
