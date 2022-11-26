@@ -772,6 +772,10 @@ One nice trick is to keep a notes document and add things to it as you look them
 
 ## Defining Custom Math Functions
 
+A good way to practice writing functions, is by translating common math equations into Python functions.
+
+
+
 ### Circumference of a Circle
 
 $$
