@@ -713,6 +713,36 @@ print(round(9.73541, 3)) # --> 9.735, where we've rounded to the 3rd decimal pla
 
 
 
+## Examples translating mathematical statements to code
+* print the result of multiplying by 7 the addition of 6 and 3
+* print the product of 7 times 6, squared, with 23 subtracted from the result
+* print the division of the result of 4 minus 2 times 2 into twenty
+
+
+<br><br><br><br><br><br><br><br><br>
+
+Solution:
+* print the result of multiplying by 7 the addition of 6 and 3
+
+```python
+print(7 * (6 + 3)) # --> 63
+```
+
+* print the product of 7 times 6, squared, with 23 subtracted from the result
+
+```python
+print((7 * 6)**2 - 23)) # --> 1741
+```
+
+* print the division of the result of 4 minus 2 times 2 into twenty
+
+```python
+print((20 / (4 - 2 * 2)) # --> Will throw an error in this interpretation
+# or
+print((4 - 2) * (20 / 2)) # --> 20
+```
+
+
 
 
 ------------------------------------------------------------------
@@ -820,8 +850,6 @@ You will often import the square root function `math.sqrt`, but there are quite 
 Keep in mind that when you program, you will often be looking thing up. You don't have to memorize, in fact, you probably shouldn't memorize. Instead, be ready to look things up, either in official documentation, or more often, on [Stack Overflow](https://stackoverflow.com/), by Googling, etc.
 
 One nice trick is to keep a notes document and add things to it as you look them up. As you edit that document, remove the things you don't need to look up anymore, and you'll have an easy extension to your working memory. It's also a good opportunity to get used to [writing Markdown](TODO:link-to-beginning-markdown-video)
-
-
 
 
 
@@ -1140,6 +1168,14 @@ TypeError: '<' not supported between instances of 'str' and 'int'
         * For example, operations between ints and floats will result in floats
         * Division will result in a float
 * TODO: Again show results for operations between numeric types that result in floats, include assignment to variables
+
+```python
+print(type(1)) # --> <class 'int'>
+print(type(1.3)) # --> <class 'float'>
+print(type(1 == 1.0)) # --> True
+print(type(1 == 1.9)) # --> False> 
+```
+
 * TODO: Again show casting to specific result type
 
 
