@@ -601,7 +601,7 @@ print(8 % 2)
 print(16 % 3)
 ```
 
-Notice that modulo in these two cases (with positive integers) will give a non-decimal result. However, if either of the numbers in the operation have a decimal value, then the result will have a decimal value. Basically, unless you know what you're doing applying modulo on decimal values, avoid doing so. Same for negative numbers. However, feel free 
+Notice that modulo in these two cases (with positive integers) will give a non-decimal result. However, if either of the numbers in the operation have a decimal value, then the result will have a decimal value. Basically, unless you know what you're doing applying modulo on decimal values, avoid doing so. Same for negative numbers. However, feel free to explore these ideas further, and I'll make a supplemental video on the topic at some point in the future.
 
 
 Let's look at some further applications of modulo
@@ -616,6 +616,16 @@ print(20 % 4) # --> 0
 print(5 % 20) # --> 5
 print(6 % 20) # --> 6
 ```
+
+
+#### Applying modulo to story problems
+1. If 3 letter carriers must deliver the same exact number of letters, and there are 299 letters, how many letters will not be delivered? Write a Python expression that answers this question.
+
+```python
+print(299 % 3) # --> 2
+```
+
+2. If you have 5 bank tellers and 28 people waiting to be served, what is the least number of people who will not be served if it takes exactly 4 minutes to serve each person and the bank MUST close in 20 minutes? Write a Python expression that answers this question.
 
 
 
