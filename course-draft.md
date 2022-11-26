@@ -741,6 +741,36 @@ An advantage of using a text editor and building your math operations in Python,
 * Try to solve these on your own before looking at the solution (if watching, pause, try, and go from there).
 
 
+## A quick aside about Comments in code
+* Comments are pieces of non-code text that a programmer might include in a program that they're writing in order to communicate to themself or other programmers.
+* Two types of comments in Python, _inline_ comments, and _block_ comments
+* Inline Comment:
+
+```python
+# this is an inline comment, where the hash symbol only applies to one line
+
+"""
+This is a block
+comment, that can cover multiple
+lines
+"""
+
+'''
+This is also a block comment, just using
+single quotes instead of double quotes
+'''
+```
+
+* Generally, comments are intended to be used in instances where an explanation of the code would help a reader understand. 
+    * The comment should not generally be a summary of the code's operation, although the comments in the next few lessons are for education, and will often summarize.
+* Uses of comments:
+    * Comments in general should provide insight into the programmer's choices
+    * Comments can be used to "comment out" lines of code so that they don't execute, which can be helpful when troubleshooting bugs
+    * A type of comment, called a DocString, can be included when defining functions, classes, and methods, so that code can be it's own reference material.
+        * (We'll explore this later in the course)
+
+
+
 
 ## Importing `math` functions and _constants_
 * [See `math` module documentation](https://docs.python.org/3/library/math.html)
