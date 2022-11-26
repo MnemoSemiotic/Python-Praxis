@@ -1053,19 +1053,20 @@ print(area_of_triangle(4, 5))
 
 ------------------------------------------------------------------
 
-# 005 - Declaring Variables, Checking Equality, and Checking Data Type
+# 005 - Declaring Variables, Checking Equality, and Applying logic
 
 
 ## Goals:
 * Assigning values to variables
 * Boolean `bool` type, with values `True` and `False`
-* Equality operators (`==`, `>`, `>=`, `<`, `<=`, `!=`)
+* Comparison Operators (`==`, `>`, `>=`, `<`, `<=`, `!=`)
+* Logical Operators (`not`, `and`, `or`)
 * Understand that Python will _infer_ the type of data
-* Understand the concept of "duck typing" in Python
+    * Understand the concept of "duck typing" in Python
 * Checking variable types using `type()` and `isinstance()`
 
 
-## Variables
+## Variable assignment using the _assignment operator_ `=`
 * TODO: explanation and snippets for declaring variables
 * TODO: Mention "gets" as how to read assignment
 
@@ -1074,8 +1075,7 @@ print(area_of_triangle(4, 5))
 * TODO: explanation of `bool` type
     * result of comparison
     * related to the binary concept of 1, or 0
-* TODO: introduce `not` keyword
-    * show that `not True` => `False`, `not False` => `True`, and `not not False` => `False`
+`
 
 
 ## Equals (`==`) and Not Equals (`!=`)
@@ -1087,6 +1087,28 @@ print(area_of_triangle(4, 5))
 ## Greater than `>`, less than `<`, Greater than or equals `>=`, Less than or equals `<=`
 * TODO: demonstrate on variables
 
+
+## Logical operators
+* TODO: introduce `not` keyword
+    * show that `not True` => `False`, `not False` => `True`, and `not not False` => `False
+* TODO: introduce `and`
+* TODO: introduce `or`
+
+
+## Other Operators
+* Bitwise Operators (covered in `numpy` and `pandas`)
+* 
+
+
+------------------------------------------------------------------
+
+# 006 - Declaring Variables, Checking Equality, and Applying logic
+
+
+## Goals:
+* Understand that Python will _infer_ the type of data
+    * Understand the concept of "duck typing" in Python
+* Checking variable types using `type()` and `isinstance()`
 
 
 ## Type _Inference_ 
@@ -1126,8 +1148,11 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 * Type comparison
     * `1.0 == 1` ?? ⇒ `True`
     * However, `type(1.0) == type(1)` ?? ⇒ `False`
-
-
+* TODO: code examples of `type` run on variables
+* TODO: code examples of checking `type` equality
 
 
 ## `isinstance()` to check for specific types 
+* Note that `isinstance` is generally preferred over `type`, even though they can be used in the same way
+* TODO: code examples of `isinstance` run on variables
+* TODO: code examples of checking `isinstance` equality
