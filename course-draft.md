@@ -1093,16 +1093,7 @@ print(area_of_triangle(4, 5))
 * Simply stated, Python will look at a data value, and assign it a type that makes sense, without you needing to explicitly say, for example, that a number is an `int` or `float`
 * TODO: snippet showing type inference for `int`, `float`, and `bool`
 * TODO: snippet showing type inference for `str`
-* TODO: show that `str` is not comparable with numeric types
-
-
-## Duck Typing
-* Python is a “duck typed” language
-    * _"If it walks like a duck, and quacks like a duck, then it must be a duck."_
-    * Effectively, this means that you can perform mathematical operations between similar types, such as ints and floats, because Python infers a general type for the operation.
-        * For example, operations between ints and floats will result in floats
-        * Division will result in a float
-
+* The string `str` type is not comparable with numeric types, which makes sense, because how would we answer the question, "which is greater, "I'm a cat" or 20?"
 
 ```python
 a = "I'm a cat"
@@ -1118,6 +1109,17 @@ Traceback (most recent call last):
     print(a < b)
 TypeError: '<' not supported between instances of 'str' and 'int'
 ```
+
+
+## Duck Typing
+* Python is a “duck typed” language
+    * _"If it walks like a duck, and quacks like a duck, then it must be a duck."_
+    * Effectively, this means that you can perform mathematical operations between similar types, such as ints and floats, because Python infers a general type for the operation.
+        * For example, operations between ints and floats will result in floats
+        * Division will result in a float
+
+
+
 
 ## Recall `type()` for checking the types of values
 * Type comparison
