@@ -757,6 +757,9 @@ print(round(9.73541, 3)) # --> 9.735, where we've rounded to the 3rd decimal pla
 ```
 
 
+## What is the result of calculating `1/10**1000000`? Explain this result
+* TODO: fill this in
+
 
 ## Examples translating mathematical statements to code
 * print the result of multiplying by 7 the addition of 6 and 3
