@@ -1325,7 +1325,32 @@ print(type(1 == 1.9)) # --> False>
 
 ------------------------------------------------------------------
 
-# 007 - 
+# 007 - A Brief Introduction to Strings in Python
 
 
 ## Goals:
+* Understand the basics of the string `str` type
+* Understand basic string concatenation
+* Interpolation using f-strings and `.format()` when using the `print()` function
+* Capitalizing, Lower-casing, and Upper-casing
+* Checking for substrings in strings using `in`
+* Extracting substrings from strings
+
+
+## Strings
+* A string `str` is an object that acts as a sequence of characters.
+* Declare a `string` using quotes 
+* Note we will talk more extensively about the `string` type in later lectures
+
+
+## String Concatenation using the `+` operator
+* Can **concatenate** a `string` with another `string` using the `+` operator
+
+
+## Interpolation using f-strings and `.format()`
+
+
+## Capitalizing, Lower-casing, and Upper-casing strings
+
+
+##
