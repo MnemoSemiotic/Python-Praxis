@@ -1150,10 +1150,14 @@ print(area_of_triangle(4, 5))
 * You can think of variable assignment as giving a name to something so that it can be accessed later by different parts of your program.
     * You can use a variable to store any data type
     * Important for **reusability**
-* ex `x = 4`
-* Variable Assignment: giving a name through which a value can be referred
+* Variables are assigned using the `=` operator.
+    * variable = value
+    *  `x = 4`
+* Need to print to see the result of assigning a variable.
+* Can assign two or more variables on the same line.
+    * `x, y = 1, 2`
 * Operations on a variable will be determined by the data type of the value stored.
-* Helps us keep track of values that change or values that are inputted 
+* Variable help us keep track of values that change or values that are inputted 
 
 * TODO: explanation and snippets for declaring variables
 * TODO: Mention "gets" as how to read assignment
