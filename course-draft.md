@@ -1055,4 +1055,21 @@ print(area_of_triangle(4, 5))
 
 ## Goals:
 * Assigning values to variables
+* Understand that Python will _infer_ the type of data
 * Checking variable types using `type()` and `isinstance`
+
+
+## Variables
+
+
+
+## Type _Inference_
+
+
+## Recall `type()` for checking the types of values
+* Type comparison
+    * `1.0 == 1` ?? ⇒ `True`
+    * However, `type(1.0) == type(1)` ?? ⇒ `False`
+
+
+## `isinstance()` to check for specific types 
