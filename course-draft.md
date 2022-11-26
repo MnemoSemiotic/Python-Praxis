@@ -787,7 +787,10 @@ print((20 / (4 - 2 * 2)) # --> Will throw an error in this interpretation
 print((4 - 2) * (20 / 2)) # --> 20
 ```
 
+# Conclusion
+* In this lesson we 
 
+## In the Next Lesson...
 
 
 ------------------------------------------------------------------
@@ -1114,7 +1117,7 @@ print(area_of_triangle(4, 5))
 * Additionally, there are two special operators that you will often use when programming, modulo (`%`) and floor division (`//`)
 * Many mathematical functions can be found in the built-in `math` module
 * Mathematical operations that you will write repeatedly can be defined in functions.
-
+* TODO: verify conclusion is complete
 
 
 ## In the Next Lesson...
@@ -1191,6 +1194,12 @@ print(area_of_triangle(4, 5))
 * 
 
 
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
 ------------------------------------------------------------------
 
 # 006 - Scalar types are immutable, the `None` Type, Type Inference, Duck Typing, Checking and Comparing Data Types
@@ -1199,6 +1208,7 @@ print(area_of_triangle(4, 5))
 ## Goals:
 * Understand the concept of a "scalar" type
 * Intro to the concept of _mutability_ and _immutability_
+* The `None` type
 * Understand that Python will _infer_ the type of data
     * Understand the concept of "duck typing" in Python
 * Checking variable types using `type()` and `isinstance()`
@@ -1229,6 +1239,11 @@ print(id(x))
 
 
 ## What is the `None` type?
+# `None` Type 
+* `None` is not the same as `0`.
+* Rather, `None` is the absence of a value
+* **Functions without an explicit `return` will `return` `None`**
+
 * TODO: demonstrate the None type
 * TODO: note that functions by default will return `None` when no return is explicitly defined
     * demonstrate this with a `print` vs `return` example
@@ -1288,3 +1303,20 @@ print(type(1 == 1.9)) # --> False>
 * Note that `isinstance` is generally preferred over `type`, even though they can be used in the same way
 * TODO: code examples of `isinstance` run on variables
 * TODO: code examples of checking `isinstance` equality
+
+
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+# 007 - 
+
+
+## Goals:
