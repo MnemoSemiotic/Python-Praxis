@@ -631,6 +631,7 @@ print( (5 + 3) / (7 - 24 % 8)**3 )
 ## Floats: `float`
 * simply stated, floats are positive or negative numbers that have a decimal point.
 * All the same mathematical operations that are used for integers may be used for floats
+    * `int` and `float` datatypes are encoded differently, but are able to share operators in Python
 
 ### Adding (`+`), Subtracting (`-`), Multiplying (`*`), Dividing (`/`), Exponentiation (`**`) with floats
 * notice that the result of these basic mathematical operations will result in floats, even when the result could be a whole number
@@ -1070,18 +1071,29 @@ print(area_of_triangle(4, 5))
 
 
 ## Boolean `bool` data type
+* TODO: explanation of `bool` type
+    * result of comparison
+    * related to the binary concept of 1, or 0
+* TODO: introduce `not` keyword
+    * show that `not True` => `False`, `not False` => `True`, and `not not False` => `False`
 
 
 ## Equals (`==`) and Not Equals (`!=`)
 * TODO: demonstrate equals and not equals operations on variables
+* TODO: Reiterate that we can compare `int` to `float` even though they are stored differently
 
 
 
+## Greater than `>`, less than `<`, Greater than or equals `>=`, Less than or equals `<=`
+* TODO: demonstrate on variables
 
-## Greater than `>` and less than
+
 
 ## Type _Inference_ 
 * Simply stated, Python will look at a data value, and assign it a type that makes sense, without you needing to explicitly say, for example, that a number is an `int` or `float`
+* TODO: snippet showing type inference for `int`, `float`, and `bool`
+* TODO: snippet showing type inference for `str`
+* TODO: show that `str` is not comparable with numeric types
 
 
 ## Duck Typing
@@ -1092,7 +1104,20 @@ print(area_of_triangle(4, 5))
         * Division will result in a float
 
 
+```python
+a = "I'm a cat"
+b = 20
 
+print(a < b)
+```
+
+`output:`
+```
+Traceback (most recent call last):
+  File "main.py", line 4, in <module>
+    print(a < b)
+TypeError: '<' not supported between instances of 'str' and 'int'
+```
 
 ## Recall `type()` for checking the types of values
 * Type comparison
