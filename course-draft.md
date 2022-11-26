@@ -620,12 +620,18 @@ print(6 % 20) # --> 6
 
 #### Applying modulo to story problems
 1. If 3 letter carriers must deliver the same exact number of letters, and there are 299 letters, how many letters will not be delivered? Write a Python expression that answers this question.
+* TODO: put in solution that utilizes generalizable function
 
 ```python
 print(299 % 3) # --> 2
 ```
 
 2. If you have 5 bank tellers and 28 people waiting to be served, what is the least number of people who will not be served if it takes exactly 4 minutes to serve each person and the bank MUST close in 20 minutes? Write a Python expression that answers this question.
+* TODO: put in solution that utilizes generalizable function
+
+```python
+print(28 - (20//4 * 5)) # --> 3
+```
 
 
 
@@ -742,7 +748,6 @@ Be aware that the `int()` function will not round the number. There is actually 
 print(round(9.73541))    # -->10
 print(round(9.73541, 3)) # --> 9.735, where we've rounded to the 3rd decimal place 
 ```
-
 
 
 
@@ -1128,8 +1133,14 @@ print(area_of_triangle(4, 5))
 
 
 ## Variable assignment using the _assignment operator_ `=`
+* ex `x = 4`
+* Variable Assignment: giving a name through which a value can be referred
+* Operations on a variable will be determined by the data type of the value stored.
+* Helps us keep track of values that change or values that are inputted 
+
 * TODO: explanation and snippets for declaring variables
 * TODO: Mention "gets" as how to read assignment
+
 
 
 ## Boolean `bool` data type
