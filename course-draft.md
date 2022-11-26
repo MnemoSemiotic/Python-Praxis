@@ -776,6 +776,7 @@ single quotes instead of double quotes
 * [See `math` module documentation](https://docs.python.org/3/library/math.html)
 * a _constant_ is a fixed mathematical value, like pi, tau, or e
 * importing all `math` functions
+* Notice that we're using comments in this code, to describe for newbie programmers what specific lines are doing
 
 ```python
 # imports all math functions, called using math.<function_name()>
@@ -798,7 +799,7 @@ print(math.pi)
 ```python
 from math import ceil, sqrt, pi
 
-# note we now omit the "math." part that we included above
+# note we now omit the "math." part that we included above, as we can access the names directly
 print(ceil(9.9))
 print(sqrt(25))
 print(pi)
@@ -812,7 +813,7 @@ print(pi)
 ```
 
 
-You will often import the square root function `math.sqrt`, but there are quite a few functions and constants in the `math` module. [See the `math` module documentation](https://docs.python.org/3/library/math.html). 
+You will often import the square root function `math.sqrt`, but there are quite a few other functions and constants in the `math` module. [See the `math` module documentation](https://docs.python.org/3/library/math.html). 
 
 Keep in mind that when you program, you will often be looking thing up. You don't have to memorize, in fact, you probably shouldn't memorize. Instead, be ready to look things up, either in official documentation, or more often, on [Stack Overflow](https://stackoverflow.com/), by Googling, etc.
 
@@ -946,6 +947,7 @@ A = l^2
 $$
 
 * where $l$ is the length of one side of the square
+* Notice that we have comments in this code to indicate when using a dependent function or an independent function
 
 ```python
 # independent function
