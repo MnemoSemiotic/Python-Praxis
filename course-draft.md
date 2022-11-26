@@ -129,7 +129,14 @@
 print("Hello World")
 ```
 
-## Making a Simple Dice Roller
+
+## How to Program, simply stated
+1. Think about the problem
+2. Define what it means for the program to be working
+3. Create a series of formal steps that lead to a repeatable, reusable operation
+
+
+## Example: Making a Simple Dice Roller
 
 Let's say you and your friends just acquired [Outward Bound](https://penflower-ink.itch.io/outward-bound), a TTRPG by [Penflower Ink](https://penflower-ink.itch.io/), and you realize that you don't have any dice. You know that you'll need to be rolling dice fairly often as you play, so you decide to figure out how to roll some dice using Python.
 
