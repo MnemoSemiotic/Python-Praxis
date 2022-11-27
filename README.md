@@ -27,4 +27,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * introduce other assignment operators (`+=`, `*=`, etc) when loops are introduced
 * create a supplement lesson for decimal and negative modulo
 * create a supplement lesson for float and double (32-bit and 64-bit) encoding
+* create lesson on walrus operator for assignment
+* 
 

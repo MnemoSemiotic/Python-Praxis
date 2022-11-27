@@ -1524,7 +1524,15 @@ will output
 # --> all is well
 ```
 
-* Notice that 
+* Another example
+```python
+if x + y == x or x + y == y:
+    print('At least one number is zero')
+elif x + y > x and x + y > y:
+    print('Both numbers are positive')
+else:
+    print('At least one number is negative')
+```
 
 
 ## Using `input()` to take input from a user in the terminal
@@ -1596,5 +1604,8 @@ describe_number()
 
 ------------------------------------------------------------------
 
-# 009 - 
+# 009 - Let's talk about Python Functions
 
+
+##  Goals
+* Function _parameters_ and _arguments_
