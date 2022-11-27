@@ -1532,9 +1532,9 @@ def describe_number():
     num = get_number_from_user()
 
     if num % 2 == 0:
-        print(f"{num}" is even)
+        print(f"{num} is even")
     else:
-        print(f"{num}" is odd)
+        print(f"{num} is odd")
     
     if num % 3 == 0 and num % 4 == 0:
         print(f"{num} is divisible by both 3 and 4")
