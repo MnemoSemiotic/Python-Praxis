@@ -1507,10 +1507,20 @@ else:
 * note that `input()` will give a string result, even if the value entered is a number
 * Recall our `hello-world` function
 ```python
-def hello_world(your_name):
-    return f'Why hello there {your_name}'
+def get_name_from_user():
+    return input("What is your name? ")
 
-print(hello_world("MnemoSemiotic"))
+def hello_world():
+    return f'Why hello there {get_name_from_user()}'
+
+print(hello_world())
 ```
 
-## 
+
+## Making choices based on user input
+* Let's get a from a user, and describe that number
+
+```python
+def get_number_from_user():
+    return input()
+```
