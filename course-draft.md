@@ -1793,27 +1793,63 @@ def another_func(x):
 * Unpacking a list
 
 
-
-
-
-
 ## What is a `list` 
 * TODO
+* A list is a **collection** of arbitrary objects
+* Lists are **ordered** and **mutable**
+* Declare empty lists using `[]` or `list()`
+
+```python
+lst_1 = []
+lst_2 = list()
+```
+
+* Declare a list with values using [1, 2, 3]
+
+```python
+lst_3 = [1, 2, 3]
+```
+
+* Lists can hold both **scalar** types and collections
+
+```python
+nested_list = [[2, 3, 4], [2, 1, 5]]
+```
+
+* TODO: write a function that takes 4 arguments and returns them packed into a list
+
+
 ## Range
 * TODO
+
+
 ## List indexing
 * TODO
+
+
 ## List Membership
 * TODO
+
+
 ## List Slicing
 * TODO
+
+
 ## Nested Lists
 * TODO
+
+
 ## List Mutability
 * TODO
+
+
 ## Copy a List
 * TODO
+
+
 ## Append to a List
 * TODO
+
+
 ## Unpacking a list
 * TODO
