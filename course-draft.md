@@ -1249,7 +1249,18 @@ print(True or False)  #--> True
 
 
 ## Constructing logic
-* TODO: show examples of more complex logic
+
+|  Order of Operations    |
+|-------------------------|
+| <center> ~ </center>    |
+| <center> & </center>    |
+| <center> ^ </center>    |
+| <center> | </center>    |
+| <center> not </center>  |
+| <center> and </center>  |
+| <center> or </center>   |
+
+* TODO: show examples of more complex logical statements
 * TODO: include example of DeMorgan's in a function
 
 
@@ -1288,7 +1299,9 @@ True
     * `~`, `&`, `|` are the matching bitwise operators for `not`, `and`, and `or`
     * Don’t use these or worry about them for now
     * They may not behave exactly as you expect
-
+* Exclusive or (XOR)
+    * `^` is the bitwise operator for **exclusive or**
+    * For now, think of this as asking the question **“are these two things different?”**
 
 
 # Conclusion
