@@ -1610,6 +1610,7 @@ describe_number()
 ##  Goals
 * Understanding what a function is in Python
 * Function _parameters_ and _arguments_
+* Set _default arguments_ in a function
 * `print()` vs `return`
 * Understanding `global` vs Local Scope
 
@@ -1636,6 +1637,43 @@ def my_func(arg1):
 
 ## Function _parameters_ and _arguments_
 * TODO:
+
+
+### Function **Parameters**
+* Function parameters:
+    * Function inputs that are inside the parentheses of the function header
+    * Operate similar to variables but they only exist within the function
+
+```python
+def some_func(im_a_function_parameter): 
+   return bool(im_a_function_parameter) 
+```
+
+
+### Function **Arguments**
+
+* Pass in “arguments” to the parameters when the function is called.
+
+```python
+def add_one_to_num(num):
+    return num + 1
+
+x = 7
+
+print(add_one_to_num(x)) # outputs 8 to console
+```
+
+
+### Setting Default Arguments
+* Default Arguments can be defined for function parameters. They are created in the function definition
+
+```python
+def add_two_numbers(num_1=1, num_2=2):
+    return num_1 + num_2
+
+print(add_two_numbers()) # outputs 3 to the console
+```
+
 
 
 ## `print()` vs `return`
