@@ -1481,4 +1481,36 @@ print(type(1 == 1.9)) # --> False>
 
 ------------------------------------------------------------------
 
-# 008 - 
+# 008 - Beginning Control Flow with `if / elif / else`
+
+##  Goals
+* Understand the syntax of `if` statements
+* Take input from a user, and choose different program paths based on that input
+
+
+## `if / elif / else`
+* TODO: clean this
+* We use if statements if we want to evaluate code only under a certain condition
+* Only when the statement following the if keyword evaluates to True will Python run the code in the body of that if block
+* General Syntax:
+
+```python
+if some_condition == True:
+    # execute this code
+elif some_other_condition == True:
+    # execute this code instead
+else:
+    # and if none of the above conditions are met, then execute this code block
+```
+
+## Using `input()` to take input from a user in the terminal
+* note that `input()` will give a string result, even if the value entered is a number
+* Recall our `hello-world` function
+```python
+def hello_world(your_name):
+    return f'Why hello there {your_name}'
+
+print(hello_world("MnemoSemiotic"))
+```
+
+## 
