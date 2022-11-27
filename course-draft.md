@@ -1603,22 +1603,6 @@ describe_number()
 ```
 
 
-## Checking to see if specific words are in a text
-* TODO
-
-```python
-def check_words_in_paragraph(word1, word2=None, word3=None):
-    pass
-    # TODO: fill in func
-
-
-freire_quote = '''No pedagogy which is truly liberating can remain distant from the oppressed by treating them as unfortunates and by presenting for their emulation models from among the oppressors. The oppressed must be their own example in the struggle for their redemption.
-'''
-
-# note that we simply omit word3 here, which isn't a problem given the way we wrote our function
-check_words_in_paragraph(word1="oppressed", word2="free hand")
-```
-
 
 # Conclusion
 * In this lesson we 
@@ -1645,6 +1629,7 @@ check_words_in_paragraph(word1="oppressed", word2="free hand")
 
 
 ## What are functions in Python?
+* We've been writing a lot of functions so far in this course, so let's describe them in more detail before we get much further.
 * Functions can be thought of as ways to create repeatable procedures
     * Name the function, give it parameters (optional), write your code
 * Things we need to consider when making a functions:
