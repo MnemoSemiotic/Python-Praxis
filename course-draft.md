@@ -2070,7 +2070,14 @@ list1.append(4)
 
 
 ## break
-*TODO:
+* TODO:
+
+
 ## continue
-*TODO:
-*TODO:## pass
+* TODO:
+
+
+## pass
+* TODO:
+
+
