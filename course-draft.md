@@ -1460,16 +1460,27 @@ print(type(1 == 1.9)) # --> False>
 
 
 ## Interpolation using f-strings and `.format()`
+* f-strings are an easy way to interpolate a value into a string
+    * defined by putting an `f` in front of quotes: `f'some text'`
+
+```python
+state = 'Alaska'
+
+print(f'{state} is one of the states in the US')
+```
+
+* `.format`
+* TODO
 
 
 ## Capitalizing, Lower-casing, and Upper-casing strings
+* TODO
 
-
-## Checking for substrings in strings using `in`
-
+## Checking for substrings in strings using `in` and `not in`
+* TODO
 
 ## Extracting substrings from strings using string indexing
-
+* TODO
 
 
 
@@ -1477,6 +1488,9 @@ print(type(1 == 1.9)) # --> False>
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
 
 
 ------------------------------------------------------------------
@@ -1589,6 +1603,18 @@ describe_number()
 ```
 
 
+## Checking to see if specific words are in a text
+
+```python
+
+def check_words_in_paragraph(word1, word2=None, word3=None):
+    pass
+    # TODO: fill in func
+
+
+freire_quote = '''No pedagogy which is truly liberating can remain distant from the oppressed by treating them as unfortunates and by presenting for their emulation models from among the oppressors. The oppressed must be their own example in the struggle for their redemption.
+'''
+```
 
 
 # Conclusion
