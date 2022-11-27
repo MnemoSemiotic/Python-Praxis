@@ -1609,3 +1609,6 @@ describe_number()
 
 ##  Goals
 * Function _parameters_ and _arguments_
+* `print()` vs `return`
+* Understanding `global` vs Local Scope
+
