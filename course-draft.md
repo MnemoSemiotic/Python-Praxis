@@ -1502,6 +1502,9 @@ elif some_other_condition == True:
 else:
     # and if none of the above conditions are met, then execute this code block
 ```
+* TODO: add in simple code snippets for these
+
+
 
 ## Using `input()` to take input from a user in the terminal
 * note that `input()` will give a string result, even if the value entered is a number
@@ -1522,5 +1525,27 @@ print(hello_world())
 
 ```python
 def get_number_from_user():
-    return input()
+    # notice we need to cast this to int, otherwise it will be a string
+    return int(input("What is your favorite number?"))
+
+def describe_number():
+    num = get_number_from_user()
+
+    if num % 2 == 0:
+        print(f"{num}" is even)
+    else:
+        print(f"{num}" is odd)
+    
+    if num % 3 == 0 and num % 4 == 0:
+        print(f"{num} is divisible by both 3 and 4")
+    elif num % 3 == 0:
+        print(f"{num} is divisible by 3")
+    elif num % 4 == 0:
+        print(f"{num} is divisible by 4")
+    else:
+        print(f"{num} is not divisible by 3 or 4")
+
+    # note that we're not returning anything here, implicitly it is returning None
+
+describe_number()
 ```
