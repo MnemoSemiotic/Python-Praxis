@@ -1781,20 +1781,39 @@ def another_func(x):
 # 010 - Introducing Lists in Python
 
 ##  Goals
+* What is a `list` 
+* Range
+* List indexing
+* List Membership
+* List Slicing
+* Nested Lists
+* List Mutability
+* Copy a List
+* Append to a List
+* Unpacking a list
 
 
 
 
-# Conclusion
-* In this lesson we 
-
-## In the Next Lesson...
 
 
-
-
-------------------------------------------------------------------
-
-# 011 - Introducing Lists in Python
-
-##  Goals
+## What is a `list` 
+* TODO
+## Range
+* TODO
+## List indexing
+* TODO
+## List Membership
+* TODO
+## List Slicing
+* TODO
+## Nested Lists
+* TODO
+## List Mutability
+* TODO
+## Copy a List
+* TODO
+## Append to a List
+* TODO
+## Unpacking a list
+* TODO
