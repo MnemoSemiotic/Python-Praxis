@@ -1909,8 +1909,6 @@ one_to_99 = list(range(1,99+1))
 
 
 
-
-
 # Conclusion
 * In this lesson we 
 
@@ -1935,6 +1933,30 @@ one_to_99 = list(range(1,99+1))
 * Lists are mutable
     * The contents in a `list` can change while its `id()` stays the same.
     * Two lists that contain the same values will have different ids. 
+
+
+Examine list1 and list2 after running these code snippets and explain why each code snippet gives different values
+
+
+### snip 1
+```python
+list1 = [1, 2, 3]
+list2 = list1
+list1.append(4)
+```
+### snip 2
+```python
+list1 = [1, 2, 3]
+list2 = list1[:]
+list1.append(4)
+```
+* In the first example, both lists are updated, as they are the same object referred to by different names. In the second example, only the copy is updated with the new value
+
+
+
+
+
+
 
 
 ## Copy a List
