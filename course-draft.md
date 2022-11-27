@@ -1917,6 +1917,7 @@ one_to_99 = list(range(1,99+1))
 
 
 
+
 ------------------------------------------------------------------
 
 # 012 - List Mutability, Copying, Appending, and Unpacking
@@ -1985,3 +1986,91 @@ list1.append(4)
 * We can unpack the elements of a `list` so that we are storing these elements in a variable:
     * `fruit1, fruit2, fruit3 = [‘grapes’, ‘blueberries’, ‘apples’]`
 * Unpacking a `list` is untenable for a very long `list`.
+
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 013 - Introduction to For Loops and traversing a `list`
+
+##  Goals
+* Traversing a `list`
+
+
+## Traversing a `list`
+* TODO
+
+
+
+
+
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 014 - Accumulators and boolean flags, loops as filters
+
+
+## Goals
+* accumulators
+* boolean flags
+* `list` accumulators
+* loops as filters
+
+
+
+
+## accumulators
+* TODO
+
+## boolean flags
+* TODO
+
+## `list` accumulators
+* TODO
+
+## loops as filters* TODO
+* TODO
+
+
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 014 - Break, Continue, Pass
+
+
+## Goals
+* break
+* continue
+* pass
+
+
+
+## break
+*TODO:
+## continue
+*TODO:
+*TODO:## pass
