@@ -1524,6 +1524,8 @@ will output
 # --> all is well
 ```
 
+* Notice that 
+
 
 ## Using `input()` to take input from a user in the terminal
 * note that `input()` will give a string result, even if the value entered is a number
@@ -1562,7 +1564,7 @@ def describe_number():
         print(f"{num} is negative")
     else:
         print("You're not a zero, you're a hero!!")
-        
+
 
     if num % 3 == 0 and num % 4 == 0:
         print(f"{num} is divisible by both 3 and 4")
