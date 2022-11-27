@@ -1784,13 +1784,6 @@ def another_func(x):
 * What is a `list` 
 * Range
 * List indexing
-* List Membership
-* List Slicing
-* Nested Lists
-* List Mutability
-* Copy a List
-* Append to a List
-* Unpacking a list
 
 
 ## What is a `list` 
@@ -1819,16 +1812,58 @@ nested_list = [[2, 3, 4], [2, 1, 5]]
 * TODO: write a function that takes 4 arguments and returns them packed into a list
 
 
-## Range
+## Using `range` to construct a range of numbers
 * TODO
+* The `range` function helps us create an object that can be converted into a `list` of integers.
+* Syntax:
+    * `range(start, stop, step)`
+    * Start is inclusive, stop is not
+* `range` is an object that can help us to iterate over a series of numbers.
+* `range` can provide indices for items in a `list` or in a pair of lists
+
+```python
+one_to_99 = list(range(1,99+1))
+```
+
+
 
 
 ## List indexing
 * TODO
+* We use square brackets `[idx]` to access elements in a `list`
+* Python uses **zero-based indexing**. Therefore, we count starting from 0.
+    * `lst[0]` will return the first element of the list
+* List indexing also allows us to reassign the value at that index
+* Lists can be unpacked into variables.
+
+
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 011 - List Membership, Slicing, and Nested Lists
+
+##  Goals
+* List Membership
+* List Slicing
+* Nested Lists
+
 
 
 ## List Membership
 * TODO
+
+
+
 
 
 ## List Slicing
@@ -1837,6 +1872,29 @@ nested_list = [[2, 3, 4], [2, 1, 5]]
 
 ## Nested Lists
 * TODO
+
+
+
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 012 - List Mutability, Copying, Appending, and Unpacking
+
+##  Goals
+* List Mutability
+* Copy a List
+* Append to a List
+* Unpacking a list
 
 
 ## List Mutability
