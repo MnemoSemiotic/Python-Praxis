@@ -1285,7 +1285,10 @@ True
 
 ## Other Operators
 * Bitwise Operators (covered in `numpy` and `pandas`)
-* 
+    * `~`, `&`, `|` are the matching bitwise operators for `not`, `and`, and `or`
+    * Don’t use these or worry about them for now
+    * They may not behave exactly as you expect
+
 
 
 # Conclusion
