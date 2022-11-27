@@ -1504,6 +1504,25 @@ else:
 ```
 * TODO: add in simple code snippets for these
 
+* We can incorporate comparison operators and logical operators into our if statements
+
+```python
+x = 7
+y = False
+
+if x < 10 and not y:
+    print('all is well')
+elif x > 3 and y:
+    print('danger')
+else:
+    print('nothing matters')
+```
+
+will output
+
+```python
+# --> all is well
+```
 
 
 ## Using `input()` to take input from a user in the terminal
@@ -1536,6 +1555,15 @@ def describe_number():
     else:
         print(f"{num} is odd")
     
+
+    if num > 0:
+        print(f"{num} is positive")
+    elif num < 0:
+        print(f"{num} is negative")
+    else:
+        print("You're not a zero, you're a hero!!")
+        
+
     if num % 3 == 0 and num % 4 == 0:
         print(f"{num} is divisible by both 3 and 4")
     elif num % 3 == 0:
