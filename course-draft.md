@@ -1608,7 +1608,47 @@ describe_number()
 
 
 ##  Goals
+* Understanding what a function is in Python
 * Function _parameters_ and _arguments_
 * `print()` vs `return`
 * Understanding `global` vs Local Scope
 
+
+## What are functions in Python?
+* Functions can be thought of as ways to create repeatable procedures
+    * Name the function, give it parameters (optional), write your code
+* Things we need to consider when making a functions:
+    * How to name the function
+    * What the function expects to pass into it - arguments
+    * What the function does
+    * What the function returns: a value or `None`?
+
+
+## Functions Basic Structure
+
+```python
+def my_func(arg1):
+    # some block of code here
+    return arg1 # Returns the value in arg1 when function is called
+```
+
+
+
+## Function _parameters_ and _arguments_
+* TODO:
+
+
+## `print()` vs `return`
+
+### `print`
+* function takes the value passed into it and writes that value to the console.
+* `print()` is in your core toolset for checking what you expect is happening in your code.
+* **the `print()` function is fundamentally different from the `return` keyword!**
+
+
+### `return`
+
+
+
+
+## Understanding `global` vs Local Scope
