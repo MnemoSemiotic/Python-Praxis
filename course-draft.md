@@ -1564,7 +1564,21 @@ print(hello_world())
 
 
 ## Making choices based on user input
-* Let's get a from a user, and describe that number
+* Write a function that uses the `input()` function inside of it to take a user inputted number and check if that number is equal to `7`. If the number is equal to `7`, return `True`. If not, return `False`
+* Hint: `input()` will return a string by default, so cast to an `int`:
+   * `user_input = int(input(‘type number: ‘))`
+
+```python
+def check_for_seven():
+    user_input = int(input('type a number: '))
+
+    if user_input == 7:
+        return True
+    else:
+        return False
+```
+
+* Let's get a number from a user, and describe that number
 
 ```python
 def get_number_from_user():
@@ -1600,6 +1614,25 @@ def describe_number():
     # note that we're not returning anything here, implicitly it is returning None
 
 describe_number()
+```
+
+
+* let's do another example that analyses a user's input
+    * Write a function that takes in a number between 0-999:
+        * Print out whether the number is a single, double, or triple digit number. 
+        * If the number is outside of that range, print a message saying that it is outside of the expected range. 
+
+
+```python
+def print_num_len(num):
+    if num < 0 or num > 999:
+        print(f'{num} outside of expected range')
+    elif num / 10 < 1: 
+        print(f'{num} is single digit')
+    elif num / 100 < 1:
+        print(f'{num} is double digit')
+    else:
+        print(f'{num} is triple digit')
 ```
 
 
@@ -1663,6 +1696,8 @@ def some_func(im_a_function_parameter):
    return bool(im_a_function_parameter) 
 ```
 
+### If not specified using the `return` keyword, a function will return `None`
+
 
 ### Function **Arguments**
 
@@ -1693,8 +1728,8 @@ print(add_two_numbers()) # outputs 3 to the console
 
 ## `print()` vs `return`
 * `print()` and `return` ARE DIFFERENT!!
-* `print()` outputs to the console
-* `return` defines the value that will be received from the scope of the function
+* `print()` : function takes the value passed into it and writes that value to the console.
+* `return` : Keyword used to return an object from a function
 
 ```python
 def some_func(x):
@@ -1718,3 +1753,48 @@ def another_func(x):
 
 
 ## Understanding `global` vs Local Scope
+* Global Variables 
+    * Variables defined in the main program
+* Local Variables
+    * Variables defined within the scope of a function
+* You can access a variable declared in the global scope of the function within the local scope of a function
+* If you want to change a global variable within the scope of a function, use `global var_name`
+
+* TODO: demonstrate when a variable is inaccessible from outside a given function's local scope
+
+```python
+
+```
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 010 - Introducing Lists in Python
+
+##  Goals
+
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 011 - Introducing Lists in Python
+
+##  Goals
