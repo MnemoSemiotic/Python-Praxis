@@ -1291,6 +1291,17 @@ True
 ```
 
 
+### What do each of these return?
+* `not 7 > 2`
+    * `False`
+* `3 >= 2 or 5 < 1`
+    * `True`
+* `not 8 `
+    * `False`
+* `bool(‘’) and 5 != 3`
+    * `False`
+* `bool(‘’) and 5 != 5`
+    * `False`
 
 
 
