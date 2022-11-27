@@ -1664,7 +1664,7 @@ print(add_one_to_num(x)) # outputs 8 to console
 ```
 
 
-### Setting Default Arguments
+### Setting Default Arguments in a function
 * Default Arguments can be defined for function parameters. They are created in the function definition
 
 ```python
@@ -1676,7 +1676,21 @@ print(add_two_numbers()) # outputs 3 to the console
 
 
 
+
 ## `print()` vs `return`
+* `print()` and `return` ARE DIFFERENT!!
+* `print()` outputs to the console
+* `return` defines the value that will be received from the scope of the function
+
+```python
+def some_func(x):
+    print(x)
+
+# is fundamentally different from
+def another_func(x):
+    return x
+```
+
 
 ### `print`
 * function takes the value passed into it and writes that value to the console.
@@ -1685,7 +1699,7 @@ print(add_two_numbers()) # outputs 3 to the console
 
 
 ### `return`
-
+* TODO
 
 
 
