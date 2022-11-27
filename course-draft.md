@@ -1838,6 +1838,13 @@ one_to_99 = list(range(1,99+1))
 
 
 
+`num_list = list(range(4, 16))`
+
+* How do you index `num_list` to get `6`? How about `15`?
+    * `print(num_list[2])`
+    * `print(num_list[11])`
+
+
 
 
 # Conclusion
@@ -1861,18 +1868,44 @@ one_to_99 = list(range(1,99+1))
 
 ## List Membership
 * TODO
-
+* Use the in keyword to check whether an element is in a list
+    * `5 in [1, 2, 3, 4]` will be `False`
+* You can conversely use not in to check if an element is not a member of the list
+    * `5 not in [1, 2, 3, 4]` will be `True`
 
 
 
 
 ## List Slicing
 * TODO
+* Use list slicing if you want to access a portion of a list
+    * Notation is similar to indexing, e.g. `[1:3]`
+    * Syntax: `list[start:stop]`
+        * The slice starts at the start value and goes up until the stop value
+        * The slice will not inclued the stop value
+* Like the range function, we can specify a step
+    * Syntax: `list[start:stop:step]`
+
+
+`num_list = list(range(4, 16))`
+* How do you slice `num_list` to get this sublist: `[10, 11, 12, 13, 14, 15]`
+    * `print(num_list[6:13])`
+* How do you slice `num_list` to get this sublist: `[4, 6, 8, 10, 12, 14]`
+    * `print(num_list[::2])`
+* Challenge: How do you slice `num_list` to get this sublist: `[8, 7, 6, 5, 4]`
+    * `print(num_list[4::-1])`
+
+
 
 
 ## Nested Lists
 * TODO
-
+* A list that contains another list is known as a nested list
+    * Example: `lst = [‘a’, ‘b’, [1, 2, 3]]`
+* To access an element in a nested list, you will need two indices
+    * `lst[2][0]` will access the value `1`  
+* To access more than one element in a nested list, use a slice:	
+    * `lst[2][:2]` will produce the slice `[1, 2]`
 
 
 
@@ -1899,15 +1932,34 @@ one_to_99 = list(range(1,99+1))
 
 ## List Mutability
 * TODO
+* Lists are mutable
+    * The contents in a `list` can change while its `id()` stays the same.
+    * Two lists that contain the same values will have different ids. 
 
 
 ## Copy a List
 * TODO
+* Create a copy of a list with the `.copy()` method
+    * Syntax: `lst_2 = lst.copy()`
+* `list` slicing can also be used to make a copy
+    * Syntax: `lst2 = lst[:]`
+* It is good practice to not modify function arguments. If a function argument is a `list`, create a copy before changing that `list` in any way. 
+
+
 
 
 ## Append to a List
 * TODO
+# `append()` to a `list`
+* The `.append()` method places a new value at the end of the `list` 
+    * Syntax: `lst.append(new_item)`	
+* Can append a `list` to another `list` in order to create a nested `list`.
+
+
 
 
 ## Unpacking a list
 * TODO
+* We can unpack the elements of a `list` so that we are storing these elements in a variable:
+    * `fruit1, fruit2, fruit3 = [‘grapes’, ‘blueberries’, ‘apples’]`
+* Unpacking a `list` is untenable for a very long `list`.
