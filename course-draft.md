@@ -1199,14 +1199,38 @@ print(area_of_triangle(4, 5))
     * `True`
 
 
+## Boolean Operators
+
+| Operator              | Meaning                 |
+| ----------------------| ----------------------- |
+| <center>`>`</center>  | Greater Than            |
+| <center>`>=`</center> | Greater Than or Equal   |
+| <center>`<`</center>  | Less Than               |
+| <center>`<=`</center> | Less Than or Equal      |
+| <center>`==`</center> | Equals or Is Equivalent |
+| <center>`!=`</center> | Does not Equal          |
+
+
 ## Equals (`==`) and Not Equals (`!=`)
 * TODO: demonstrate equals and not equals operations on variables
 * TODO: Reiterate that we can compare `int` to `float` even though they are stored differently
 
+```python
+print(5 == 6)  # --> False
+print(5 != 6)  #--> True
+```
 
 
 ## Greater than `>`, less than `<`, Greater than or equals `>=`, Less than or equals `<=`
 * TODO: demonstrate on variables
+
+```python
+print(5 > 4)   # --> True
+print(5 >= 6)  # --> False
+print(5 < 4)   # --> False
+print(5 <= 6)  # --> True
+```
+
 
 
 ## Logical operators
@@ -1214,6 +1238,49 @@ print(area_of_triangle(4, 5))
     * show that `not True` => `False`, `not False` => `True`, and `not not False` => `False
 * TODO: introduce `and`
 * TODO: introduce `or`
+
+```python
+print(not True)       #--> False
+print(not False)      #--> True
+print(True and True)  #--> True
+print(True and False) #--> False
+print(True or False)  #--> True
+```
+
+
+## Constructing logic
+* TODO: show examples of more complex logic
+* TODO: include example of DeMorgan's in a function
+
+
+
+What is the result of the following boolean expression?
+
+```python
+(not (not (True or False) and (True and True))) and True or True
+```
+
+* note that the `or True` on the end will evaluate the whole thing as `True`. We'll simplify the whole thing anyway
+```python
+(not (not (True or False) and (True and True))) and True or True
+#          --simplify---
+(not (not True and (True and True))) and True or True
+#     --------
+(not (False and (True and True))) and True or True
+#                -------------
+(not (False and True)) and True or True
+#     --------------
+(not False and True or True
+#---------
+True and True or True
+#------------
+True or True
+#----------
+True
+```
+
+
+
 
 
 ## Other Operators
