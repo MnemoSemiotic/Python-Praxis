@@ -2578,8 +2578,7 @@ squared_with_indices(range(1, 20))
 
 ## unpacking lists
 * TODO
-* In the case of nested lists, we can use an accumulator to unpack the nested items into a new `list`.
-* In the new `list`, the nesting will be “undone.”
+
 
 
 ### unpacking a nested `list`
