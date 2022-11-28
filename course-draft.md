@@ -2812,8 +2812,23 @@ print(f'Your order list: {selections}')
 # 022 - String methods
 
 ## Goals
-* Declaring `strings`
-* `string` methods
-* Functions with `strings`
+* The `string` datatype
+* Basic `string` Operators
+
+
+
+## The `string` datatype
+* Strings are simply a collection of characters
+* However, in Python, a `string` is a scalar type and is immutable
+* Strings are declared with single tick or ,double tick, quotes in groups of 1 or 3 in the beginning and end.
+    * Mostly interchangeable. Single and double quotes only work with strings that span one line. 
+    * Strings that span multiple lines need to be declared using triple quotes.
+
+
+## Basic `string` Operators
+* We can use the addition operator to concatenate strings.
+    * `'My first string ' + 'My second string'` => `'My first stringMy second string'`
+* The multiplication operator will repeat the string `n` times.
+    * `'Repeating string' * 3` => `'Repeating stringRepeating stringRepeating string'`
 
 
