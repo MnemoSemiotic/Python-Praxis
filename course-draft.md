@@ -1454,7 +1454,9 @@ print(type(1 == 1.9)) # --> False>
 
 ## Strings
 * A string `str` is an object that acts as a sequence of characters.
-* Declare a `string` using quotes 
+* Declare a `str` using quotes: single, double, and triple quotes
+    * Mostly interchangeable. Single and double quotes only work with strings that span one line.
+    * Strings that span multiple lines need to be declared using triple quotes.
 * Note we will talk more extensively about the `string` type in later lectures
 
 
