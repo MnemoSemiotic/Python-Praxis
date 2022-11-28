@@ -2439,25 +2439,27 @@ def function_name():
 # 017 - Lists: 
 
 ## Goals
-* sort
-* reverse
-* sorted
-* reversed
+* sort vs sorted
+* reverse vs reversed
 
 
 
 
-## sort
+## sort vs sorted
+* TODO
+* The `sort` and `reverse` methods are slightly different from the `sorted` and `reversed` functions
+* The `sort` method will sort all the values in a `list` in ascending order and change the `list` in place. `sorted` will return a `list` with elements sorted but does not modify the original `list`.
+    * Syntaxes:
+        * `lst.sort()`
+        * `sorted(lst)`
+
+
+## reverse vs reversed
 * TODO
 
-## reverse
-* TODO
 
-## sorted
-* TODO
 
-## reversed
-* TODO
+
 
 ## In the Next Lesson...
 
@@ -2478,6 +2480,11 @@ def function_name():
 
 ## sum
 * TODO
+* `sum()` will calculate the sum of all the elements of the list that is passed in.
+    * Syntax: `sum(list_name)`
+    * Only works with lists that contain only integers and floats
+
+
 
 ## max
 * TODO
