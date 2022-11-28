@@ -2341,4 +2341,18 @@ def function_name():
 
 
 
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 015 - Lists: append, extend, remove, and pop
+
+## Goals
+* appending
+* extending
+* removing
+* pop
 
