@@ -1465,6 +1465,8 @@ print(type(1 == 1.9)) # --> False>
 ## Interpolation using f-strings and `.format()`
 * f-strings are an easy way to interpolate a value into a string
     * defined by putting an `f` in front of quotes: `f'some text'`
+* `f` strings will dynamically insert variables into strings. The difference is that we just need to place the variable name in the curly braces.
+    * Syntax: `f'Inserting {variable_to_insert} into this string'`
 
 ```python
 state = 'Alaska'
@@ -1474,6 +1476,8 @@ print(f'{state} is one of the states in the US')
 
 * `.format`
 * TODO
+* The `format` method will dynamically insert the variables passed in as parameters into the placeholders in a `string`
+    * Syntax: `'Inserting {} into this string'.format(variable_to_insert)`
 
 
 ## Capitalizing, Lower-casing, and Upper-casing strings
@@ -2880,7 +2884,7 @@ for idx, ch in enumerate(string):
 ## Goals
 * `string` Slicing
 * `replace`
-* 
+* Processing strings within a list
 
 
 
@@ -2902,5 +2906,90 @@ string = 'I love to look at the moon'
 
 string = string.replace('o', 'puppy', 2)
 ```
+
+
+## Processing strings within a list
+Write a function that takes a `list` like the following `list` of column names and change any spaces in the column names to underscores. Return a modified `list` with the updated names.
+
+```python
+column_names = ['gender', 'longest absence from school', 'is enrolled', 'enlist', 'unemployed', 'filed for bankruptcy', 'school', 'peace corps']
+```
+
+
+
+```python
+column_names = ['gender', 'longest absence from school', 'is enrolled', 'enlist', 'unemployed', 'filed for bankruptcy', 'school', 'peace corps']
+
+def add_underscores(feature_list):
+    new_list = feature_list.copy()
+    for idx, column in enumerate(new_list):
+        if ' ' in column:
+            new_list[idx] = column.replace(' ', '_')
+
+    return new_list
+
+```
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 024 - Strings: 
+
+## Goals
+* Applying the `list()` function to strings
+* Applying the `split()` method to strings to create word lists
+
+
+
+## Applying the `list()` function to strings
+* TODO
+* A `string` can be cast to a `list` using the `list` function
+    * `list(string)`
+* The `list()` function will separate each character in the `string` into a new element in the returned list.
+
+
+## Applying the `split()` method to strings to create word lists
+* TODO
+* Quick aside: Strings are immutable so methods will not change the `string` in place like with lists.
+* This method splits a `string` at each occurrence of a specified delimiter and will return a list with each split substring.
+    * `string.split(delimiter)`
+* The delimiter will not be included in the returned `list`
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 025 - Strings: 
+
+## Goals
+* `lower()`, `upper()`, `swapcase()`, and `capitalize()`
+* 
+
+
+## `lower()`, `upper()`, `swapcase()`, and `capitalize()`
+* The `lower` method will return a `string` where all the letters are lowercase
+    * Syntax: `string.lower()`
+* The `upper` method will return a `string` where all the letters are uppercase
+    * Syntax: `string.upper()`
+* The `swapcase` method will return a `string` where all the letter’s cases are swapped
+    * Syntax: `string.swapcase()`
+* The `capitalize` method will return a `string` where the first letter of the `string` will be capitalized and the rest will be lower case.
+    * Syntax: `string.capitalize()`
 
 
