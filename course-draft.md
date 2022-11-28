@@ -3136,8 +3136,16 @@ print( clean_string_lst(my_txt) )
 # 027 - Dictionaries
 
 ## Goals
+* Understanding dictionaries in Python
 
 
+## Understanding dictionaries in Python
+* Dictionaries contain key/value pairs in a mutable, unordered collection.
+* Keys must be immutable and unique.
+* Dictionaries are declared:
+    * Using curly braces `{}`
+    * `dict()` constructor
+* Syntax: `{key1 : value1, key2: value2, key3 : value3}`
 
 
 ## Conclusion
