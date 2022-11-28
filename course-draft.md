@@ -2796,3 +2796,20 @@ print(f'Your order list: {selections}')
 ```
 
 
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 022 - Creating a Menu using a `while` loop
+
+## Goals
+* Creating a simple menu
