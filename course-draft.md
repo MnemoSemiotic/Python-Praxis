@@ -2809,7 +2809,11 @@ print(f'Your order list: {selections}')
 
 ------------------------------------------------------------------
 
-# 022 - Creating a Menu using a `while` loop
+# 022 - String methods
 
 ## Goals
-* Creating a simple menu
+* Declaring `strings`
+* `string` methods
+* Functions with `strings`
+
+
