@@ -2362,11 +2362,19 @@ def function_name():
 
 
 ## appending
-* TODO
+* TODO: this is covered earlier, but should touch on it again here really quick
+* The `append` method places a new value at the end of the `list`.
+    * Syntax: `list.append(new_item)`
+* Can `append` a `list` to another `list` in order to create a nested `list`.
+
 
 
 ## extending
 * TODO
+* The `extend` method combines two lists
+    * Syntax: `list1.extend(list2)`
+    * In the above example, the `list2` elements will be inserted into `list1`
+
 
 
 ## removing
