@@ -2815,7 +2815,7 @@ print(f'Your order list: {selections}')
 
 ------------------------------------------------------------------
 
-# 022 - Strings: Operators, Casting, and Joining
+# 022 - Strings: Operators, Casting, Joining, and Enumerate
 
 ## Goals
 * The string datatype
@@ -2985,6 +2985,7 @@ def add_underscores(feature_list):
 * The `count()` method
 
 
+
 ## `lower()`, `upper()`, `swapcase()`, and `capitalize()`
 * The `lower` method will return a `string` where all the letters are lowercase
     * Syntax: `string.lower()`
@@ -3073,3 +3074,98 @@ def get_letter_count(string):
 
     return letters, counts
 ```
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 026 - Strings: More Practice
+
+## Goals
+* Removing _stopwords_ and making a word list
+* TODO
+
+
+
+## Removing _stopwords_ and making a word list
+Create a function that takes in a string. This function should split the string into a list of lowercase words that make up that string. Return a list of unique ‘cleaned’ words.
+* Challenge: strip any punctuation (for now, strip commas and periods)
+* Challenge: remove the common english words from the list below you are returning
+
+
+```python
+def clean_string_lst(txt_in):
+    punct_lst = [",", ".", ";", ":", "!", "?", "'", '"'],
+    remove_words = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself", "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself", "it", "its", "itself", "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that", "these", "those", "am", "is", "are", "on", "off", "over", "under", "again", "further", "then", "once", "here", "there", "when", "where", "why", "how", "all", "any", "both", "each", "few", "more", "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same", "so", "than", "too", "very", "can", "will", "just", "don", "should", "now"]
+
+    for punct in punct_lst:
+        if punct in txt_in:
+            txt_in = txt_in.replace(punct, "")
+
+    lst = []
+    for word in txt_in.lower().split():
+        if word not in lst + remove_words:
+            lst.append(word)
+
+    return " ".join(lst)
+
+
+my_txt = "Hello there! How are you? Why don’t you take a seat over there? Once we went to the store and we found ourselves in a strange place. We ran into two people. They were very interesting to talk to. Each of them had an interesting accent and we wondered where they were from."
+print( clean_string_lst(my_txt) )
+```
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 027 - Dictionaries
+
+## Goals
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 028 - Sets
+
+## Goals
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 029 - Tuples
+
+## Goals
