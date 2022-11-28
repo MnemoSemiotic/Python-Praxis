@@ -328,7 +328,7 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 ```
 
 
-# Conclusion
+## Conclusion
 * Programming can be simply defining a repeatable set of steps
 * Here we created some simple dice rolling functions
     * Working code is more important than clean code.
@@ -1123,6 +1123,9 @@ print(area_of_triangle(4, 5))
 * Mathematical operations that you will write repeatedly can be defined in functions.
 * TODO: verify conclusion is complete
 
+
+## Conclusion
+* In this lesson we 
 
 ## In the Next Lesson...
 
@@ -2074,7 +2077,7 @@ print_vowels(char_list)
 ## Traversing a `str`
 
 
-# Conclusion
+## Conclusion
 * In this lesson we 
 
 ## In the Next Lesson...
@@ -2265,6 +2268,11 @@ for element in some_list:
 ```
 
 
+
+
+## Conclusion
+* In this lesson we 
+
 ## In the Next Lesson...
 
 
@@ -2344,6 +2352,9 @@ def function_name():
 
 
 
+## Conclusion
+* In this lesson we 
+
 ## In the Next Lesson...
 
 
@@ -2399,7 +2410,8 @@ def function_name():
     * `last_element = lst.pop()`
 
 
-
+## Conclusion
+* In this lesson we 
 
 ## In the Next Lesson...
 
@@ -2453,7 +2465,8 @@ squared_with_indices(range(1, 20))
 
 
 
-
+## Conclusion
+* In this lesson we 
 
 ## In the Next Lesson...
 
@@ -2490,6 +2503,8 @@ squared_with_indices(range(1, 20))
 * What would be the result of `list(reversed([1, 5, 6, 4, 2]))`
 
 
+## Conclusion
+* In this lesson we 
 
 ## In the Next Lesson...
 
@@ -2528,6 +2543,9 @@ squared_with_indices(range(1, 20))
 * The `count` method will return a count the occurences of an item in a `list`.
 * Syntax: `list.count()`
 
+
+## Conclusion
+* In this lesson we 
 
 ## In the Next Lesson...
 
@@ -2586,3 +2604,139 @@ squared_with_indices(range(1, 20))
 * In the new `list`, the nesting will be “undone.”
 
 
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
+
+
+------------------------------------------------------------------
+
+# 020 - `while` loops 
+
+## Goals
+* Understanding `while` loops
+* infinite loop
+* conditional loops
+* open ended problems
+* menus
+* `for` vs `while` loops
+
+
+
+
+
+
+## Understanding `while` loops
+* TODO
+* Use `while` loops when the number of iterations needed to complete a loop is not known
+* Syntax:
+
+```python
+while some_condition:
+    some code
+```
+
+* Typically, `while` loops have some counter or flag as well.
+
+
+
+## infinite loop
+* TODO
+* What happens if we run the code below?
+* Syntax:
+
+```python
+counter = 1
+while counter < 10:
+    print(‘testing’)
+```
+
+* Avoid writing infinite loops
+
+
+
+### Consider using a `for` in place of a `while`
+* A `for` loop can be set with an arbitrarily high ranged number and an escape condition
+* Creates code safe from infinite loops
+
+```python
+for _ in range(10000000):
+    # do something
+    if condition_met:
+        break
+```
+
+
+## conditional loops
+* TODO
+* Mostly `while` loops get initialized with some sort of conditional statement. The `while` loop will execute until the statement is no longer `True`
+* Syntax:
+
+```python
+counter = 0
+while some_condition:
+    # some code
+    # change counter
+```
+
+
+### Extracting a list of divisors
+* TODO
+* Write a function that computes and returns a `list` of all of the divisors of some positive number. Use a `while` loop. Things to think about:
+    * How do you determine if a single number is a divisor of another?
+    * What is your stopping condition?
+    * BONUS: rewrite this with a `for` loop
+
+```python
+def get_divisors(number):
+    divisors = []
+    divisor = 1
+
+    while divisor <= number:
+        if number % divisor == 0:
+            divisors.append(divisor)
+        divisor += 1
+
+    return divisors
+
+print(get_divisors(144))
+```
+
+* `for` loop solution
+
+```python
+def get_divisors(number):
+    divisors = []
+
+    for divisor in range(1, number+1):
+        if number % divisor == 0:
+            divisors.append(divisor)
+
+    return divisors
+
+print(get_divisors(144))
+```
+
+
+
+## open ended problems
+* TODO
+* An open-ended problem is one where we do not know how many iterations we will need in order to solve the problem
+* For example:
+    * Converging on $\pi$ through a random sampling process, you'll want an exit condition for when you reach a certain level of surety
+    * Run state for an application, where "Quit" would be the only instance where the containing loop would exit.
+
+    
+
+## menus
+* TODO
+
+
+## `for` vs `while` loops
+* TODO
