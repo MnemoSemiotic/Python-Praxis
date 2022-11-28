@@ -2379,11 +2379,21 @@ def function_name():
 
 ## removing
 * TODO
+* Use the `remove` method to remove an element from a `list`
+    * Syntax: `list1.remove(some_item)`
+    * Only removes the first instance of that element
+* Use `del` to remove a specific index of element, or slice of elements, in a `list`:
+    * `del list[index]`
+    * `del list[start:stop]`
+
 
 
 ## pop
 * TODO
-
+* The `pop` method removes the last item from a `list` in place and returns the value of that last item
+    * Syntax: `list_name.pop()`
+* The value of the last item can be stored by assigning the method call to a variable
+    * `last_element = list_name.pop()`
 
 
 
@@ -2413,6 +2423,8 @@ def function_name():
 
 ## len
 * TODO
+* `len()` return the length of the `list` passed in
+    * Syntax: `len(list_name)`
 
 
 
