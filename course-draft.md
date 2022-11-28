@@ -3133,10 +3133,15 @@ print( clean_string_lst(my_txt) )
 
 ------------------------------------------------------------------
 
-# 027 - Dictionaries
+# 027 - Dictionaries Overview
 
 ## Goals
 * Understanding dictionaries in Python
+* Accessing and Updating Key Value Pairs
+* Basic dictionary methods
+* Membership in dictionaries
+* Deleting Key/Value Pairs
+* Using the `.get()` method to check keys
 
 
 ## Understanding dictionaries in Python
@@ -3148,6 +3153,51 @@ print( clean_string_lst(my_txt) )
 * Syntax: `{key1 : value1, key2: value2, key3 : value3}`
 
 
+## Accessing and Updating Key Value Pairs
+* Access values by using the key as an index:
+    * `d[key]`
+    * This statement will throw an error if the key is not in the dictionary.
+* Keys can be added to dictionaries by:
+    * `d[new_key] = new_value`
+    * Note that if the key already exists in the dictionary, this syntax will reassign the value to this new_value
+
+
+## Basic dictionary methods
+* The keys method will return a list of the keys in a dictionary
+    * `dct.keys()`
+* The values method will return a list of the values in a dictionary
+    * `dct.values()`
+* The items method will return a list of tuples that contain the key/ value pairs
+    * `dct.items()`
+
+
+## Membership in dictionaries
+* Membership for dictionaries
+    * `k in dct`
+    * `k in dct.keys()`
+    * `v in dct.values()`
+
+
+## Deleting Key/Value Pairs
+* In order to remove key/value pairs, you can use the pop method or the del keyword
+    * `d.pop('some_key')`
+    * `del d['some_key']`
+* Create a copy of the original dictionary before changing it by adding and deleting key/value pairs
+    * `dictionary.copy()`
+
+
+## Using the `.get()` method to check keys
+* To check and see if a specific key is in a dictionary, you can use the get method
+    * Syntax: `dct.get(key, default=None)`
+
+```python
+states_caps_dict = {'Georgia': 'Atlanta', 'Colorado': 'Denver', 'Indiana': 'Indianapolis'}
+d.get(‘Washington’, ‘Capital not found’)
+```
+
+
+
+
 ## Conclusion
 * In this lesson we 
 
@@ -3157,10 +3207,92 @@ print( clean_string_lst(my_txt) )
 
 ------------------------------------------------------------------
 
-# 028 - Sets
+# 028 - Dictionary Traversal
 
 ## Goals
+* Traversing a Dictionary
+* Copying a Dictionary
 
+
+
+## Traversing a Dictionary
+* Creating a for loop allows us to iterate through a dictionary’s keys
+
+```python
+for key in dictionary:
+    print(key)
+```
+
+* Combining a for loop with the items method allows us to iterate through both the keys and the values of a dictionary:
+
+```python
+for key, value in dictionary.items():
+    print(key, value)
+```
+
+
+## Copying a Dictionary
+To make a copy of a dictionary you need to use the `.copy()` method
+* Syntax: `dct.copy()`
+* Err on the side of making copies of dictionaries
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 029 - Sets
+
+## Goals
+* Understanding the `set` datatype
+* Using the list/set trick to remove duplicates
+* Set Union and Intersection
+* Set Difference
+
+
+
+## Understanding the `set` datatype
+* Sets are unordered, mutable collections
+* Sets will only contain unique elements
+* Sets can be declared:
+    * Using the set constructor `set()`
+* Be careful when declaring empty sets. `{}` defaults to dictionaries.
+
+
+## Using the list/set trick to remove duplicates
+* Sets only hold unique elements.
+    * This property is useful for removing duplicates from lists and tuples
+    * Do this by casting the `list` or `tuple` to a `set`
+
+
+## Set Union and Intersection
+* The union and intersection methods in sets are similar to their mathematical analogues.
+* The union is a set of all elements in two sets
+    * Syntax: `set1.union(set2)`
+* The intersection is a set of all the elements that two sets have in common
+Syntax: `set1.intersection(set2)`
+
+
+## Set Difference
+* The difference of two sets A - B contains all the elements of set A that are not contained in set B
+* Syntax: `set1.difference(set2)`
+* `set1.difference(set2)` is different from  `set2.difference(set1)`
+
+```python
+l1 = [1, 4, 7, 0, 2, 5, 8]
+l2 = [1, 2, 3, 4, 9]
+```
+
+* What does the intersection of these two lists return?
+* What does the the union of these two lists return?
+* What does the difference of `l1 - l2` return?
+* What about `l2 - l1`?
 
 
 
@@ -3174,6 +3306,6 @@ print( clean_string_lst(my_txt) )
 
 ------------------------------------------------------------------
 
-# 029 - Tuples
+# 030 - Tuples
 
 ## Goals
