@@ -2394,6 +2394,9 @@ def function_name():
     * Syntax: `list_name.pop()`
 * The value of the last item can be stored by assigning the method call to a variable
     * `last_element = list_name.pop()`
+* What will be stored in the variables `lst` and `last_element` after executing the following code?
+    * `lst = [1, 3, 5, 7]`
+    * `last_element = lst.pop()`
 
 
 
@@ -2408,23 +2411,46 @@ def function_name():
 # 016 - Lists: 
 
 ## Goals
-* list traversal by index
-* enumerate
 * len
+* list traversal by index, using `enumerate`
 
-
-## list traversal by index
-* TODO
-
-
-## enumerate
-* TODO
 
 
 ## len
 * TODO
 * `len()` return the length of the `list` passed in
     * Syntax: `len(list_name)`
+* What would be the result of `len([1, 2, [1, 2]])`
+
+
+## list traversal by index, using `enumerate`
+* TODO
+* Sometimes you will need to write a `for` loop that can keep track of items in a `list` and their corresponding indices.
+* Syntax:
+
+```python
+for idx, num in enumerate(my_lst):
+    some code
+```
+
+* `enumerate` needs two variables: the index gets assigned to the first variable and the item from the `list` gets assigned to the second
+
+* Create a function that will iterate over a `list` printing out each value of the `list` squared and the indexed position of each item starting at an index of `1` instead of `0`.
+
+```python
+sample_data = [2, 4, 6, 8, 10, 12, 14]
+```
+
+```python
+def squared_with_indices(num_list):
+    for idx, num in enumerate(num_list, 1):
+        print(num**2, idx)
+
+squared_with_indices(range(1, 20))
+```
+
+
+
 
 
 
@@ -2456,8 +2482,12 @@ def function_name():
 
 ## reverse vs reversed
 * TODO
-
-
+* The `reverse` method will reverse the list in place. `reversed` will return an iterable object that must be cast to `list` to be indexed and used as a `list`. In fact, list slicing is preferable to `reversed` when wanting to get a reversed list.
+    * Syntaxes:
+        * `lst.reverse()`
+        * `reversed(lst) # returns an iterable object`
+        * `lst[::-1]`
+* What would be the result of `list(reversed([1, 5, 6, 4, 2]))`
 
 
 
@@ -2471,10 +2501,9 @@ def function_name():
 # 018 - Lists: 
 
 ## Goals
-* sum
-* max
-* min
-* count
+* `sum`
+* `max` and `min`
+* `count`
 
 
 
@@ -2486,18 +2515,26 @@ def function_name():
 
 
 
-## max
+## max and min
 * TODO
+* `max()` returns the highest numeric value in a `list`
+    * Syntax: `max(list_name)`
+* `min()` returns the lowest numeric value in a `list`
+    * Syntax: `min(list_name)`
 
-## min
-* TODO
 
 ## count
 * TODO
-
+* The `count` method will return a count the occurences of an item in a `list`.
+* Syntax: `list.count()`
 
 
 ## In the Next Lesson...
+
+
+
+
+
 
 
 
@@ -2506,18 +2543,25 @@ def function_name():
 # 019 - Lists: 
 
 ## Goals
-* any
-* all
+* any & all
 * parallel lists
 * unpacking lists
 
 
 
-
-
-
-## any
+## any and all
 * TODO
+* A value where `bool(value) == True` can be considered ‘truthy’
+* `any()` returns `True` if any of the values in a `list` are ‘truthy’
+    * Syntax: a`ny(list_name)`
+* `all()` returns `True` if all of the values in a `list` are ‘truthy’
+    * Syntax: `all(list_name)`
+* What is the result of `any([0, 2, 5, 6])`? What is the result of `all(['', 'a', 'c', 'p'])`
+
+
+
+
+
 
 
 ## all
@@ -2526,10 +2570,20 @@ def function_name():
 
 ## parallel lists
 * TODO
+* Two lists that have equal length and contain associated values at each index are parallel.
+* The same index can be used in each of the parallel lists to access the related data.
+
+
 
 
 ## unpacking lists
 * TODO
+* In the case of nested lists, we can use an accumulator to unpack the nested items into a new `list`.
+* In the new `list`, the nesting will be “undone.”
 
+
+### unpacking a nested `list`
+* In the case of nested lists, we can use an accumulator to unpack the nested items into a new `list`.
+* In the new `list`, the nesting will be “undone.”
 
 
