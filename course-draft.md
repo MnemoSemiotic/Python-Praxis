@@ -2624,7 +2624,6 @@ squared_with_indices(range(1, 20))
 * infinite loop
 * conditional loops
 * open ended problems
-* menus
 * `for` vs `while` loops
 
 
@@ -2732,11 +2731,65 @@ print(get_divisors(144))
     * Converging on $\pi$ through a random sampling process, you'll want an exit condition for when you reach a certain level of surety
     * Run state for an application, where "Quit" would be the only instance where the containing loop would exit.
 
-    
 
-## menus
-* TODO
+
+
 
 
 ## `for` vs `while` loops
 * TODO
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 021 - Creating a Menu using a `while` loop
+
+## Goals
+* Creating a simple menu
+
+
+## Creating a simple menu
+* TODO
+```python
+selections = []
+another_order = True
+
+while another_order == True:
+    menu_string = '''Select from this list:
+    1 : bread
+    2 : butter
+    3 : potatoes
+    4 : broccoli'''
+
+    print(menu_string)
+
+    inp = int(input('please make a selection, 1-4: '))
+
+    if inp in [1,2,3,4]:
+        selections.append(inp)
+    else:
+        print('-- your selection was not understood --')
+        continue
+
+    inp2 = input('would you like to place another order? (y/n)')
+
+    if inp2 == 'y':
+        continue
+    else:
+        another_order = False
+
+
+print(f'Your order list: {selections}')
+```
+
+
