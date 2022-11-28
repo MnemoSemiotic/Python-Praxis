@@ -2105,6 +2105,7 @@ print_vowels(char_list)
 
 
 ### A simple `int` sum accumulator
+* TODO
 * We can calculate a sum by using an integer type accumulator
 summ = 0
 
@@ -2115,6 +2116,55 @@ for num in nums:
 
 * We can also calculate the sum when our list is comprised of floats. 
 * The final accumulator will be a float. 
+
+
+### A simple sum accumulator example: Summing the evens in a list
+* Write a function to sum all even numbers in a `list`
+
+```python
+def sum_evens(num_list):
+    accum = 0
+
+    for num in num_list:
+        if num % 2 == 0:
+            accum += num
+    return accum
+```
+
+
+
+
+### Writing the factorial accumulator
+* Write a function to calculate the result of n!
+
+$$
+4! = 4 * 3 * 2 * 1
+$$
+
+$$
+3! = 3*2*1
+$$
+
+$$
+0! = 1
+$$
+
+* Think about edge cases 
+
+```python
+def factorial(num):
+    prod = 1
+    if num == 0:
+        return prod
+    if num < 0:
+        print('Negative factorial is undefined')
+
+    for i in range(num+1):
+        prod *= i
+
+    return prod
+```
+
 
 
 
@@ -2229,7 +2279,7 @@ for element in some_list:
 
 
 
-## break
+## `break`
 * TODO:
 * Use `break` in `for` loops to exit the loop when some condition has been met
 * Syntax:
@@ -2258,8 +2308,17 @@ def is_prime(num):
 
 
 
-## continue
+## `continue`
 * TODO:
+* Use `continue` in `for` loops in order to skip code and continue to the next iteration of the loop when some condition is met
+* Syntax:
+
+```python
+for element in some_list:
+    if some_condition:
+	    continue
+    # some code
+```
 
 
 
@@ -2267,8 +2326,19 @@ def is_prime(num):
 
 
 
-
-## pass
+## `pass`
 * TODO:
+* Use pass as a placeholder for future code
+* Syntax:
+
+```python
+for element in some_list:
+    pass
+
+def function_name():
+	pass
+```
+
+
 
 
