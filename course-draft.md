@@ -2809,11 +2809,15 @@ print(f'Your order list: {selections}')
 
 ------------------------------------------------------------------
 
-# 022 - String methods
+# 022 - Strings: Operators, Casting, and Joining
 
 ## Goals
 * The `string` datatype
 * Basic `string` Operators
+* Casting to and from a `string`
+* Join a `list` to create a `string`
+
+
 
 
 
@@ -2832,3 +2836,18 @@ print(f'Your order list: {selections}')
     * `'Repeating string' * 3` => `'Repeating stringRepeating stringRepeating string'`
 
 
+## Casting to and from a `string`
+* Just about any data type can be cast to a `string`.
+    * Use the `string` casting function: `str()`
+* Not every `string` can be cast to another data type.
+    * `int('a')` will not work
+* String concatenation will only work between strings
+    * Need to cast any numeric variables to a `string` before concatenating.
+
+
+## Join a `list` to create a `string`
+* Use the `join` `string` method to create a single `string` that contains all the elements of a `list`.
+    * `''.join(list)`
+* All the elements of the `list` must be strings for the `join` method to work
+    * You can use the `map` function to quickly cast all the elements of a `list` to strings
+    * `list(map(str, list))`
