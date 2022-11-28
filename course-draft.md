@@ -2071,6 +2071,9 @@ print_vowels(char_list)
 
 
 
+## Traversing a `str`
+
+
 # Conclusion
 * In this lesson we 
 
@@ -2247,7 +2250,7 @@ print(get_common_elements(lst_a, lst_b))
 
 
 
-## loops as filters* TODO
+## loops as filters
 * TODO
 * We can filter list elements that meet a condition using accumulators.
 * As the for loop is evaluated, values that meet the condition will be appended to a new empty list. 
@@ -2355,4 +2358,151 @@ def function_name():
 * extending
 * removing
 * pop
+
+
+
+## appending
+* TODO
+
+
+## extending
+* TODO
+
+
+## removing
+* TODO
+
+
+## pop
+* TODO
+
+
+
+
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 016 - Lists: 
+
+## Goals
+* list traversal by index
+* enumerate
+* len
+
+
+## list traversal by index
+* TODO
+
+
+## enumerate
+* TODO
+
+
+## len
+* TODO
+
+
+
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 017 - Lists: 
+
+## Goals
+* sort
+* reverse
+* sorted
+* reversed
+
+
+
+
+## sort
+* TODO
+
+## reverse
+* TODO
+
+## sorted
+* TODO
+
+## reversed
+* TODO
+
+## In the Next Lesson...
+
+
+
+
+------------------------------------------------------------------
+
+# 018 - Lists: 
+
+## Goals
+* sum
+* max
+* min
+* count
+
+
+
+## sum
+* TODO
+
+## max
+* TODO
+
+## min
+* TODO
+
+## count
+* TODO
+
+
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 019 - Lists: 
+
+## Goals
+* any
+* all
+* parallel lists
+* unpacking lists
+
+
+
+
+
+
+## any
+* TODO
+
+
+## all
+* TODO
+
+
+## parallel lists
+* TODO
+
+
+## unpacking lists
+* TODO
+
+
 
