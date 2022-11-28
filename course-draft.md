@@ -2733,12 +2733,15 @@ print(get_divisors(144))
 
 
 
-
-
-
 ## `for` vs `while` loops
 * TODO
-
+* In general, always use `for` loops to avoid infinite loops
+    * Will always terminate at the end of an iterable when traversing elements in that iterable
+    * Useful when you know how many iterations are needed
+* However, there are some problems that should be solved using `while` loops
+    * Open-ended problems
+    * Menus
+    * Run States
 
 
 
