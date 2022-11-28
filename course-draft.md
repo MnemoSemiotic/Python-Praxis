@@ -2812,10 +2812,11 @@ print(f'Your order list: {selections}')
 # 022 - Strings: Operators, Casting, and Joining
 
 ## Goals
-* The `string` datatype
-* Basic `string` Operators
-* Casting to and from a `string`
-* Join a `list` to create a `string`
+* The string datatype
+* Basic string Operators
+* Casting to and from a string
+* Join a `list` to create a string
+* Using `enumerate` on strings
 
 
 
@@ -2851,3 +2852,55 @@ print(f'Your order list: {selections}')
 * All the elements of the `list` must be strings for the `join` method to work
     * You can use the `map` function to quickly cast all the elements of a `list` to strings
     * `list(map(str, list))`
+
+
+## Using `enumerate` on strings
+* The `enumerate` function can be used on strings:
+
+```python
+for idx, ch in enumerate(string):
+    print(idx, ch)
+```
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 023 - Strings: 
+
+## Goals
+* `string` Slicing
+* `replace`
+* 
+
+
+
+
+## `string` Slicing
+* Use slice indexing (similar to a list) to access characters or subsequences of characters
+* `string[index]`
+* `string[start:end]`
+* `string[start:end:skip]`
+
+
+## `replace`
+* The `replace` method is used to replace every occurence of a specified substring in the original substring with another substring
+    * Syntax: `string.replace(old_substring, new_substring, 1)`
+* The third argument here will limit the amount of times the `replace` method will be applied to only once.
+
+```python
+string = 'I love to look at the moon'
+
+string = string.replace('o', 'puppy', 2)
+```
+
+
