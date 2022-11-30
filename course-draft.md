@@ -3309,3 +3309,23 @@ l2 = [1, 2, 3, 4, 9]
 # 030 - Tuples
 
 ## Goals
+* Understanding the `tuple` data type
+
+
+## Understanding the `tuple` data type
+* Tuples are ordered collections
+* Tuples are very similar to list with two key differences:
+    * Tuples are immutable.
+    * Tuples are declared using parenthesis.
+* We can index and slice tuples because they are ordered
+* Tuples have two methods associated with them: count and index
+
+## Declaring Tuples
+* Tuples can be declared in three ways:
+    * `tup = (1, 2, 3)`
+    * `tup = tuple([1, 2, 3])`
+    * `tup = 1, 2, 3`
+* For single elements tuples:
+    * `tup = (1,)`
+    * `tup = tuple([1])`
+    * `tup = 1,`
