@@ -2569,6 +2569,7 @@ squared_with_indices(range(1, 20))
 ## Goals
 * any & all
 * parallel lists
+* `zip()`
 * unpacking lists
 
 
@@ -2596,6 +2597,56 @@ squared_with_indices(range(1, 20))
 * TODO
 * Two lists that have equal length and contain associated values at each index are parallel.
 * The same index can be used in each of the parallel lists to access the related data.
+
+
+
+
+## `zip()`
+You know how to iterate over a single data structure, but what if you have parallel lists? How can we iterate over these at the same time?
+Syntax:
+
+```python
+for i, j in zip(lst1, lst2):
+	#some code here
+```
+
+
+Write a function that prompts the user to input numbers separated by commas. Your script will then take these inputted numbers and store them as a list of tuples, two at a time. Use the zip() function to do this.  If the user inputs an odd number of numbers, then only make a list of the largest number of pairs of two that are possible.
+
+
+Write a function that takes a string of numbers separated by commas. Your script will then take these numbers and store them as a list of tuples, two at a time. Use the zip() function to do this.  If the user inputs an odd number of numbers, then only make a list of the largest number of pairs of two that are possible.
+
+Example: If you inputted the numbers:\
+    `'1, 2, 3, 4, 5, 6'`\
+your function should return\
+    `[(1, 2), (3, 4), (5, 6)]`\
+If you inputted the numbers\
+    `'1, 2, 3, 4, 5'`\
+your function should return\
+    `[(1, 2), (3, 4)]`
+
+
+
+
+```python
+def build_tups():
+    inp = input('Enter numbers, separated by commas: ')
+    lst1 = []
+    lst2 = []
+
+    nums_str = inp.split(', ')
+
+    for i in range(0, len(nums_str), 2):
+        lst1.append(int(nums_str[i]))
+        if i+1 < len(nums_str):
+            lst2.append(int(nums_str[i+1]))
+
+    return list(zip(lst1, lst2))
+
+print(build_tups())
+```
+
+
 
 
 
