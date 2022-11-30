@@ -3357,6 +3357,7 @@ str2 = set('Complex is better than complicated. Flat is better than nested. Spar
     * Tuples are declared using parenthesis.
 * We can index and slice tuples because they are ordered
 * Tuples have two methods associated with them: count and index
+* Functions return tuples when returning more than one item
 
 
 ## Declaring Tuples
