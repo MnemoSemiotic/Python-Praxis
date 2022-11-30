@@ -3258,6 +3258,58 @@ def square_dict():
 
 
 
+
+
+
+
+Write a function that takes in a string. Return a dictionary where the keys represent unique characters in the string and the values represent the number of times that character appears in the original string.
+s = 'This is a string, we want you to count how many times each unique character appears in this string!'
+
+Docstring and starter code:
+
+```python
+def num_chars(s):
+    '''
+    function that takes in a string and parses through
+    identifying how many characters are in each word,
+    assuming a whitespace is what separates your words
+    parameters:
+        s: str - a string
+
+    returns:
+        A dictionary, where the keys are the words and the
+        values are the number of characters in each word
+    '''
+    pass
+```
+
+
+```python
+def clean_string(string):
+    new_string = ''
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+
+    for letter in string.lower():
+        if letter in alpha or letter = ' ':
+            new_string += letter
+    return new_string
+
+def word_letter_count(string):
+    d = dict()
+    cleaned = clean_string(string)
+    word_list = cleaned.split(' ')
+
+    for word in word_list:
+        d[word] = len(word)
+
+    return d
+```
+
+
+
+
+
+
 ## Conclusion
 * In this lesson we 
 
