@@ -3310,7 +3310,8 @@ l2 = [1, 2, 3, 4, 9]
 
 ## Goals
 * Understanding the `tuple` data type
-
+* Declaring Tuples
+* Tuples are Immutable
 
 ## Understanding the `tuple` data type
 * Tuples are ordered collections
@@ -3319,6 +3320,7 @@ l2 = [1, 2, 3, 4, 9]
     * Tuples are declared using parenthesis.
 * We can index and slice tuples because they are ordered
 * Tuples have two methods associated with them: count and index
+
 
 ## Declaring Tuples
 * Tuples can be declared in three ways:
@@ -3329,3 +3331,21 @@ l2 = [1, 2, 3, 4, 9]
     * `tup = (1,)`
     * `tup = tuple([1])`
     * `tup = 1,`
+
+
+## Tuples are Immutable
+* Once a tuple is declared, it generally can’t be changed in anyway
+    * However, if an element of a tuple is mutable, the element can be changed
+* Tuples hold references to all the objects they contain, rather than the objects themselves.
+
+
+
+
+Write a function that has two arguments that are both tuples. Return a single tuple that is the combination of the two original tuples that skips every other element in reverse.
+* Say `tuple1 = (12, 14, 16, 18)` and `tuple2 = (3, 5, 7, 9)`:
+* The result would be `(9, 5, 18, 14)`
+
+```python
+def function_name(tuple1, tuple2):
+   pass
+```
