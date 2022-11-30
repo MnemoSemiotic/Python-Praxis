@@ -3297,6 +3297,43 @@ l2 = [1, 2, 3, 4, 9]
 
 
 
+
+
+```python
+str1 = set('Explicit is better than implicit. Simple is better than complex.'.lower().replace('.', '').split(' '))
+str2 = set('Complex is better than complicated. Flat is better than nested. Sparse is better than dense.'.lower().replace('.', '').split(' '))
+```
+
+* What is the intersection of str1 and str2?
+* What is the union of str1 and str2?
+* What is the difference of str1 - str2?
+
+
+```python
+{'is', 'better', 'than'}
+```
+
+* What is the union of str1 and str2?
+
+```python
+{'better', 'implicit', 'complex', 'nested', 'dense', 'beautiful', 'complicated', 'complex', 'explicit', 'than', 'sparse', 'is', 'simple', 'flat', 'ugly'}
+```
+
+* What is the difference of str1 - str2?
+
+```python
+{'implicit', 'explicit', 'beautiful', 'complex', 'simple', 'ugly'}
+```
+
+* What is the difference of str2 - str1?
+
+```python
+{'dense', 'sparse', 'complex', 'nested', 'complicated', 'flat'}
+```
+
+
+
+
 ## Conclusion
 * In this lesson we 
 
