@@ -30,4 +30,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create a supplement lesson for float and double (32-bit and 64-bit) encoding
 * create lesson on walrus operator for assignment
 * create lessons on map, filter, zip, reduce
+* create lesson on lambda expressions
+* create lesson on list, set, and Dictionary comprehensions
 
