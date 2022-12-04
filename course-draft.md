@@ -123,7 +123,9 @@
 
 
 ## This lesson is a proof of concept
-
+* No expectation for you to understand everything in this lesson
+* We'll cover everything in this lesson early in the subsequent lessons
+* Feel free to skip to the next lesson if you find this one stressful
 
 
 
