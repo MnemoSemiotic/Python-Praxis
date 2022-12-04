@@ -116,9 +116,15 @@
 # 001 - A Demo: Rolling the Dice
 
 ## Goals:
+* This lesson is a proof of concept
 * Give a simple introduction to programming
 * Don't worry if you don't understand this lesson now, all concepts will be broken down in subsequent lessons
 * Introduction to an immediately available Python environment using [repl.it](https://repl.it)
+
+
+## This lesson is a proof of concept
+
+So I want to start off this course with an example that might seem pretty complex if you haven't seen programming or if you're completely new to programming. If this is a little over your head at this time, don’t worry, this will all make sense soon in the lessons coming up. Also, if it’s stressful, definitely feel free to skip this lesson and just get into the fundamentals in the lessons that follow. Consider this lesson to be a proof-of-concept okay. 
 
 
 ## Using [Repl.it](https://replit.com/) as a first coding environment.
