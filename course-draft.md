@@ -3510,3 +3510,57 @@ Write a function that has two arguments that are both tuples. Return a single tu
 def function_name(tuple1, tuple2):
    pass
 ```
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 031 - List Comprehensions
+
+## Goals
+* List Comprehensions
+* List Comprehension w/ if statement
+* List Comprehension w/ if else statement
+
+
+## List Comprehensions
+
+```python
+new_lst = []
+for i in old_lst:
+    new_lst.append(i**2)
+
+new_lst = [ i ** 2 for i in old_lst ]
+```
+
+
+## List Comprehension w/ if statement
+
+```python
+new_lst = []
+for i in old_lst:
+	if i > 10:
+        new_lst.append(i**2)
+
+new_lst = [i ** 2 for i in old_lst if i > 10]
+```
+
+
+## List Comprehension w/ if else statement
+
+```python
+new_lst = []
+for i in old_lst:
+	if i > 10:
+        new_lst.append(i**2)
+    else:
+	    new_lst.append(i//2)
+
+new_lst = [i ** 2 if i > 10 else i//2 for i in old_lst]
+```
