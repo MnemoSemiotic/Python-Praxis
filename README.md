@@ -32,4 +32,4 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create lessons on map, filter, zip, reduce
 * create lesson on lambda expressions
 * create lesson on list, set, and Dictionary comprehensions
-
+* create a lesson on yield and generators
