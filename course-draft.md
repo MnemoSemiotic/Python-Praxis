@@ -3579,6 +3579,15 @@ for i in old_lst:
 new_lst = [ i ** 2 for i in old_lst ]
 ```
 
+1. Write a list comprehension of this list to get the len of each item, if an item doesn't have a len, make sure to change that item to a string before you take len.
+    * `L1 = ['hello', 'goodbye', [1,2,3], 44]`
+
+```python
+L1 = ['hello', 'goodbye', [1,2,3], 44]
+l1 = [len(item) if not isinstance(item, (int, float, complex, bool)) else len(str(item)) for item in L1]
+```
+
+
 
 ## List Comprehension w/ if statement
 
@@ -3590,6 +3599,8 @@ for i in old_lst:
 
 new_lst = [i ** 2 for i in old_lst if i > 10]
 ```
+
+
 
 
 ## List Comprehension w/ if else statement
@@ -3605,6 +3616,15 @@ for i in old_lst:
 new_lst = [i ** 2 if i > 10 else i//2 for i in old_lst]
 ```
 
+2. Write a list comprehension that takes in a list of positive integers and adds 100 to a single digit number else it will subtract 100 from the number.
+    * `L2  = [1, 5, 8, 100, 43, 254, 1000, 3, 0, 88888]`
+
+```python
+L2  = [1, 5, 8, 100, 43, 254, 1000, 3, 0, 88888]
+l2 = [n + 100 if abs(n / 10) < 1 else n - 100 for n in L2>]
+```
+
+
 
 ## `dict` Comprehension
 
@@ -3616,4 +3636,19 @@ for i in old_lst:
 new_dict = {i:i**2 for i in old_lst}
 ```
 
+3. Write a dictionary comprehension of a dictionary, making the values the keys and the keys the values
+    * `D1 = {'Apple':5, 'Pear': 10, 'Banana':2, 'Orange': 1}`
+
+```python
+D1 = {'Apple':5, 'Pear': 10, 'Banana':2, 'Orange': 1}
+d1 = {v: k for k, v in D1.items()}
+```
+
+4. Write a dictionary comprehension of a dictionary, adding '_test' to the keys and finding the remainder of the value when divided by 13
+    * `D2 = {'a': 540, 'b': 222, 'c':88, 'd':1000,'e':13}`
+
+```python
+D2 = {'a': 540, 'b': 222, 'c':88, 'd':1000,'e':13}
+d2 = {k+'_test': v%13 for k, v in D2.items()}
+```
 
