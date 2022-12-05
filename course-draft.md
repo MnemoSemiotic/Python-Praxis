@@ -2325,6 +2325,45 @@ print(get_common_elements(lst_a, lst_b))
 
 
 
+## String accumulators
+* We can concatenate a string by using a `string` type accumulator
+* We can concatenate the string by letter, by word, or by some other separator within our string
+
+
+```python
+str1 = ''
+for s in string:
+    str1 += s
+```
+
+
+
+Write a function called `build_non_vowel_str()` that takes in a string and returns a string accumulator that accumulates all non-vowels.
+
+Pass in this string:
+
+```python
+string = "It’s a beautiful day in the neighborhood, A beautiful day for a neighbor, could you be mine? Would you be mine?"
+```
+
+
+```python
+def non_val(s):
+	new_s = ''
+	for char in s:
+		if char in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+			continue
+		else:
+			new_s += char
+    return new_s
+```
+
+
+
+
+
+
+
 
 ## loops as filters
 * TODO
