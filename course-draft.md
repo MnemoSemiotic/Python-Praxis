@@ -2788,6 +2788,38 @@ def mean(lst, trim_by=0):
 * Syntax: `list.count()`
 
 
+
+Mode
+* Unlike the median and mean, the mode can be applied to categorical data.
+    * Special Case: The median can be applied to categorical data which is ordinal in nature
+* The mode is not very useful for continuous data. 
+* Rather than trying to represent the “center” of a dataset or distribution, the mode seeks to find the element with the greatest frequency.
+* Can consider first mode, second mode, and so on in describing a data set
+
+
+Code the mode() function.
+
+
+```python
+'''
+Mode
+'''
+def mode(lst):
+    most_occurring = lst[0]
+
+    for item in lst[1:]:
+        if lst.count(item) > lst.count(most_occurring):
+            most_occurring = item
+
+    return most_occurring
+
+
+mode_lst = ['kangaroo', 'muskrat', 'platypus', 'muskrat', 'squid', 'squirrel', 'muskrat']
+
+# print(mode(mode_lst))
+```
+
+
 ## Conclusion
 * In this lesson we 
 
@@ -3412,6 +3444,65 @@ my_txt = "Hello there! How are you? Why don’t you take a seat over there? Once
 print( clean_string_lst(my_txt) )
 ```
 
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+# 027 - The Random module
+
+## Goals
+* The importance of randomness in problem solving
+* Using `random.choice()` to randomly select from a list
+* Getting random numbers using ...
+
+
+## The importance of randomness in problem solving
+* TODO
+
+
+
+## Using `random.choice()` to randomly select from a list
+* TODO
+
+A sampling example using Python
+* What can you do to better approach the population parameter?
+
+```python
+# from random import choice
+
+def get_samps(sample_range, num_samples=5):
+    
+    samples = []
+
+    for _ in range(num_samples):
+        samples.append(choice(sample_range))
+    
+    return samples
+
+num_samples = 5
+sample_range = list(range(0, 99+1))
+print(f'mu: {mean(sample_range)}')
+# print(f'x_bar: {mean(get_samps(sample_range, num_samples=5))}')
+
+means = []
+for _ in range(100000):
+    means.append(mean(get_samps(sample_range, num_samples)))
+
+print(f'mean of means: {mean(means)}')
+```
+
+
+
+
+
+## Getting random numbers using ...
+* TODO
 
 ## Conclusion
 * In this lesson we 
