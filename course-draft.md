@@ -1841,7 +1841,7 @@ def star_args(*args):
 
 ------------------------------------------------------------------
 
-# 010 - Introducing Lists in Python
+#  - Introducing Lists in Python
 
 ##  Goals
 * What is a `list` 
@@ -1937,7 +1937,7 @@ x = [1, 2, 3, 4, 5, 6, 7, 8, 9, [“hello”, 85, True], 0]
 
 ------------------------------------------------------------------
 
-# 011 - List Membership, Slicing, and Nested Lists
+#  - List Membership, Slicing, and Nested Lists
 
 ##  Goals
 * List Membership
@@ -2000,7 +2000,7 @@ x = [1, 2, 3, 4, 5, 6, 7, 8, 9, [“hello”, 85, True], 0]
 
 ------------------------------------------------------------------
 
-# 012 - List Mutability, Copying, Appending, and Unpacking
+#  - List Mutability, Copying, Appending, and Unpacking
 
 ##  Goals
 * List Mutability
@@ -2080,7 +2080,7 @@ list1.append(4)
 
 ------------------------------------------------------------------
 
-# 013 - Introduction to For Loops and traversing a `list`
+#  - Introduction to For Loops and traversing a `list`
 
 ##  Goals
 * `for` loops
@@ -2147,7 +2147,7 @@ print_vowels(char_list)
 
 ------------------------------------------------------------------
 
-# 014 - Accumulators and boolean flags, loops as filters
+#  - Accumulators and boolean flags, loops as filters
 
 
 ## Goals
@@ -2471,7 +2471,7 @@ for element in some_list:
 
 ------------------------------------------------------------------
 
-# 014 - Break, Continue, Pass
+#  - Break, Continue, Pass
 
 
 ## Goals
@@ -2553,7 +2553,7 @@ def function_name():
 
 ------------------------------------------------------------------
 
-# 015 - Lists: append, extend, remove, and pop
+#  - Lists: append, extend, remove, and pop
 
 ## Goals
 * appending
@@ -2611,7 +2611,7 @@ def function_name():
 
 ------------------------------------------------------------------
 
-# 016 - Lists: 
+#  - Lists: 
 
 ## Goals
 * len
@@ -2666,7 +2666,7 @@ squared_with_indices(range(1, 20))
 
 ------------------------------------------------------------------
 
-# 017 - Lists: 
+#  - Lists: 
 
 ## Goals
 * sort vs sorted
@@ -2745,7 +2745,7 @@ def median(lst):
 
 ------------------------------------------------------------------
 
-# 018 - Lists: 
+#  - Lists: 
 
 ## Goals
 * `sum`
@@ -2855,7 +2855,7 @@ mode_lst = ['kangaroo', 'muskrat', 'platypus', 'muskrat', 'squid', 'squirrel', '
 
 ------------------------------------------------------------------
 
-# 019 - Lists: 
+#  - Lists: 
 
 ## Goals
 * any & all
@@ -2965,7 +2965,7 @@ print(build_tups())
 
 ------------------------------------------------------------------
 
-# 020 - `while` loops 
+#  - `while` loops 
 
 ## Goals
 * Understanding `while` loops
@@ -3103,7 +3103,7 @@ print(get_divisors(144))
 
 ------------------------------------------------------------------
 
-# 021 - Creating a Menu using a `while` loop
+#  - Creating a Menu using a `while` loop
 
 ## Goals
 * Creating a simple menu
@@ -3157,7 +3157,7 @@ print(f'Your order list: {selections}')
 
 ------------------------------------------------------------------
 
-# 022 - Strings: Operators, Casting, Joining, and Enumerate
+#  - Strings: Operators, Casting, Joining, and Enumerate
 
 ## Goals
 * The string datatype
@@ -3223,7 +3223,7 @@ for idx, ch in enumerate(string):
 
 ------------------------------------------------------------------
 
-# 023 - Strings: 
+#  - Strings: 
 
 ## Goals
 * `string` Slicing
@@ -3285,7 +3285,7 @@ def add_underscores(feature_list):
 
 ------------------------------------------------------------------
 
-# 024 - Strings: 
+#  - Strings: 
 
 ## Goals
 * Applying the `list()` function to strings
@@ -3319,7 +3319,7 @@ def add_underscores(feature_list):
 
 ------------------------------------------------------------------
 
-# 025 - Strings: 
+#  - Strings: 
 
 ## Goals
 * `lower()`, `upper()`, `swapcase()`, and `capitalize()`
@@ -3430,7 +3430,7 @@ def get_letter_count(string):
 
 ------------------------------------------------------------------
 
-# 026 - Strings: More Practice
+#  - Strings: More Practice
 
 ## Goals
 * Removing _stopwords_ and making a word list
@@ -3475,7 +3475,7 @@ print( clean_string_lst(my_txt) )
 
 ------------------------------------------------------------------
 
-# 027 - The Random module
+#  - The Random module
 
 ## Goals
 * The importance of randomness in problem solving
@@ -3522,6 +3522,29 @@ print(f'mean of means: {mean(means)}')
 
 
 
+Write a function called `series_of_flips`.
+* define one parameter, `n`, which represents the number of coin flips
+* return a list of length `n` containing `n` random coin flips
+
+
+```python
+from random import choice
+
+def coin_flip():
+    flip = ['H', 'T']
+    return choice(flip)
+
+def series_of_flips(n):
+    flips = []
+    for _ in range(n):
+        flips.append(coin_flip())
+    return flips
+```
+
+
+
+
+
 ## Getting random integers using `random.randint()`
 * TODO
 
@@ -3538,7 +3561,7 @@ print(f'mean of means: {mean(means)}')
 
 ------------------------------------------------------------------
 
-# 027 - Dictionaries Overview
+#  - Dictionaries Overview
 
 ## Goals
 * Understanding dictionaries in Python
@@ -3681,7 +3704,7 @@ d.get(‘Washington’, ‘Capital not found’)
 
 ------------------------------------------------------------------
 
-# 028 - Dictionary Traversal
+#  - Dictionary Traversal
 
 ## Goals
 * Traversing a Dictionary
@@ -3794,7 +3817,7 @@ def word_letter_count(string):
 
 ------------------------------------------------------------------
 
-# 029 - Collecting with Dictionaries
+#  - Collecting with Dictionaries
 
 ## Goals
 * Dictionaries make excellent collectors
@@ -4091,7 +4114,7 @@ def roll_dice(n_rolls):
 
 ------------------------------------------------------------------
 
-# 030 - `defaultdict` and `Counter` are excellent "convenience" dictionaries
+#  - `defaultdict` and `Counter` are excellent "convenience" dictionaries
 
 ## Goals
 * The `defaultdict`datatype provides default values
@@ -4115,7 +4138,7 @@ def roll_dice(n_rolls):
 
 ------------------------------------------------------------------
 
-# 030 - Sets
+#  - Sets
 
 ## Goals
 * Understanding the `set` datatype
@@ -4237,7 +4260,7 @@ str2 = set('Complex is better than complicated. Flat is better than nested. Spar
 
 ------------------------------------------------------------------
 
-# 031 - Tuples
+#  - Tuples
 
 ## Goals
 * Understanding the `tuple` data type
