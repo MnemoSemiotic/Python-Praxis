@@ -3434,7 +3434,7 @@ def get_letter_count(string):
 
 ## Goals
 * Removing _stopwords_ and making a word list
-* TODO
+* Solving the anagrams problem
 
 
 
@@ -3464,6 +3464,140 @@ def clean_string_lst(txt_in):
 my_txt = "Hello there! How are you? Why don’t you take a seat over there? Once we went to the store and we found ourselves in a strange place. We ran into two people. They were very interesting to talk to. Each of them had an interesting accent and we wondered where they were from."
 print( clean_string_lst(my_txt) )
 ```
+
+
+
+
+## Solving the Anagrams problem
+
+Let's create a function that takes in a list of words and returns a new list of words that are anagrams of each other:
+Example:
+This list:\
+`['dog', 'god', 'cat', 'act', 'tack', 'star', 'rat', 'rats']`
+
+Will return:\
+`['dog', 'god', 'cat', 'act', 'star', 'rats']`
+
+
+Step 1: Think about the problem, how do we approach this? What are we comparing and how to we compare it?
+
+We are comparing each item in the list to every other item in the list EXCEPT itself!
+
+But what does this look like?
+
+We will need two for loops!s
+
+
+
+Step 2: Before we get into our iteration structure, let's think about what the comparisons that we need to make are
+
+Let's take the words 'dog' and 'god' for example, are these anagrams of each other?
+
+So how can we compare these two words??
+
+`sorted('dog') == sorted('god')`
+
+Why doesn't this work?
+`set('dog') == set('god')`
+Think about
+`set('dog') == set('good')`
+
+
+
+
+Step 2: Let’s think about our accumulator, what are we accumulating into?
+
+`anagram_lst = []`
+
+Step 3: What does our control flow look like, just use i and j for to represent our words
+
+`if sorted(i) == sorted(j):`
+
+
+Step 4: How do we add our accumulation into this control flow?
+
+```python
+if sorted(i) == sorted(j):
+    anagram_lst.append(????)
+```
+
+
+
+Step 5: What are we appending to our accumulator?
+
+```python
+if sorted(i) == sorted(j):
+    anagram_lst.append(i)
+```
+Step 6: Let’s think about our edge cases here. What might those be?
+
+>Think about if you are comparing each item in the list
+to each item in the list again
+
+
+Step 6 continued: so how do we take care of those edge cases in our control flow?
+```python
+if i == j:
+    continue
+elif sorted(i) == sorted(j):
+    anagram_lst.append(i)
+
+# Or
+
+if sorted(i) == sorted(j) and i != j:
+    anagram_lst.append(i)
+```
+
+
+
+Step 7: How do we write code to compare everything in the list to itself? How many loops might we need?
+
+```python
+for i in lst:
+    for j in lst:
+```
+
+
+Step 8: Let’s put the code we have come up with so far together and wrap it in a function called `anagrams()`
+```python
+def anagrams(lst):
+anagram_lst = []
+for i in lst:
+        for j in lst:
+if sorted(i) == sorted(j) and i != j:
+                anagram_lst.append(i)
+    return anagram_lst
+
+Try running the code with the list:
+l = ['dog', 'god', 'cat', 'act', 'tack', 'star', 'rat', 'rats',
+    'arts', 'start', 'good']
+```
+
+
+What’s wrong with our output?? How do we change our code to
+get exactly what we want?
+
+```python
+def anagrams(lst):
+anagram_lst = []
+for i in lst:
+        for j in lst:
+if sorted(i) == sorted(j) and i != j:
+                anagram_lst.append(i)
+    return list(set(anagram_lst))
+
+# OR
+
+def anagrams(lst):
+anagram_lst = set()
+for i in lst:
+        for j in lst:
+if sorted(i) == sorted(j) and i != j:
+                anagram_lst.add(i)
+    return list(anagram_lst)
+```
+
+
 
 
 ## Conclusion
