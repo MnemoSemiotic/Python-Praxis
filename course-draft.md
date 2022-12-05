@@ -4457,6 +4457,7 @@ def function_name(tuple1, tuple2):
 * List Comprehension w/ if statement
 * List Comprehension w/ if else statement
 * `dict` Comprehension
+* `set` Comprehension
 
 
 ## Understanding Comprehensions
@@ -4600,6 +4601,10 @@ d2 = {k+'_test': v%13 for k, v in D2.items()}
 
 
 
+## `set` Comprehension
+
+
+
 
 ## Conclusion
 * In this lesson we 
@@ -4610,6 +4615,20 @@ d2 = {k+'_test': v%13 for k, v in D2.items()}
 
 ------------------------------------------------------------------
 
-#  - Thinking Algorithmically
+#  - Thinking Algorithmically: GCD and LCM
 
 ## Goals
+* Understanding the concept of an _algorithm_
+* Greatest Common Divisor
+* Least Common Multiple
+
+
+
+## Understanding the concept of an _algorithm_
+
+
+## Greatest Common Divisor
+* include `math.gcd` 
+
+## Least Common Multiple
+* include `math.lcm`
