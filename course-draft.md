@@ -2663,6 +2663,47 @@ squared_with_indices(range(1, 20))
         * `sorted(lst)`
 
 
+
+
+Coding a Median function using `sorted()`
+* the middle value of a numeric data set
+
+|Symbol                 |           Meaning               |
+|-------------------------------|---------------------------------|
+| <center>$med(A)$</center>        | Where A is the collection on which to take the median    |
+| <center>$\tilde x$</center>| "x-tilde" is also used to represent median|
+
+
+* Calculating Median
+1. Sort the List
+2. Find the middle value(s)
+    * if list is odd, just select the middle value
+    * if list is even, take mean of two middle values
+
+* example:
+
+```python
+odd_list = [13, 18, 13, 14, 13, 16, 14, 21, 13]
+even_list = [15, 14, 10, 8, 12, 8, 16, 13]
+```
+
+* Code the `median()` function. Make sure to account for even and odd length lists.
+
+
+```python
+def median(lst):
+    lst_sorted = sorted(lst)
+
+    # if odd
+    if len(lst) % 2 == 1:
+        mid = int(len(lst) / 2)
+        return lst_sorted[mid]
+    else:
+        upper_mid_idx = int(len(lst)/2)
+        return mean([lst_sorted[upper_mid_idx-1], lst_sorted[upper_mid_idx]])
+```
+
+
 ## reverse vs reversed
 * TODO
 * The `reverse` method will reverse the list in place. `reversed` will return an iterable object that must be cast to `list` to be indexed and used as a `list`. In fact, list slicing is preferable to `reversed` when wanting to get a reversed list.
