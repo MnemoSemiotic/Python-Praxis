@@ -2699,6 +2699,29 @@ squared_with_indices(range(1, 20))
     * Only works with lists that contain only integers and floats
 
 
+Code the `mean()` function
+* BONUS: Include a `trim` parameter that removes the greatest and least `n` values
+
+* Test with this data:
+
+```python
+a = [1, 5, 7, 10, 15, 23, 35, 67, 220, 2000]
+```
+
+
+
+```python
+def mean(lst, trim_by=0):
+    lst_ = lst.copy()
+
+    if trim_by > 0:
+        lst_ = sorted(lst_)[trim_by:-trim_by]
+
+    return sum(lst_) / len(lst_)
+```
+
+
+
 
 ## max and min
 * TODO
