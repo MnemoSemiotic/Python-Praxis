@@ -34,3 +34,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create lesson on list, set, and Dictionary comprehensions
 * create a lesson on yield and generators
 * create a lesson for defaultdict and Counter
+* create project lessons
+    * intro to probstats
+    * creating animations of bitfields
