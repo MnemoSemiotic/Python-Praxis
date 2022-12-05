@@ -3608,8 +3608,7 @@ def word_letter_count(string):
 
 ## Goals
 * Dictionaries make excellent collectors
-* The `defaultdict`datatype provides default values
-* The `Counter` datatype is good for counting
+
 
 
 
@@ -3746,6 +3745,9 @@ else:
 # 030 - `defaultdict` and `Counter` are excellent "convenience" dictionaries
 
 ## Goals
+* The `defaultdict`datatype provides default values
+* The `Counter` datatype is good for counting
+
 
 
 ## The `defaultdict`datatype provides default values
