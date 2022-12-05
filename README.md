@@ -35,6 +35,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create a lesson on yield and generators
 * create a lesson for defaultdict and Counter
 * create project lessons
+    * python scripting
     * intro to probstats
     * Sudoku solver and app
     * creating animations of bitfields
