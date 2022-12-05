@@ -37,3 +37,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create project lessons
     * intro to probstats
     * creating animations of bitfields
+    * creating a Twitter bot to post socialist quotes
+    * Using LDA to build a simple topic analysis of a set of documents
+        * maybe use Consciencism, Pedagogy of the Oppressed, etc.
+    * Building a simple flashcard app using Flask and markdown
