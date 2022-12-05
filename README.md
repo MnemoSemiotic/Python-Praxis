@@ -18,6 +18,8 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * lessons to add:
+    * lesson on installing python using anaconda
+    * lesson on using a text editor
     * `try / except`
     * Create "intro to writing markdown video"
     * include `math.factorial`, `math.perm`, `math.comb` in "counting" lesson on combinations
