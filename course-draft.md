@@ -1701,9 +1701,11 @@ def print_num_len(num):
 * Set _default arguments_ in a function
 * `print()` vs `return`
 * Understanding `global` vs Local Scope
+* Star (`*args`) Arguments for passing in an arbitrary number of arguments
+* `**kwargs` for passing an arbitrary number of positional arguments
 
 
-## What are functions in Python?
+## Understanding what a function is in Python
 * We've been writing a lot of functions so far in this course, so let's describe them in more detail before we get much further.
 * Functions can be thought of as ways to create repeatable procedures
     * Name the function, give it parameters (optional), write your code
@@ -1809,6 +1811,12 @@ def another_func(x):
 ```
 
 
+
+## Star (`*args`) Arguments for passing in an arbitrary number of arguments
+* TODO
+
+## `**kwargs` for passing an arbitrary number of positional arguments
+* TODO
 
 # Conclusion
 * In this lesson we 
@@ -4112,6 +4120,32 @@ def roll_dice(n_rolls):
 * Sets only hold unique elements.
     * This property is useful for removing duplicates from lists and tuples
     * Do this by casting the `list` or `tuple` to a `set`
+* The `set` datatype does not allow duplicates and thus provides a simple way to remove duplicates from a list
+* Might not maintain order from the original `list`
+
+
+```python
+lst = ['dog', 'cat', 'cat', 'bird']
+
+lst = list(set(lst))
+```
+
+
+Write a function called `dedupe_in_order` that takes a `list` that may contain duplicates as input and returns a list without duplicates.
+* Maintain the order of the elements in the list (do not use the `list/set` trick)
+
+
+```python
+def dedupe_in_order(lst):
+    deduped = []
+
+    for element in lst:
+        if element not in deduped:
+            deduped.append(element)
+
+    return deduped
+```
+
 
 
 ## Set Union and Intersection
