@@ -36,6 +36,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create a lesson on yield and generators
 * basic file i/o
 * project lessons
+    * [describing Emergence of Euler's Number $e$](https://www.youtube.com/watch?v=Mw52nDwPh8k&list=PL5T50pwCrPUrIxYqP8jC8ctUUItW6csXG)
     * python scripting
         * taking input when calling the script
     * intro to probstats
