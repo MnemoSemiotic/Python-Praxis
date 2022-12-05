@@ -2326,6 +2326,53 @@ print(get_common_elements(lst_a, lst_b))
 
 
 
+Write a function called `words_start_with()` with two parameters, a list of letters and a string. The function should return a new list filled with words from the string that start with the letters in the list of letters.
+Test with this string:
+
+```python
+str1 = "It's a beautiful day in the neighborhood, A beautiful day for a neighbor, could you be mine? Would you be mine?"
+```
+
+
+```python
+def words_start_with(letters, string):
+    lst = []
+    for word in string.split():
+        if word[0].lower() in letters:
+            lst.append(word)
+    return lst
+```
+
+
+
+
+Write a function called `examine_lst()` that takes a list of various values as an argument, then returns a new list of those values processed by these rules:
+* Accumulate elements that are not integers
+    * If an element is a float, change it to a string
+    * If an element is a string, get the length of that string
+* Test String:
+
+```python
+l1 = [192, 504, 23.11, 3.14, 'table', 'chair', 55, 1039.1, 0, 0.0, '0.0', 'python']
+```
+
+
+```python
+def examine_lst(l):
+    out_l = []
+    for i in l:
+        if type(i) == float:
+            out_l.append(str(i))
+        elif type(i) == str:
+            out_l.append(len(i))
+	    elif type(i) != int:
+            out_l.append(i)
+    return out_l
+```
+
+
+
+
 
 ## String accumulators
 * We can concatenate a string by using a `string` type accumulator
