@@ -42,7 +42,9 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
     * python scripting
         * taking input when calling the script
     * intro to probstats using Python
-        * add in experiments and stuff like that
+        * add in experiments, hypothesis testing, confidence intervals
+        * add in linear and logistic regression
+        * add in simple ML and crossval
     * Sudoku solver and app
     * creating animations of bitfields
     * creating a Twitter bot to post socialist quotes
