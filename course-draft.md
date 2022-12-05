@@ -113,7 +113,7 @@
 
 -------------------------------------------------------------------------
 
-# 001 - A Demo: Rolling the Dice
+#  - A Demo: Rolling the Dice
 
 ## Goals:
 * This lesson is a proof of concept
@@ -359,7 +359,7 @@ print(multiple_dice_roll(number_dice=5, number_sides=6))
 ---------------------------------------------------------------------------------
 
 
-# 002 - First Steps: A Few Simple Programs
+#  - First Steps: A Few Simple Programs
 
 ## Goals:
 * Set up a REPL.it account to play with code
@@ -488,7 +488,7 @@ print(word_in_sentence("cat", "Is the dog inside?"))
 -------------------------------------------------------------------------------
 
 
-# 003 - Data Types: Numeric data types and operations
+#  - Data Types: Numeric data types and operations
 
 ## Goals:
 * Understand the concept of a data type
@@ -808,7 +808,7 @@ print((4 - 2) * (20 / 2)) # --> 20
 ------------------------------------------------------------------
 
 
-# 004 - Defining Mathematical Functions and using Python as a Calculator
+#  - Defining Mathematical Functions and using Python as a Calculator
 
 
 ## Goals:
@@ -1169,7 +1169,7 @@ def calc_total_bill(bill, tax, tip):
 
 ------------------------------------------------------------------
 
-# 005 - Declaring Variables, Incrementing Variables, Booleans, Checking Equality, and Applying logic
+#  - Declaring Variables, Incrementing Variables, Booleans, Checking Equality, and Applying logic
 
 
 ## Goals:
@@ -1359,7 +1359,7 @@ True
 
 ------------------------------------------------------------------
 
-# 006 - Scalar types are immutable, the `None` Type, Type Inference, Duck Typing, Checking and Comparing Data Types
+#  - Scalar types are immutable, the `None` Type, Type Inference, Duck Typing, Checking and Comparing Data Types
 
 
 ## Goals:
@@ -1473,7 +1473,7 @@ print(type(1 == 1.9)) # --> False>
 
 ------------------------------------------------------------------
 
-# 007 - A Brief Introduction to Strings in Python
+#  - A Brief Introduction to Strings in Python
 
 
 ## Goals:
@@ -1537,7 +1537,7 @@ print(f'{state} is one of the states in the US')
 
 ------------------------------------------------------------------
 
-# 008 - Beginning Control Flow with `if / elif / else`
+#  - Beginning Control Flow with `if / elif / else`
 
 ##  Goals
 * Understand the syntax of `if` statements
@@ -1692,7 +1692,7 @@ def print_num_len(num):
 
 ------------------------------------------------------------------
 
-# 009 - Let's talk about Python Functions
+#  - Let's talk about Python Functions
 
 
 ##  Goals
@@ -1814,6 +1814,19 @@ def another_func(x):
 
 ## Star (`*args`) Arguments for passing in an arbitrary number of arguments
 * TODO
+* `*args` allow for an arbitrary length tuple to be passed into the function as an argument.
+
+```python
+def star_args(*args):
+    print(type(args))
+    for item in args:
+        print(item)
+    return None
+```
+
+
+
+
 
 ## `**kwargs` for passing an arbitrary number of positional arguments
 * TODO
@@ -3467,7 +3480,8 @@ print( clean_string_lst(my_txt) )
 ## Goals
 * The importance of randomness in problem solving
 * Using `random.choice()` to randomly select from a list
-* Getting random numbers using ...
+* Getting random integers using `random.randint()`
+* Getting random floats using `random.random()`
 
 
 ## The importance of randomness in problem solving
@@ -4275,7 +4289,7 @@ def function_name(tuple1, tuple2):
 
 ------------------------------------------------------------------
 
-# 032 - Comprehensions
+#  - Comprehensions
 
 ## Goals
 * Understanding Comprehensions
