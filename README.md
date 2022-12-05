@@ -17,29 +17,31 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 
 ## TODOs:
-* Create "intro to writing markdown video"
-* include `math.factorial`, `math.perm`, `math.comb` in "counting" lesson on combinations
-* include `math.gcd` in lesson where GCD function is covered
-* include `math.lcm` in lesson where LCM function is covered
-* create a `numpy` section, where Bitwise operations are introduced
-* create a `pandas` section, where data is first looked at and bitwise logic is applied to a filter
-* create a brief `matplotlib` section, where some simple plots are created on the data from the `pandas` section
-* create a brief duckdb lesson that touches on SQL and importing that way
-* introduce other assignment operators (`+=`, `*=`, etc) when loops are introduced
-* create a lesson on `pathlib`
-* create a supplement lesson for decimal and negative modulo
-* create a supplement lesson for float and double (32-bit and 64-bit) encoding
-* create lesson on walrus operator for assignment
-* create lessons on map, filter, zip, reduce
-* create lesson on lambda expressions
-* create lesson on list, set, and Dictionary comprehensions
-* create a lesson on yield and generators
-* basic file i/o
+* lessons to add:
+    * Create "intro to writing markdown video"
+    * include `math.factorial`, `math.perm`, `math.comb` in "counting" lesson on combinations
+    * include `math.gcd` in lesson where GCD function is covered
+    * include `math.lcm` in lesson where LCM function is covered
+    * create a `numpy` section, where Bitwise operations are introduced
+    * create a `pandas` section, where data is first looked at and bitwise logic is applied to a filter
+    * create a brief `matplotlib` section, where some simple plots are created on the data from the `pandas` section
+    * create a brief duckdb lesson that touches on SQL and importing that way
+    * introduce other assignment operators (`+=`, `*=`, etc) when loops are introduced
+    * create a lesson on `pathlib`
+    * create a supplement lesson for decimal and negative modulo
+    * create a supplement lesson for float and double (32-bit and 64-bit) encoding
+    * create lesson on walrus operator for assignment
+    * create lessons on map, filter, zip, reduce
+    * create lesson on lambda expressions
+    * create lesson on list, set, and Dictionary comprehensions
+    * create a lesson on yield and generators
+    * basic file i/o
 * project lessons
     * [describing Emergence of Euler's Number $e$](https://www.youtube.com/watch?v=Mw52nDwPh8k&list=PL5T50pwCrPUrIxYqP8jC8ctUUItW6csXG)
     * python scripting
         * taking input when calling the script
-    * intro to probstats
+    * intro to probstats using Python
+        * add in experiments and stuff like that
     * Sudoku solver and app
     * creating animations of bitfields
     * creating a Twitter bot to post socialist quotes
