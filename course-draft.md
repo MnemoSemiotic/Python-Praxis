@@ -2133,6 +2133,7 @@ print_vowels(char_list)
 * accumulators
 * boolean flags
 * `list` accumulators
+* String accumulators
 * loops as filters
 
 
