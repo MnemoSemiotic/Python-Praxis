@@ -3626,7 +3626,8 @@ for element in some_list:
 		accumulator[element] = 1
 ```
 
-Write a function that will:
+
+## Example: Analyzing vowels, non-vowels, and non-alpha characters
 * For any given string, return a dictionary that gives us the number of vowels, the number of non vowels, the number of non-alpha characters.
 
 **Step 1:**
@@ -3738,6 +3739,164 @@ else:
 
 
 
+
+## Example: Collecting dice rolls
+Write a function that take in an integer and will roll a 6-sided dice randomly for that number of times and will update the proportions of each number occurring and update the counts also
+* Have your function return:
+    * A dictionary of counts
+    * A dictionary of dice proportions
+
+
+
+What is the first thing we need to do?
+Assume we have already
+
+```python
+import random
+```
+
+What do we need to create?
+
+
+
+
+
+What is the first thing we need to do?
+Assume we have already
+
+```python
+import random
+```
+
+What do we need to create?
+
+```python
+counts = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+probs = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+total_rolls = 0
+```
+
+
+
+What is the first thing we need to do?
+Assume we have already
+
+```python
+import random
+```
+
+Now we can iterate over our integer we called in our function and call `random.randint(1,6)` which will return a number randomly 1-6
+
+Based on what that roll is we can update our count dictionary and probability dictionary
+
+
+
+
+
+What is the first thing we need to do?
+Assume we have already
+
+```python
+import random
+```
+
+Now we can iterate over our integer we called in our function and call `random.randint(1,6)` which will return a number randomly 1-6
+
+Based on what that roll is we can update our count dictionary and probability dictionary
+
+```python
+roll = random.randint(1, 6)
+counts[roll] += 1
+```
+
+
+
+
+What is the first thing we need to do?
+Assume we have already
+
+```python
+import random
+```
+
+Now we can iterate over our integer we called in our function and call `random.randint(1,6)` which will return a number randomly 1-6
+
+Based on what that roll is we can update our count dictionary and probability dictionary.
+
+How do we update the probability dictionary?
+
+
+
+
+Well we know we need to update every value in our probs dictionary, what does that lead you to want to use when we think about iterating over a dictionary?
+
+
+
+
+Well we know we need to update every value in our probs dictionary, what does that lead you to want to use when we think about iterating over a dictionary?
+
+```python
+for k, v in probs.items():
+```
+
+So now how do we update our probs where the numerator will be updated for the value that the dice rolled and the denominators will be updated for all of our key:value pairs?
+
+
+
+Well we know we need to update every value in our probs dictionary, what does that lead you to want to use when we think about iterating over a dictionary?
+
+```python
+for k, v in probs.items():
+	probs[k] = counts[k]/total_rolls
+```
+
+We have parallel dictionaries (like parallel lists) so our keys can be used to access values from both dictionaries!
+
+
+
+#### Let’s say we rolled a `5` after rolling a `1`
+
+```python
+roll = random.randint(1, 6)
+       counts[roll] += 1
+       total_rolls += 1
+counts = {1: 1, 2: 0, 3: 0, 4: 0, 5: 1, 6: 0}
+total_rolls += 1
+for k, v in probs.items():
+	probs[k] = counts[k]/total_rolls
+probs = {1: 1/2, 2: 0/2, 3: 0/2, 4: 0/2, 5: 1/2, 6: 0/2}
+```
+
+
+
+Now let’s put it all together in a function!
+
+```python
+def roll_dice(n_rolls):
+   counts = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+   probs = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+   total_rolls = 0
+
+   for i in range(1, n_rolls+1):
+       roll = random.randint(1, 6)
+       counts[roll] += 1
+       total_rolls += 1
+       for k, v in probs.items():
+           probs[k] = counts[k]/total_rolls
+   return counts, probs
+```
+
+
+
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
 
 
 ------------------------------------------------------------------
