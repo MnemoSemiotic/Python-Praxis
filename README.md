@@ -18,6 +18,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * lessons to add:
+    * `try / except`
     * Create "intro to writing markdown video"
     * include `math.factorial`, `math.perm`, `math.comb` in "counting" lesson on combinations
     * include `math.gcd` in lesson where GCD function is covered
