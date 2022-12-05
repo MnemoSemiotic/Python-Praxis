@@ -4598,3 +4598,18 @@ D2 = {'a': 540, 'b': 222, 'c':88, 'd':1000,'e':13}
 d2 = {k+'_test': v%13 for k, v in D2.items()}
 ```
 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - Thinking Algorithmically
+
+## Goals
