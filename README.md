@@ -26,6 +26,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create a brief `matplotlib` section, where some simple plots are created on the data from the `pandas` section
 * create a brief duckdb lesson that touches on SQL and importing that way
 * introduce other assignment operators (`+=`, `*=`, etc) when loops are introduced
+* create a lesson on `pathlib`
 * create a supplement lesson for decimal and negative modulo
 * create a supplement lesson for float and double (32-bit and 64-bit) encoding
 * create lesson on walrus operator for assignment
@@ -33,9 +34,10 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create lesson on lambda expressions
 * create lesson on list, set, and Dictionary comprehensions
 * create a lesson on yield and generators
-* create a lesson for defaultdict and Counter
-* create project lessons
+* basic file i/o
+* project lessons
     * python scripting
+        * taking input when calling the script
     * intro to probstats
     * Sudoku solver and app
     * creating animations of bitfields
