@@ -3627,6 +3627,126 @@ for element in some_list:
 		accumulator[element] = 1
 ```
 
+Write a function that will:
+* For any given string, return a dictionary that gives us the number of vowels, the number of non vowels, the number of non-alpha characters.
+
+**Step 1:**
+We need to first create a dictionary that we can store all our information in.
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}      
+```
+
+We can fill our dictionary like this because we know exactly what the question is asking and because we want counts, we can use integer accumulators for our values using addition.
+
+**Step 2:**
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}     
+```
+
+We now need to iterate over our string and identify each of the three types of characters we are interested in.
+
+How can we identify vowels in a string?
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}     
+```
+
+We now need to iterate over our string and identify each of the three types of characters we are interested in.
+
+How can we identify vowels in a string?
+
+```python
+if char.lower() in ['a', 'e', 'i', 'o', 'u']:
+    # do something
+```
+
+
+**Step 2:**
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}     
+```
+
+We now need to iterate over our string and identify each of the three types of characters we are interested in.
+
+How can we identify non-alphas in a string?
+
+
+**Step 2:**
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}     
+```
+
+We now need to iterate over our string and identify each of the three types of characters we are interested in.
+
+How can we identify non-alphas in a string?
+
+```python
+elif not char.isalpha():
+    # do something
+```
+
+
+**Step 2:**
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}     
+```
+
+We now need to iterate over our string and identify each of the three types of characters we are interested in.
+
+Based on this, we can use just a regular else statement to cover all other characters
+
+
+
+**Step 2:**
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}     
+```
+
+Let’s put it all together - you now fill in the blanks of how to use our dictionary to accumulate here
+
+```python
+if char in ['a', 'e', 'i', 'o', 'u']:
+	pass
+elif not char.isalpha():
+	pass
+else:
+	pass
+```
+
+
+**Step 2:**
+
+```python
+d = {'vowels': 0, 'consonants': 0, 'nonalpha': 0}     
+```
+
+Let’s put it all together - you now fill in the blanks of how to use our dictionary to accumulate here
+
+```python
+if char in ['a', 'e', 'i', 'o', 'u']:
+	d['vowels'] += 1
+elif not char.isalpha():
+	d['nonalpha'] += 1
+else:
+	d['consonants'] += 1
+```
+
+
+
+
+
+------------------------------------------------------------------
+
+# 030 - `defaultdict` and `Counter` are excellent "convenience" dictionaries
+
+## Goals
+
 
 ## The `defaultdict`datatype provides default values
 * TODO
