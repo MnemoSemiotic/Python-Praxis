@@ -2969,7 +2969,7 @@ for idx, ch in enumerate(string):
 
 ## Goals
 * `string` Slicing
-* `replace`
+* using `.replace()` to replace substrings within a string
 * Processing strings within a list
 
 
@@ -3244,6 +3244,75 @@ print( clean_string_lst(my_txt) )
 * Keys can be added to dictionaries by:
     * `d[new_key] = new_value`
     * Note that if the key already exists in the dictionary, this syntax will reassign the value to this new_value
+
+
+
+Create a text content analyzer. This is a tool used by writers to find statistics such as word and sentence count on essays or articles they are writing.
+
+Write a Python program that analyzes string and compiles statistics on it. Your sentence can end in a `.`, `!` or `?`, do not include punctuation in your words
+
+The program should PRINT using string formatting:
+1. The total word count
+2. The count of unique words
+3. The number of sentences
+4. The average sentence length in words (whole number)
+5. A list of words used, in order of descending frequency
+
+The program should also `return` all the information in a dictionary
+To get your string to check is on the next slide
+
+Use this text:
+
+```python
+Mochi is a Maltese. He weighs only 4 lbs even though he is already 6 years old!!! He likes to eat blueberries. Mochi is sleeping. Is Mochi cute? Everyone thinks Mochi is cute!! Couple more lines for testing stdin. Is Disney Tsum Tsum a fun game?! Disney Tsum Tsum is very fun! Mochi is sleeping. Mochi loves Disney Tsum Tsum. Mochi is sleeping again.
+```
+
+
+```python
+def word_counter(text_list):
+    d = dict()
+    out = []
+
+    for word in text_list:
+        if word not in d:
+            d[word] = 0
+        d[word] += 1
+
+    for word, count in d.items():
+        out.append((count, word))
+
+    return [word for count, word in sorted(out, reverse=True)]
+
+def text_content_analyzer(text):
+    d = {
+        'total_word_count': 0,
+        'unique_word_count': 0,
+        'sentence_count': 0,
+        'avg_sentence_len': 0,
+        'word_list_desc_freq': []
+    }
+
+    text_list = text.replace('.', '').replace('?', '').replace('!', '').lower().split(' ')
+    sentences = text.replace('?', '.').replace('!', '.').lower().split('. ')
+    sentences = [sentence.replace('.', ' ') for sentence in sentences]
+
+    d['total_word_count'] = len(text_list)
+    print(f'Total Word Count: {d['total_word_count']}')
+
+    d['unique_word_count'] = len(list(set(text_list)))
+    print(f'Unique Word Count: {d['unique_word_count']}')
+
+    d['sentence_count'] = len(sentences)
+    print(f'Sentence Count: {d['sentence_count']}')
+
+    d['avg_sentence_len'] = sum([len(sentences) for sentence in sentences]) / len(sentences)
+    print(f'Average Sentence Length: {d['avg_sentence_len']}')
+
+    d['word_list_desc_freq'] = word_counter(text_list)
+    print(f'Words in Desc Frequency: {d['word_list_desc_freq']}')
+
+    return d
+```
 
 
 ## Basic dictionary methods
@@ -3594,6 +3663,49 @@ new_lst = [ i ** 2 for i in old_lst ]
 L1 = ['hello', 'goodbye', [1,2,3], 44]
 l1 = [len(item) if not isinstance(item, (int, float, complex, bool)) else len(str(item)) for item in L1]
 ```
+
+
+Create a function that will check to see if a book is in a library and if it isn’t, then update your library with the book and let the user know it was a new book, else tell the user that the book was not new.  (Remember capitalization matters) Return your library as a list
+    a. Try this if your library was a list - use list methods
+    b. Try this if your library was a set - use set methods
+
+```python
+def book_update(new_book, library):
+	pass
+```
+
+```python
+library = ['Pedagogy of the Oppressed', 'Consciencism', 'Neo-Colonialism', 'Pathologies of Power', 'White Malice', 'The Jakarta Method', 'An Indigenous Peoples\' History of the United States', 'Braiding Sweetgrass', 'Journal of an Ordinary Grief']
+```
+
+Check to see if your library has these books:
+
+```python
+'journal of an ordinary grief', 'Consciencism', 'The Jakarta method', 'Make Rojava Green Again'
+```
+
+
+```python
+def book_update(new_book, library):
+    if new_book.lower() in [book.lower() for book in library]:
+        print(f'Your book, {new_book}, is in the library')
+        return library
+    else:
+        print(f'Your book, {new_book}, is new!')
+        if isinstance(library, list):
+            new_lib = library[:]
+            new_lib.append(new_book)
+            return new_lib
+        elif isinstance(library, set):
+            new_lib = library.copy()
+            new_lib.add(new_book)
+            return list(new_lib)
+```
+
+
+
+
+
 
 
 
