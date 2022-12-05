@@ -2700,6 +2700,16 @@ squared_with_indices(range(1, 20))
 
 
 Code the `mean()` function
+* sum of the numeric elements, divided by the number of elements, expressed as:
+* Trimmed Mean
+    * Can be used to combat large devations and outliers
+    * “trim” some percent off of  max and min of data list:
+    * Advantage - can help combat outliers that might influence our mean
+    * Disadvantage - we are removing portions of our data which might be very important
+
+$$
+\frac{1}{n} \sum_{i=1}^n a_i
+$$
 * BONUS: Include a `trim` parameter that removes the greatest and least `n` values
 
 * Test with this data:
