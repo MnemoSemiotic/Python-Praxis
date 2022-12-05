@@ -3601,9 +3601,26 @@ def word_letter_count(string):
 
 
 
+
 ------------------------------------------------------------------
 
-# 029 - Sets
+# 029 - Collecting with Dictionaries
+
+## Goals
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+# 030 - Sets
 
 ## Goals
 * Understanding the `set` datatype
@@ -3699,7 +3716,7 @@ str2 = set('Complex is better than complicated. Flat is better than nested. Spar
 
 ------------------------------------------------------------------
 
-# 030 - Tuples
+# 031 - Tuples
 
 ## Goals
 * Understanding the `tuple` data type
@@ -3754,7 +3771,7 @@ def function_name(tuple1, tuple2):
 
 ------------------------------------------------------------------
 
-# 031 - Comprehensions
+# 032 - Comprehensions
 
 ## Goals
 * Understanding Comprehensions
