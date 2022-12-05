@@ -3607,9 +3607,33 @@ def word_letter_count(string):
 # 029 - Collecting with Dictionaries
 
 ## Goals
+* Dictionaries make excellent collectors
+* The `defaultdict`datatype provides default values
+* The `Counter` datatype is good for counting
 
 
 
+## Dictionaries make excellent collectors
+* Sometimes, you will need an accumulator that is a dictionary.
+* The accumulator either create a new key value pair or it will add something to the value of an already existing key value pair.
+* Syntax for a dictionary counter:
+
+```python
+accumulator = {}
+for element in some_list:
+	if element in accumulator.keys():
+		accumulator[element] += 1
+	else:
+		accumulator[element] = 1
+```
+
+
+## The `defaultdict`datatype provides default values
+* TODO
+
+
+## The `Counter` datatype is good for counting
+* TODO
 
 
 ## Conclusion
