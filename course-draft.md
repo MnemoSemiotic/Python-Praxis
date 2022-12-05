@@ -3522,8 +3522,11 @@ print(f'mean of means: {mean(means)}')
 
 
 
+## Getting random integers using `random.randint()`
+* TODO
 
-## Getting random numbers using ...
+
+## Getting random floats using `random.random()`
 * TODO
 
 ## Conclusion
