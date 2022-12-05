@@ -2325,6 +2325,8 @@ print(get_common_elements(lst_a, lst_b))
 
 
 
+
+
 ## String accumulators
 * We can concatenate a string by using a `string` type accumulator
 * We can concatenate the string by letter, by word, or by some other separator within our string
@@ -2359,8 +2361,17 @@ def non_val(s):
 ```
 
 
+Write a function called `collect_evens()` that takes a list of integers. The function should return a string that accumulates the even numbers into a string.
+* Example: `collect_evens([1, 2, 3, 4])` -> `'24'`
 
-
+```python
+def collect_evens(lst):
+	s = ''
+	for i in l:
+		if i % 2 == 0:
+			s += str(i)
+	return s
+```
 
 
 
