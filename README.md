@@ -36,6 +36,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * create a lesson for defaultdict and Counter
 * create project lessons
     * intro to probstats
+    * Sudoku solver and app
     * creating animations of bitfields
     * creating a Twitter bot to post socialist quotes
     * Using LDA to build a simple topic analysis of a set of documents
