@@ -29,7 +29,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
         * add in linear and logistic regression
         * add in simple ML and crossval
     * Sudoku solver and app
-    * creating animations of bitfields
     * creating a Twitter bot to post socialist quotes
     * Using LDA to build a simple topic analysis of a set of documents
         * maybe use Consciencism, Pedagogy of the Oppressed, etc.
