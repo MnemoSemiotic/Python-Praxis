@@ -4897,6 +4897,8 @@ def heaps_non_recursive(lst, k):
 * Understand combinations
 * Code the Combinations function
 * Discovering combinations through counting
+* Discovering Combinations through random sampling
+* Implementing the `itertools` combinations algorithm
 
 
 
@@ -4929,6 +4931,133 @@ def combinations(n, k):
 ```
 
 ## Discovering combinations through counting
+1. Make a counter list, treating the elements as the base in a number system
+2. Create a sublist of the counter list that is the Permutations
+3. Sort the elements of the sublist
+4. Remove any duplicate sublists
+
+
+Ex:
+
+Out of a set of 11 basketball players, only
+5 can be on the court at a time. What are all
+the combinations possible for that basketball team.
+
+```python
+num_combs = combinations(11, 5)
+
+def basketball_combs():
+    eleven_nums = range(1, 11+1)
+
+    # every arrangement of 5
+    possible_five = []
+
+    for i in eleven_nums:
+        for j in eleven_nums:
+            for k in eleven_nums:
+                for l in eleven_nums:
+                    for m in eleven_nums:
+                        possible_five.append([i,j,k,l,m])
+
+    # for five in possible_five:
+    #     print(five)
+
+    perms = []
+
+    for five in possible_five:
+        if len(list(set(five))) == 5:
+            perms.append(five)
+
+    # for five in perms:
+    #     print(five)
+
+    combs = []
+
+    for five in perms:
+        sorted_five = sorted(five)
+
+        if sorted_five not in combs:
+            combs.append(sorted_five)
+    
+    return combs
+
+# for five in basketball_combs():
+#     print(five)
+```
+
+
+## Discovering Combinations through random sampling
+#### An expensive Sampling Approach
+
+We can sample 5 players from our list of 11,
+can continue to build combinations until we reach
+11C5 combinations
+
+```python
+from random import choice
+
+def basketball_combs_samp(team_size=11, num_players=5):
+    combs = []
+
+    player_range = range(1, team_size+1)
+
+    while len(combs) < combinations(team_size, num_players):
+        player_comb = []
+
+        while len(player_comb) < num_players:
+            player_num = choice(player_range)
+
+            if player_num not in player_comb:
+                player_comb.append(player_num)
+
+        player_comb = sorted(player_comb)
+
+        if player_comb not in combs:
+            print(player_comb)
+            combs.append(player_comb)
+    return combs
+
+
+team_size = 11
+num_players = 5
+
+print(len(basketball_combs_samp(team_size, num_players)))
+print(combinations(team_size, num_players))
+```
+
+
+
+## Implementing the `itertools` combinations algorithm
+* Describe the `itertools` module
+
+* Notice the `yield` keyword, which allows for the creation of a [generator](https://wiki.python.org/moin/Generators) object. 
+
+```python
+def combs_alg_from_itertools(lst, k):
+    # get a frozen version of the input, 
+    lst_frozen = tuple(lst)
+    n = len(lst_frozen)
+    
+    combs = []
+
+    # fault control
+    if k > n:
+        return
+
+
+    indices = list(range(k))
+    yield tuple(lst_frozen[i] for i in indices)
+    while True:
+        for i in reversed(range(k)):
+            if indices[i] != i + n - k:
+                break
+        else:
+            return
+        indices[i] += 1
+        for j in range(i+1, k):
+            indices[j] = indices[j-1] + 1
+        yield tuple(lst_frozen[i] for i in indices)
+```
 
 
 ## Conclusion
