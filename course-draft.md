@@ -4896,7 +4896,7 @@ def heaps_non_recursive(lst, k):
 ## Goals
 * Understand combinations
 * Code the Combinations function
-* Derive combinations manually
+* Discovering combinations through counting
 
 
 
@@ -4928,7 +4928,7 @@ def combinations(n, k):
     return int(perm / factorial(k))
 ```
 
-## Derive combinations manually
+## Discovering combinations through counting
 
 
 ## Conclusion
