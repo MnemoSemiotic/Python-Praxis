@@ -17,7 +17,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * lessons to add:
-    * Create "intro to writing markdown video"
+
 
 * project lessons
     * intro to probstats using Python
