@@ -5255,8 +5255,43 @@ out.release
 
 ## Goals
 * A quick introduction to Sci-Kit Image
+* Understand images as multi-dimensional arrays
 * Survey image filters in Sci-Kit Image
 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - Introduction to Pandas for Data Analysis
+
+## Goals
+* Understand Pandas dataframes as a tool for analysing tabular data
+* Creating and populating dataframes
+* Importing data into Pandas
+* Simple statistics with Pandas
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+#  - Pandas and Matplotlib for Data Visualization
+
+## Goals
+* 
 
 
 
