@@ -5065,6 +5065,38 @@ def combs_alg_from_itertools(lst, k):
 
 ## In the Next Lesson...
 
+
+------------------------------------------------------------------
+
+#  - Generator functions and `yield`
+
+## Goals
+* 
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - `map`, `filter`, `reduce`
+
+## Goals
+* 
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+
 ------------------------------------------------------------------
 
 #  - Installing Python locally using Anaconda
