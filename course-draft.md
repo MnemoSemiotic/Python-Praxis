@@ -5373,7 +5373,7 @@ out.release
 
 ## Goals
 * Using `lambda` expressions as a general pattern
-* 
+* Utilizing `lambda` expressions on Pandas dataframes
 
 
 
