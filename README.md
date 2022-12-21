@@ -18,7 +18,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * lessons to add:
-    * create lesson on lambda expressions
     * Create "intro to writing markdown video"
 
 * project lessons
