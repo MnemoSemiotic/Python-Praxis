@@ -4655,8 +4655,9 @@ d2 = {k+'_test': v%13 for k, v in D2.items()}
 
 ## Goals
 * Demonstrate and explain the concept of a permutation
-* Discovering permutations through counting
 * Code the `permutations(n,k)` function
+* Discovering permutations through counting
+
 
 
 
@@ -4690,6 +4691,31 @@ Possible Sequences:
 
 
 
+## Code the `permutations(n,k)` function
+* Consider that this function is based on the `factorial` function, so we'll write that again first
+* This function will only answer the question "How many permutations are there of k of these n objects?"
+
+```python
+def factorial(num):
+    prod = 1
+    for n in range(2, num+1):
+        prod *= n
+    return prod
+
+
+def permutations(n, k):
+    return int(factorial(n) / factorial(n-k))
+```
+
+Slightly more optimized:
+
+```python
+def permutations(n, k):
+    perm = 1
+    for i in range(n, n-k, -1):
+        perm *= i
+    return perm
+```
 
 
 
@@ -4728,31 +4754,6 @@ ex: $k=1$
 
 
 
-## Code the `permutations(n,k)` function
-* Consider that this function is based on the `factorial` function, so we'll write that again first
-* This function will only answer the question "How many permutations are there of k of these n objects?"
-
-```python
-def factorial(num):
-    prod = 1
-    for n in range(2, num+1):
-        prod *= n
-    return prod
-
-
-def permutations(n, k):
-    return int(factorial(n) / factorial(n-k))
-```
-
-Slightly more optimized:
-
-```python
-def permutations(n, k):
-    perm = 1
-    for i in range(n, n-k, -1):
-        perm *= i
-    return perm
-```
 
 
 
