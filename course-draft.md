@@ -5211,12 +5211,36 @@ def combs_alg_from_itertools(lst, k):
 
 ------------------------------------------------------------------
 
-#  - Fun with Bitfields, using `numpy` arrays and Bitwise operations
+#  - Fun with Bitfields, using `numpy` arrays and Bitwise operations to create Bitfield Animations
 
 ## Goals
-* Bitwise operators (expand into )
-* 
+* Bitwise operators (expand into individual operators)
+* Understanding the concept of a bitfield
+* Creating a bitfield images using `numpy` and `skimage`
+* Stitching images together using `cv2`
 
+
+
+
+```python
+import cv2
+import numpy as np
+import glob
+
+img_files = []
+for filename in glob.glob("/bitfield-images/*.png"):
+    img = cv2.imread(filename)
+    height, width, layers = img.shape
+    size = (width, height)
+    img_files.append(img)
+
+out = cv2.VideoWriter('bitfield.avi', cv2.VideoWriter_fourcc(*'DIVX', 15, size))
+
+for i in range(len(img_array)):
+    out.write(img_files[i])
+
+out.release
+```
 
 
 ## Conclusion
