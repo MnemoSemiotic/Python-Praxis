@@ -5169,3 +5169,20 @@ def combs_alg_from_itertools(lst, k):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+#  - Using `pathlib` to traverse folders and files
+
+## Goals
+* Understand the usage of `pathlib`
+* Use `pathlib` to list all image files in a directory of mixed files
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
