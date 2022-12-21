@@ -4895,7 +4895,7 @@ def heaps_non_recursive(lst, k):
 
 ## Goals
 * Understand combinations
-
+* Code the Combinations function
 * Derive combinations manually
 
 
@@ -4909,6 +4909,24 @@ Combinations can be thought of as a reduction of the Permutations space, as orde
 How many different 5 card hands in a game of poker?
 It doesn't matter how you arrange the cards in your hand
 
+
+## Code the Combinations function
+
+$$
+nCk = \frac{n!}{((n-k)! k!)}
+$$
+
+```python
+def combinations(n, k):
+    return int(factorial(n) / (factorial(n-k) * factorial(k)))
+
+# Slightly more optimal:
+def combinations(n, k):
+    perm = 1
+    for i in range(n, n-k, -1):
+        perm *= i
+    return int(perm / factorial(k))
+```
 
 ## Derive combinations manually
 
