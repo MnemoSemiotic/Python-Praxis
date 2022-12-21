@@ -18,8 +18,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * lessons to add:
-    * create a supplement lesson for float and double (32-bit and 64-bit) encoding
-
     * create lesson on lambda expressions
     * create a lesson on yield and generators
     * Create "intro to writing markdown video"

@@ -809,11 +809,11 @@ print((4 - 2) * (20 / 2)) # --> 20
 -------------------------------------------------------------------------------
 
 
-#  - SUPPLEMENTAL: Understanding 
+#  - SUPPLEMENTAL: Understanding float and double encoding (32-bit and 64-bit)
 (not in playlist, linked from the above lesson, in description)
 
 ## Goals:
-
+* 
 
 
 # Conclusion
