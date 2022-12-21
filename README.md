@@ -28,7 +28,7 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
     * create a supplement lesson for decimal and negative modulo
     * create a supplement lesson for float and double (32-bit and 64-bit) encoding
     * create lesson on walrus operator for assignment
-    * create lessons on map, filter, zip, reduce
+
     * create lesson on lambda expressions
     * create a lesson on yield and generators
     * Create "intro to writing markdown video"
