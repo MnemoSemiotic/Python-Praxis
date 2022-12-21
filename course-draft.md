@@ -4894,8 +4894,23 @@ def heaps_non_recursive(lst, k):
 #  - Thinking Algorithmically: Combinations
 
 ## Goals
+* Understand combinations
+
+* Derive combinations manually
 
 
+
+## Understand combinations
+* $nCk = \frac{n!}{((n-k)! k!)}$
+**ORDER DOESN'T MATTER**
+Combinations can be thought of as a reduction of the Permutations space, as order doesn't matter.
+
+**Cardinal Example of a Combinations Prob**: 
+How many different 5 card hands in a game of poker?
+It doesn't matter how you arrange the cards in your hand
+
+
+## Derive combinations manually
 
 
 ## Conclusion
