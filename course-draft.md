@@ -5288,7 +5288,39 @@ out.release
 
 ------------------------------------------------------------------
 
+#  - Pandas Filtering and Group By Operations
+
+## Goals
+* 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
 #  - Pandas and Matplotlib for Data Visualization
+
+## Goals
+* 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - 
 
 ## Goals
 * 
