@@ -1357,6 +1357,22 @@ True
 ## In the Next Lesson...
 
 
+
+------------------------------------------------------------------
+
+#  - SHORT: The "Walrus" operator
+
+
+## Goals:
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
 ------------------------------------------------------------------
 
 #  - Scalar types are immutable, the `None` Type, Type Inference, Duck Typing, Checking and Comparing Data Types
