@@ -5106,9 +5106,11 @@ def combs_alg_from_itertools(lst, k):
 
 ------------------------------------------------------------------
 
-#  - U
+#  - Basic File Input Output and using `try / except`
 
 ## Goals
+* Using `with` and `open` to read in a text file
+* 
 
 
 
