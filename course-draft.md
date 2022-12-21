@@ -5206,3 +5206,19 @@ def combs_alg_from_itertools(lst, k):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+#  - Opening images as `numpy` arrays
+
+## Goals
+* A quick introduction to Sci-Kit Image
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
