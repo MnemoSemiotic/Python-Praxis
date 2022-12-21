@@ -18,8 +18,9 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * lessons to add:
-    * `try / except`
-    * Create "intro to writing markdown video"
+    * basic file i/o
+        * `try / except`
+
     * create a `numpy` section, where Bitwise operations are introduced
     * create a `pandas` section, where data is first looked at and bitwise logic is applied to a filter
     * create a brief `matplotlib` section, where some simple plots are created on the data from the `pandas` section
@@ -31,7 +32,8 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
     * create lessons on map, filter, zip, reduce
     * create lesson on lambda expressions
     * create a lesson on yield and generators
-    * basic file i/o
+    * Create "intro to writing markdown video"
+
 * project lessons
     * [describing Emergence of Euler's Number $e$](https://www.youtube.com/watch?v=Mw52nDwPh8k&list=PL5T50pwCrPUrIxYqP8jC8ctUUItW6csXG)
     * python scripting
