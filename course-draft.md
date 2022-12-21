@@ -5195,7 +5195,9 @@ def combs_alg_from_itertools(lst, k):
 
 ## Goals
 * Introducing `numpy` arrays
-* Creating `
+* Creating arrays from lists
+* Simple mathematical operations on `numpy` arrays
+* `numpy` mathematical methods
 
 
 
