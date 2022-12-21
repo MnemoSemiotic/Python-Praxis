@@ -5120,3 +5120,20 @@ def combs_alg_from_itertools(lst, k):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - Simple Project: Write a Simple CBT Script that saves to a journal
+
+## Goals
+* Adapt a basic Cognitive Behavioral Therapy protocol into a Python script
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
