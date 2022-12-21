@@ -5728,3 +5728,17 @@ def get_sphere(gumball_inventory):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: Create a Twitter bot to post socialist quotes
+
+## Goals
+* 
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
