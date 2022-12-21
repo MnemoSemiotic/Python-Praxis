@@ -5742,3 +5742,31 @@ def get_sphere(gumball_inventory):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: Using LDA to build a simple topic analysis of a set of documents
+
+## Goals
+* 
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: Building a simple flashcard app using Flask and markdown
+
+## Goals
+* 
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
