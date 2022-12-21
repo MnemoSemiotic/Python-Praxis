@@ -18,9 +18,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 
 ## TODOs:
 * lessons to add:
-    * basic file i/o
-        * `try / except`
-    * create a lesson on `pathlib`
     * create a `numpy` section, where Bitwise operations are introduced
     * create a `pandas` section, where data is first looked at and bitwise logic is applied to a filter
     * create a brief `matplotlib` section, where some simple plots are created on the data from the `pandas` section
