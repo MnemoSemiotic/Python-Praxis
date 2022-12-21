@@ -5217,7 +5217,7 @@ def combs_alg_from_itertools(lst, k):
 * Bitwise operators (expand into individual operators)
 * Understanding the concept of a bitfield
 * Creating a bitfield images using `numpy` and `skimage`
-* Stitching images together using `cv2`
+* Stitching images together into a video using `cv2`
 
 
 
@@ -5251,11 +5251,12 @@ out.release
 
 ------------------------------------------------------------------
 
-#  - Playing with Images using Sci-Kit Image
+#  - Manipulating Images using Sci-Kit Image
 
 ## Goals
 * A quick introduction to Sci-Kit Image
-* Opening an 
+* Survey image filters in Sci-Kit Image
+
 
 
 
