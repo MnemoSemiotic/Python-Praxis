@@ -5366,6 +5366,24 @@ out.release
 
 
 
+
+------------------------------------------------------------------
+
+#  - Utilizing `lambda` Expressions
+
+## Goals
+* Using `lambda` expressions as a general pattern
+* 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
 ------------------------------------------------------------------
 
 #  - Performing SQL operations using `duckdb` and Python
