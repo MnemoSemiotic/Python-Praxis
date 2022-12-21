@@ -5714,3 +5714,17 @@ def get_sphere(gumball_inventory):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: Writing a Sudoku puzzle creator and solver 
+
+## Goals
+* 
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
