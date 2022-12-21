@@ -2201,6 +2201,7 @@ def sum_evens(num_list):
 
 ### Writing the factorial accumulator
 * Write a function to calculate the result of n!
+* Note that `factorial()` is a function available in the `math` module. However, it's a good simple algorithm to learn early on.
 
 $$
 4! = 4 * 3 * 2 * 1
@@ -2229,6 +2230,8 @@ def factorial(num):
 
     return prod
 ```
+
+ 
 
 
 
@@ -4621,6 +4624,7 @@ d2 = {k+'_test': v%13 for k, v in D2.items()}
 * Understanding the concept of an _algorithm_
 * Greatest Common Divisor
 * Least Common Multiple
+*
 
 
 
@@ -4632,3 +4636,197 @@ d2 = {k+'_test': v%13 for k, v in D2.items()}
 
 ## Least Common Multiple
 * include `math.lcm`
+
+
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+#  - Thinking Algorithmically: Counting and Permutations
+
+## Goals
+* Demonstrate and explain the concept of a permutation
+* Discovering permutations through counting
+* Code the `permutations(n,k)` function
+
+
+
+
+## Demonstrate and explain the concept of a permutation 
+* $nPk = \frac{n!}{(n-k)!}$
+* A **permutation** can be thought of as an arrangement of a number of items
+* $nPk$
+    * where $n$ is the number of possible items
+    * $k$ is how many of those items to arrange
+* Note: **ORDER MATTERS**
+
+
+
+Consider selecting 3 kittens from a box, without replacement:
+* In the first selection, there are 3 kitten choices
+* In the second selection, there are 2 kitten choices
+* In the thrid selection, there is only 1 kitten choice
+
+Possible Sequences:
+
+| Selection One | Selection Two | Selection Three|
+|---------------|---------------|----------------|
+|  <center>1</center> | <center>2</center> | <center>3</center>|
+|  <center>1</center> | <center>3</center> | <center>2</center>|
+|  <center>2</center> | <center>1</center> | <center>3</center>|
+|  <center>2</center> | <center>3</center> | <center>1</center>|
+|  <center>3</center> | <center>1</center> | <center>2</center>|
+|  <center>3</center> | <center>2</center> | <center>1</center>|
+
+
+
+
+
+
+
+## Discovering permutations through counting
+$nPk = \frac{n!}{(n-k)!}$
+
+If we consider $n$ to be the base of a counting system, then we can determine all permutations $k$ by a counting/reduction approach.
+
+1. Count in base $n$ system
+* ex: $n=3$
+
+000 010 020 100 110 120 200 210 220
+001 011 021 101 111 121 201 211 221
+002 012 022 102 112 122 202 212 222
+                            
+2. **Reduce** counts that have duplicate items
+
+000 010 020 100 110 **120** 200 **210** 220
+001 011 **021** 101 111 121 **201** 211 221
+002 **012** 022 **102** 112 122 202 212 222
+
+3. Consider $k$ items
+
+ex: $k=3$
+
+|012 | 021 | 102 | 120 | 201 | 210| 
+|----|-----|-----|-----|-----|-----|
+
+ex: $k=2$
+| 12 | 21 | 02 | 20| 01|  10|
+|-----|-----|-----|-----|-----|-----|
+
+ex: $k=1$ 
+| 2 | 1 | 0 |
+|-----|-----|-----|
+
+
+
+## Code the `permutations(n,k)` function
+* Consider that this function is based on the `factorial` function, so we'll write that again first
+* This function will only answer the question "How many permutations are there of k of these n objects?"
+
+```python
+def factorial(num):
+    prod = 1
+    for n in range(2, num+1):
+        prod *= n
+    return prod
+
+
+def permutations(n, k):
+    return int(factorial(n) / factorial(n-k))
+```
+
+Slightly more optimized:
+
+```python
+def permutations(n, k):
+    perm = 1
+    for i in range(n, n-k, -1):
+        perm *= i
+    return perm
+```
+
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+#  - Thinking Algorithmically: Combinations
+
+## Goals
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+------------------------------------------------------------------
+
+#  - Installing Python locally using Anaconda
+
+## Goals
+* Understand Anaconda as a "package manager"
+* Install Anaconda on Windows
+* Install Anaconda on Mac OSX
+* Install Anaconda in Linux
+* Create an Anaconda environment
+* Install packages: `numpy`, `pandas`, and Jupyter notebooks
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - Using text editors to edit Python code
+
+## Goals
+* Install VSCode
+* Write Python in VSCode and run that code in the terminal
+* Install Jupyter using Anaconda (if you haven't already)
+* Write code using Jupyter notebooks in the browser
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - U
+
+## Goals
+
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
