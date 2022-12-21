@@ -5413,3 +5413,19 @@ out.release
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: Creating a Python Script that splits a long lecture on silences
+
+## Goals
+* 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...

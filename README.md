@@ -21,9 +21,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
     * Create "intro to writing markdown video"
 
 * project lessons
-    * [describing Emergence of Euler's Number $e$](https://www.youtube.com/watch?v=Mw52nDwPh8k&list=PL5T50pwCrPUrIxYqP8jC8ctUUItW6csXG)
-    * python scripting
-        * taking input when calling the script
     * intro to probstats using Python
         * add in experiments, hypothesis testing, confidence intervals
         * add in linear and logistic regression
