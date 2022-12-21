@@ -5320,7 +5320,7 @@ out.release
 
 ------------------------------------------------------------------
 
-#  - 
+#  - Performing SQL operations using `duckdb` and Python
 
 ## Goals
 * 
