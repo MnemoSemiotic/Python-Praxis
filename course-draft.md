@@ -4657,6 +4657,8 @@ d2 = {k+'_test': v%13 for k, v in D2.items()}
 * Demonstrate and explain the concept of a permutation
 * Code the `permutations(n,k)` function
 * Discovering permutations through counting
+* Coding Permutations through a reductive approach
+* Coding Permutations using [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm)
 
 
 
@@ -4755,7 +4757,129 @@ ex: $k=1$
 
 
 
+## Coding Permutations through a reductive approach
+1. Count in Base $n$ system
+2. Reduce space by removing outcomes with duplicate items
 
+Five pets and 5 beds. What are all the ways that you can
+arrange those 5 pets in 5 beds?
+
+```python
+base_5 = ['bat', 'cat', 'frog', 'eel', 'hamster']
+
+animals_counting = []
+
+for an1 in base_5:
+    for an2 in base_5:
+        for an3 in base_5:
+            for an4 in base_5:
+                for an5 in base_5:
+                    animals_counting.append([an1, an2, an3, an4, an5])
+
+# for an_number in animals_counting:
+#     print(an_number)
+
+animal_perms = []
+
+for an_number in animals_counting:
+    perm = True
+
+    for an in an_number:
+        if an_number.count(an) > 1:
+            perm = False
+            break
+    if perm == True:
+        animal_perms.append(an_number)
+
+# for an_number in animal_perms:
+#     print(an_number)
+```
+
+
+## Coding Permutations using [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm)
+* Relies on swapping
+
+Non-Recursive Algorithm from [Wikipedia](https://en.wikipedia.org/wiki/Heap%27s_algorithm):
+
+```
+procedure generate(n : integer, A : array of any):
+    //c is an encoding of the stack state. 
+    //c[k] encodes the for-loop counter for when generate(k - 1, A) is called
+    c : array of int
+
+    for i := 0; i < n; i += 1 do
+        c[i] := 0
+    end for
+
+    output(A)
+    
+    //i acts similarly to the stack pointer
+    i := 0;
+    while i < n do
+        if  c[i] < i then
+            if i is even then
+                swap(A[0], A[i])
+            else
+                swap(A[c[i]], A[i])
+            end if
+            output(A)
+            //Swap has occurred ending the for-loop. Simulate the increment of the for-loop counter
+            c[i] += 1
+            //Simulate recursive call reaching the base case by bringing the pointer to the base case analog in the array
+            i := 0
+        else
+            //Calling generate(i+1, A) has ended as the for-loop terminated. Reset the state and simulate popping the stack by incrementing the pointer.
+            c[i] := 0
+            i += 1
+        end if
+    end while
+```
+
+We'll write this version close to the algorithm on wikipedia
+
+
+```python
+def swap(lst, idx_1, idx_2):
+    lst_ = lst.copy()
+    temp = lst_[idx_2]
+    lst_[idx_2] = lst_[idx_1]
+    lst_[idx_1] = temp
+    return lst_
+
+
+def heaps_non_recursive(lst, k):
+    # avoid modifying parameter
+    lst_copy = lst.copy()
+
+    # holds stack state
+    c = [0] * len(lst)
+
+    # collect permutations, collect initial perm
+    perms = [lst_copy[:k]]
+
+    i = 0 # acts like a stack pointer
+    while i < len(lst_copy):
+        if c[i] < i:
+            if i % 2 == 0:
+                lst_copy = swap(lst_copy, 0, i)
+            else:
+                lst_copy = swap(lst_copy, c[i], i)
+            
+            if lst_copy[:k] not in perms:
+                perms.append(lst_copy[:k])
+
+            # incr the counter
+            c[i] += 1
+
+            # reset i
+            i = 0
+        else:
+            # reset state of count state at i
+            c[i] = 0
+            i += 1
+
+    return perms
+```
 
 
 
