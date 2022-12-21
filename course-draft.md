@@ -5663,3 +5663,23 @@ def get_sphere(gumball_inventory):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: Performing Experiments and Hypothesis Testing with Python
+
+## Goals
+* Understanding an "experiment"
+* Hypothesis testing on one variable
+* Hypothesis testing on multiple variables
+* Confidence Intervals
+* Bootstrapping
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
