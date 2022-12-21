@@ -5110,7 +5110,8 @@ def combs_alg_from_itertools(lst, k):
 
 ## Goals
 * Using `with` and `open` to read in a text file
-* 
+* Understanding `try / except` in Python
+* Writing a simple logging script, using `datetime` and file i/o
 
 
 
