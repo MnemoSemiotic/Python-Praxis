@@ -5397,3 +5397,19 @@ out.release
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: [describing Emergences of Euler's Number $e$](https://www.youtube.com/watch?v=Mw52nDwPh8k&list=PL5T50pwCrPUrIxYqP8jC8ctUUItW6csXG)
+
+## Goals
+* 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
