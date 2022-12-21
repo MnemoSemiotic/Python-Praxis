@@ -5683,3 +5683,34 @@ def get_sphere(gumball_inventory):
 * In this lesson we 
 
 ## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: A Simple Introduction to Machine Learning using Linear in Python
+
+## Goals
+* Describe Linear Regression
+* Train/Test Split and Cross Validation
+* Interpreting results of Linear Regression
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+
+------------------------------------------------------------------
+
+#  - PROJECT: Using Logistic Regression to Determine Classes in Data
+
+## Goals
+* Describe Logistic Regression
+* ...
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
