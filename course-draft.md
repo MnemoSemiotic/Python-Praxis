@@ -805,6 +805,22 @@ print((4 - 2) * (20 / 2)) # --> 20
 ## In the Next Lesson...
 
 
+
+-------------------------------------------------------------------------------
+
+
+#  - SUPPLEMENTAL: Understanding Decimal and Negative Modulo
+(not in playlist, linked from the above lesson, in description)
+
+## Goals:
+
+
+
+# Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
 ------------------------------------------------------------------
 
 
