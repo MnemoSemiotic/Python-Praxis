@@ -5208,13 +5208,30 @@ def combs_alg_from_itertools(lst, k):
 ## In the Next Lesson...
 
 
+
 ------------------------------------------------------------------
 
-#  - Opening images as `numpy` arrays
+#  - Fun with Bitfields, using `numpy` arrays and Bitwise operations
+
+## Goals
+* Bitwise operators (expand into )
+* 
+
+
+
+## Conclusion
+* In this lesson we 
+
+## In the Next Lesson...
+
+
+------------------------------------------------------------------
+
+#  - Playing with Images using Sci-Kit Image
 
 ## Goals
 * A quick introduction to Sci-Kit Image
-
+* Opening an 
 
 
 
