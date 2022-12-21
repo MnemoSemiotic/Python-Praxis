@@ -20,7 +20,6 @@ A course in Python, developed as we go, with curriculum dev on Twitch.
 * lessons to add:
     * `try / except`
     * Create "intro to writing markdown video"
-    * include `math.factorial` when introducting factorial function, `math.perm`, `math.comb` in "counting" lesson on combinations
     * create a `numpy` section, where Bitwise operations are introduced
     * create a `pandas` section, where data is first looked at and bitwise logic is applied to a filter
     * create a brief `matplotlib` section, where some simple plots are created on the data from the `pandas` section
